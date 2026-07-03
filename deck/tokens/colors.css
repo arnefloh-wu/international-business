@@ -1,0 +1,39 @@
+/* WU Vienna — color tokens. Source: WU 16:9 PowerPoint template theme ("WU" clrScheme). */
+:root {
+  /* Base */
+  --wu-black: #000000;
+  --wu-white: #FFFFFF;
+
+  /* Brand blues */
+  --wu-navy: #002350;        /* dk2 / accent2 — deep WU blue */
+  --wu-cyan: #0096D3;        /* accent1 — signature pattern + bullet color */
+  --wu-sky: #80CFE9;         /* accent6 — light cyan */
+  --wu-ice: #E5F5FA;         /* lt2 — pale blue surface */
+
+  /* Secondary accents */
+  --wu-purple: #4B2582;      /* accent3 */
+  --wu-steel: #457AA0;       /* accent4 */
+  --wu-lavender: #A592C0;    /* accent5 */
+
+  /* Links */
+  --wu-link: #405A7C;        /* hlink */
+  --wu-link-visited: #0082AA;/* folHlink */
+
+  /* Literal layout-shape cyan (title rules + "Zwischentitel blau" background).
+     The template uses #3399CC for these shapes, NOT accent1. */
+  --wu-rule-cyan: #3399CC;
+
+  /* Grays */
+  --wu-gray-footer: #888888; /* footer / page-number text */
+
+  /* Semantic aliases */
+  --text-title: var(--wu-black);
+  --text-body: var(--wu-black);
+  --text-muted: var(--wu-gray-footer);
+  --text-inverse: var(--wu-white);
+  --surface-page: var(--wu-white);
+  --surface-tint: var(--wu-ice);
+  --surface-inverse: var(--wu-navy);
+  --accent-primary: var(--wu-cyan);
+  --accent-bullet: var(--wu-cyan);
+}

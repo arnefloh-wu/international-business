@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>International Business Strategy — ISU WU 2026</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; }
+  html, body { margin: 0; background: #55606b; }
+  body {
+    font-family: var(--font-body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 40px 20px;
+  }
+
+  /* Fixed 1280x720 canvas, scaled responsively */
+  .stage { width: 1280px; max-width: 100%; }
+  .slide {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background: var(--surface-page);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    transform-origin: top left;
+  }
+
+  /* Title band + rule */
+  .s-title {
+    position: absolute; left: 65px; top: 16px; width: 1000px; height: 114px; margin: 0;
+    display: flex; align-items: center;
+    font-family: var(--font-title); font-weight: bold; font-size: var(--size-slide-title);
+    line-height: 1.05; color: var(--wu-black);
+  }
+  .rule { position: absolute; left: 64px; top: 126px; width: 108px; height: 7px; background: var(--wu-rule-cyan); }
+  .logo-black { position: absolute; left: 1106px; top: 22px; width: 121px; height: 90px; }
+  .logo-white { position: absolute; left: 1106px; top: 22px; width: 121px; height: 90px; }
+
+  /* Bulleted lists */
+  ul.wu { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  ul.wu li { font-family: var(--font-body); color: var(--wu-black); line-height: var(--leading-body);
+    display: flex; gap: 18px; align-items: baseline; font-size: var(--size-body-1); }
+  ul.wu li::before { content: "▪"; color: var(--accent-bullet); flex: none; }
+  ul.wu li.sub { font-size: var(--size-body-2); margin-left: 46px; }
+  ul.wu li.sub::before { color: var(--wu-sky); }
+
+  /* Footer rail */
+  .footer {
+    position: absolute; left: 65px; top: 688px; display: flex;
+    font-family: var(--font-body); font-size: var(--size-footer); color: var(--wu-gray-footer);
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .footer .pg { width: 150px; flex: none; }
+  .accred-b { position: absolute; left: 1052px; top: 678px; width: 200px; height: 32px; }
+
+  /* Tables */
+  table.wu { border-collapse: collapse; width: 1150px; font-family: var(--font-body); font-size: var(--size-body-3); }
+  table.wu th, table.wu td { padding: 12px 20px; text-align: left; vertical-align: top; }
+  table.wu th { background: var(--wu-navy); color: var(--wu-white); font-weight: bold; }
+  table.wu tbody tr:nth-child(even) { background: var(--wu-ice); }
+  table.wu td.k { font-weight: bold; width: 240px; }
+
+  /* Stat / fact tiles (hard rectangles, ice fill — no radius, no shadow) */
+  .facts { position: absolute; left: 65px; top: 190px; display: flex; gap: 24px; flex-wrap: wrap; width: 1150px; }
+  .fact { background: var(--wu-ice); padding: 24px 28px; width: 258px; box-sizing: border-box; }
+  .fact .n { font-family: var(--font-title); font-weight: bold; font-size: 44px; color: var(--wu-navy); line-height: 1; }
+  .fact .l { margin-top: 12px; font-size: 18px; color: var(--wu-black); line-height: 1.3; }
+
+  /* Section divider text */
+  .div-title { position: absolute; left: 65px; top: 14px; width: 1000px; height: 114px; margin: 0;
+    display: flex; align-items: center; font-family: var(--font-title); font-weight: bold;
+    font-size: var(--size-slide-title); line-height: 1.0; }
+  .div-sub { position: absolute; left: 65px; top: 150px; width: 1000px; margin: 0;
+    font-family: var(--font-body); font-size: 20px; line-height: var(--leading-body); }
+  .div-num { position: absolute; left: 65px; top: 150px; font-family: var(--font-title); font-weight: bold;
+    font-size: 120px; color: var(--wu-rule-cyan); opacity: 0.28; line-height: 1; }
+
+  .kicker { position: absolute; left: 65px; top: 148px; font-family: var(--font-body); font-size: 17px;
+    text-transform: uppercase; letter-spacing: 0.12em; color: var(--wu-cyan); }
+
+  @media print {
+    body { background: #fff; padding: 0; gap: 0; }
+    .slide { box-shadow: none; page-break-after: always; break-after: page; }
+    .stage { max-width: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 1 · TITLE — full-bleed campus photo -->
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:34px;width:900px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.08;color:var(--wu-white)">International Business Strategy<br>in the Age of Deglobalization</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:770px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:24px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026 · Course Outline<br>Undergraduate · English · 4 ECTS</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+
+<!-- 2 · SECTION DIVIDER — course at a glance -->
+<div class="stage"><div class="slide">
+  <div class="div-num">01</div>
+  <h1 class="div-title" style="color:var(--wu-black)">The course at a glance</h1>
+  <div class="rule" style="top:122px"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="div-sub" style="top:326px;color:var(--wu-black)">Institute for International Business · WU Vienna</p>
+  <img src="assets/accreditations-black.png" alt="" style="position:absolute;left:66px;top:362px;width:232px;height:37px">
+  <img src="assets/patterns/pattern-blocks-dense-cyan.png" alt="" style="position:absolute;left:0;top:399px;width:1280px;height:321px;object-fit:cover;object-position:left top">
+</div></div>
+
+<!-- 3 · KEY FACTS — tiles -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Key facts</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div class="facts">
+    <div class="fact"><div class="n">4</div><div class="l">ECTS credits · undergraduate level</div></div>
+    <div class="fact"><div class="n">35</div><div class="l">Teaching hours (45 min. each)</div></div>
+    <div class="fact"><div class="n">8</div><div class="l">Course days, incl. case work &amp; presentation</div></div>
+    <div class="fact"><div class="n">EN</div><div class="l">Language of instruction: English</div></div>
+  </div>
+  <div style="position:absolute;left:65px;top:452px;width:1150px">
+    <table class="wu">
+      <tbody>
+        <tr><td class="k">Course title</td><td>International Business Strategy in the Age of Deglobalization, Nationalism and Geo-political tensions</td></tr>
+        <tr><td class="k">Instructors</td><td>Arne Floh (arne.floh@wu.ac.at) · Can Tihanyi (can.tihanyi@wu.ac.at)</td></tr>
+        <tr><td class="k">Institute</td><td>Institute for International Business, WU Vienna University of Economics and Business</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer"><span class="pg">Seite 3</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 4 · AIM OF THE COURSE -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Aim of the course</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:185px;width:1080px;font-family:var(--font-body);font-size:24px;line-height:1.5;color:var(--wu-black)">
+    <p style="margin:0 0 24px 0">The international expansion of their operations is central for the survival of an increasing number of firms. In a context of <b>deglobalization, nationalism, and geo-political tensions</b>, this internationalization poses novel challenges for firms and requires them to rethink their existing strategy.</p>
+    <p style="margin:0">In this module we analyze both the strategies used when <b>expanding overseas</b> and the strategies that can be used to <b>operate and develop an existing network</b> of international operations in a context characterized by deglobalization, nationalism, and geo-political tensions.</p>
+  </div>
+  <div class="footer"><span class="pg">Seite 4</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 5 · LEARNING OBJECTIVES -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Learning objectives</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;margin:0;font-family:var(--font-body);font-size:19px;color:var(--wu-gray-footer)">Upon successful completion of this course, you will:</p>
+  <ul class="wu" style="position:absolute;left:65px;top:194px;width:1120px;gap:16px">
+    <li>Have greater awareness of the deglobalization, nationalism, and geo-political tensions characterizing the current business environment</li>
+    <li>Become aware of the various types of international strategies available to internationally operating firms</li>
+    <li>Recognize how particular characteristics of firms and their environments affect the choice and implementation of international business strategies</li>
+    <li>Develop the skills needed for solving the challenges firms face when considering different international business strategies in a dynamic environment</li>
+    <li>Demonstrate improved critical thinking and problem-solving skills</li>
+    <li>Improve communication skills necessary for effective team performance</li>
+  </ul>
+  <div class="footer"><span class="pg">Seite 5</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 6 · SECTION DIVIDER (BLUE) — course contents -->
+<div class="stage"><div class="slide" style="background:var(--wu-rule-cyan)">
+  <img src="assets/patterns/pattern-facade-white.png" alt="" style="position:absolute;left:-130px;top:360px;width:1410px;height:360px;object-fit:cover;object-position:left top">
+  <h1 class="div-title" style="top:0;color:var(--wu-white)">Course contents</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" class="logo-white">
+  <p class="div-sub" style="top:150px;color:var(--wu-white)">Eight sessions — from environment and FDI theory to entry, collaboration, global strategy and case work</p>
+  <img src="assets/accreditations-white.png" alt="" style="position:absolute;left:65px;top:362px;width:232px;height:37px">
+</div></div>
+
+<!-- 7 · DAYS 1-2 (two content) -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Course schedule — Days 1 &amp; 2</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:178px;width:554px">
+    <p style="margin:0 0 12px 0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Day 1 — Business environment</p>
+    <ul class="wu" style="gap:11px">
+      <li style="font-size:22px">Introduction to the module</li>
+      <li style="font-size:22px">Deglobalization, nationalism &amp; geopolitical tensions</li>
+      <li style="font-size:22px">Ethical issues in international business strategy</li>
+      <li style="font-size:22px">Models of environmental analyses &amp; country risk</li>
+      <li style="font-size:22px">Political strategies · legality vs. legitimacy</li>
+    </ul>
+  </div>
+  <div style="position:absolute;left:660px;top:178px;width:554px">
+    <p style="margin:0 0 12px 0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Day 2 — Explaining FDI</p>
+    <ul class="wu" style="gap:11px">
+      <li style="font-size:22px">Economic &amp; non-economic theories of FDI</li>
+      <li style="font-size:22px">Hymer, internalisation &amp; location theory</li>
+      <li style="font-size:22px">Vernon's product life cycle</li>
+      <li style="font-size:22px">Dunning's eclectic paradigm</li>
+      <li style="font-size:22px">Uppsala model &amp; resource-based approaches</li>
+    </ul>
+  </div>
+  <div class="footer"><span class="pg">Seite 7</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 8 · DAYS 3-4 (two content) -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Course schedule — Days 3 &amp; 4</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:178px;width:554px">
+    <p style="margin:0 0 12px 0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Day 3 — Market entry strategies</p>
+    <ul class="wu" style="gap:11px">
+      <li style="font-size:22px">Market selection &amp; entry timing</li>
+      <li style="font-size:22px">Ownership mode choice</li>
+      <li style="font-size:22px">Establishment mode choice</li>
+      <li style="font-size:22px">Theoretical explanations of entry mode</li>
+      <li style="font-size:22px">Internalisation &amp; real-option theory</li>
+    </ul>
+  </div>
+  <div style="position:absolute;left:660px;top:178px;width:554px">
+    <p style="margin:0 0 12px 0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Day 4 — Collaborative strategies</p>
+    <ul class="wu" style="gap:11px">
+      <li style="font-size:22px">Partner selection and assessment</li>
+      <li style="font-size:22px">Managing collaborative ventures</li>
+      <li style="font-size:22px">Trust and control · management structures</li>
+      <li style="font-size:22px">Performance criteria &amp; assessment</li>
+      <li style="font-size:22px">Terminating collaborative ventures</li>
+    </ul>
+  </div>
+  <div class="footer"><span class="pg">Seite 8</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 9 · DAYS 5-8 (two content) -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Course schedule — Days 5 to 8</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:178px;width:554px">
+    <p style="margin:0 0 12px 0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Day 5 — Global-level strategy</p>
+    <ul class="wu" style="gap:11px">
+      <li style="font-size:22px">Integration-responsiveness grid</li>
+      <li style="font-size:22px">Strategy typology</li>
+      <li style="font-size:22px">Transnational &amp; meta-national solutions</li>
+      <li style="font-size:22px">Organizational structures &amp; processes for implementation</li>
+    </ul>
+  </div>
+  <div style="position:absolute;left:660px;top:178px;width:554px">
+    <p style="margin:0 0 12px 0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Days 6–8 — Case work</p>
+    <ul class="wu" style="gap:11px">
+      <li style="font-size:22px">Day 6 — Preparation of case studies</li>
+      <li style="font-size:22px">Day 7 — Preparation of case studies</li>
+      <li style="font-size:22px">Day 8 — Case presentation</li>
+    </ul>
+    <p style="margin:24px 0 0 0;font-family:var(--font-body);font-size:19px;color:var(--wu-gray-footer);line-height:1.4">Punctuality and attendance are mandatory in all sessions.</p>
+  </div>
+  <div class="footer"><span class="pg">Seite 9</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 10 · SECTION DIVIDER — assessment & requirements -->
+<div class="stage"><div class="slide">
+  <div class="div-num">02</div>
+  <h1 class="div-title" style="color:var(--wu-black)">Assessment &amp; requirements</h1>
+  <div class="rule" style="top:122px"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="div-sub" style="top:326px;color:var(--wu-black)">Teaching methods · pre-course assignment · grading · workload</p>
+  <img src="assets/accreditations-black.png" alt="" style="position:absolute;left:66px;top:362px;width:232px;height:37px">
+  <img src="assets/patterns/pattern-blocks-dense-cyan.png" alt="" style="position:absolute;left:0;top:399px;width:1280px;height:321px;object-fit:cover;object-position:left top">
+</div></div>
+
+<!-- 11 · TEACHING METHODS -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Teaching methods</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:180px;width:1080px;margin:0;font-family:var(--font-body);font-size:23px;line-height:1.5;color:var(--wu-black)">This is a highly interactive course. Learning is maximized by balancing lecture with your involvement in discussions, cases, and exercises. Students are expected to be fully engaged and to participate in classroom discussions. All course documents, assignments and lecture notes are posted online.</p>
+  <p style="position:absolute;left:65px;top:352px;margin:0;font-family:var(--font-body);font-size:19px;text-transform:uppercase;letter-spacing:0.1em;color:var(--wu-cyan)">The course is comprised of</p>
+  <ul class="wu" style="position:absolute;left:65px;top:392px;width:1080px;gap:12px">
+    <li>Lectures</li>
+    <li>In-class case analyses</li>
+    <li>A team research project</li>
+    <li>Teamwork reflection</li>
+    <li>A final team presentation</li>
+  </ul>
+  <div class="footer"><span class="pg">Seite 11</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 12 · PRE-COURSE ASSIGNMENT -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Pre-course assignment</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:178px;width:1080px;margin:0;font-family:var(--font-body);font-size:22px;line-height:1.45;color:var(--wu-black)">A concise summary of the historical development of the international operations of a company:</p>
+  <ul class="wu" style="position:absolute;left:65px;top:236px;width:1080px;gap:14px">
+    <li>Select an internationally operating company of your choice — more information is available on large, publicly listed (e.g. S&amp;P 500) firms</li>
+    <li>Write a short report (max. 1,000 words) on the firm's international operations: which country markets, when it entered or left them, and how (e.g. establishing a subsidiary)</li>
+    <li>Explain why the firm expanded to those markets and chose those entry modes</li>
+    <li>Start from the firm's website and annual reports; complement with newspaper reports — no academic journals required</li>
+  </ul>
+  <div style="position:absolute;left:65px;top:560px;width:1150px;background:var(--wu-ice);padding:20px 28px;box-sizing:border-box;display:flex;align-items:center;gap:18px">
+    <span style="font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Deadline</span>
+    <span style="font-family:var(--font-body);font-size:22px;color:var(--wu-black)">Upload to Canvas by <b>July 15, 2026</b></span>
+  </div>
+  <div class="footer"><span class="pg">Seite 12</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 13 · ASSESSMENT & GRADING (table) -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Assessment &amp; grading</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:178px;width:554px">
+    <p style="margin:0 0 14px 0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Weighting of total grade</p>
+    <table class="wu" style="width:554px;font-size:20px">
+      <thead><tr><th>Assignment</th><th style="text-align:right">Share</th></tr></thead>
+      <tbody>
+        <tr><td>Pre-course assignment</td><td style="text-align:right">25%</td></tr>
+        <tr><td>In-class participation</td><td style="text-align:right">30%</td></tr>
+        <tr><td>Team presentation</td><td style="text-align:right">45%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div style="position:absolute;left:660px;top:178px;width:554px">
+    <p style="margin:0 0 14px 0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Grading scale</p>
+    <table class="wu" style="width:554px;font-size:20px">
+      <thead><tr><th>Range</th><th>Grade</th></tr></thead>
+      <tbody>
+        <tr><td>100–90%</td><td>Excellent (1)</td></tr>
+        <tr><td>89–80%</td><td>Good (2)</td></tr>
+        <tr><td>79–70%</td><td>Satisfactory (3)</td></tr>
+        <tr><td>69–60%</td><td>Sufficient (4)</td></tr>
+        <tr><td>59–0%</td><td>Fail (5)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer"><span class="pg">Seite 13</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 14 · WORKLOAD + AI TOOLS -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Workload &amp; use of AI tools</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:170px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Total workload — undergraduate, 4 ECTS</p>
+  <table class="wu" style="position:absolute;left:65px;top:212px;width:1150px;font-size:21px">
+    <thead><tr><th>Pre-course workload</th><th>In-class activity</th><th>Outside-of-class workload</th></tr></thead>
+    <tbody>
+      <tr><td>approx. 20 hours</td><td>27 hours (= 35 teaching hours)</td><td>approx. 33 hours</td></tr>
+    </tbody>
+  </table>
+  <p style="position:absolute;left:65px;top:360px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Use of artificial intelligence tools</p>
+  <ul class="wu" style="position:absolute;left:65px;top:404px;width:1080px;gap:14px">
+    <li>Clearly explain how you have used these tools</li>
+    <li>Include any prompts you have used in an appendix</li>
+    <li>Ensure that less than 5% of the text is taken directly from AI tools</li>
+  </ul>
+  <div class="footer"><span class="pg">Seite 14</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 15 · LITERATURE -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Course literature</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:178px;width:1080px;margin:0;font-family:var(--font-body);font-size:22px;line-height:1.45;color:var(--wu-black)">Course materials and cases are provided online. No specific textbook is required — a general International Business textbook provides useful background reading, for example:</p>
+  <ul class="wu" style="position:absolute;left:65px;top:270px;width:1080px;gap:12px">
+    <li>Charles W. Hill — <i>Competing in the Global Marketplace</i> (various editions)</li>
+    <li>Daniels, Radebaugh &amp; Sullivan — <i>International Business</i> (various editions)</li>
+  </ul>
+  <div style="position:absolute;left:65px;top:400px;width:1150px;background:var(--wu-ice);padding:22px 28px;box-sizing:border-box">
+    <p style="margin:0;font-family:var(--font-body);font-size:19px;line-height:1.45;color:var(--wu-black)">Selected journal articles complement the class discussions, including work by Barkema et al. (1996), Dunning, Delios &amp; Henisz (2003), Dhanaraj &amp; Beamish (2004), Hofstede (1980) and Inkpen &amp; Beamish (1997), among others. The full reading list is provided in the course outline.</p>
+  </div>
+  <div class="footer"><span class="pg">Seite 15</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 16 · CLOSING -->
+<div class="stage"><div class="slide">
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <img src="assets/emblem-vertical-blue.png" alt="Vienna University of Economics and Business" style="position:absolute;left:86px;top:236px;width:69px;height:284px">
+  <div style="position:absolute;left:236px;top:270px;width:640px">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Institut für International Business</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;text-transform:uppercase;color:var(--wu-gray-footer)">Institute for International Business</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Arne Floh · Can Tihanyi</p>
+    <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">arne.floh@wu.ac.at</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">can.tihanyi@wu.ac.at</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Welthandelsplatz 1, 1020 Vienna, Austria</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;color:var(--wu-black)">www.wu.ac.at</p>
+  </div>
+  <div class="footer"><span class="pg">Seite 16</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<script>
+  // Scale each 1280px slide down to fit narrow viewports, preserving aspect ratio.
+  function fit() {
+    var vw = document.body.clientWidth - 40;
+    var scale = Math.min(1, vw / 1280);
+    document.querySelectorAll('.stage').forEach(function (st) {
+      var slide = st.querySelector('.slide');
+      slide.style.transform = 'scale(' + scale + ')';
+      st.style.height = (720 * scale) + 'px';
+      st.style.width = (1280 * scale) + 'px';
+    });
+  }
+  window.addEventListener('resize', fit);
+  fit();
+</script>
+</body>
+</html>

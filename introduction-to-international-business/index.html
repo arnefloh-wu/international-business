@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to International Business — ISU WU 2026</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; }
+  /* Deck-wide override: all text set in the Georgia title face (matches course-outline deck) */
+  :root { --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+
+  .s-title { position: absolute; left: 65px; top: 16px; width: 1000px; height: 114px; margin: 0;
+    display: flex; align-items: center; font-family: var(--font-title); font-weight: bold;
+    font-size: var(--size-slide-title); line-height: 1.05; color: var(--wu-black); }
+  .rule { position: absolute; left: 64px; top: 126px; width: 108px; height: 7px; background: var(--wu-rule-cyan); }
+  .logo-black { position: absolute; left: 1106px; top: 22px; width: 121px; height: 90px; }
+  .logo-white { position: absolute; left: 1106px; top: 22px; width: 121px; height: 90px; }
+
+  ul.wu { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 13px; }
+  ul.wu li { font-family: var(--font-body); color: var(--wu-black); line-height: 1.3;
+    display: flex; gap: 16px; align-items: baseline; font-size: 21px; }
+  ul.wu li::before { content: "▪"; color: var(--accent-bullet); flex: none; }
+  ul.wu li.sub { font-size: 19px; margin-left: 42px; }
+  ul.wu li.sub::before { color: var(--wu-sky); }
+
+  .footer { position: absolute; left: 65px; top: 688px; display: flex; font-family: var(--font-body);
+    font-size: var(--size-footer); color: var(--wu-gray-footer); text-transform: uppercase; letter-spacing: 0.04em; }
+  .footer .pg { width: 150px; flex: none; }
+  .accred-b { position: absolute; left: 1052px; top: 678px; width: 200px; height: 32px; }
+
+  table.wu { border-collapse: collapse; width: 1150px; font-family: var(--font-body); font-size: 18px; }
+  table.wu th, table.wu td { padding: 10px 16px; text-align: left; vertical-align: top; line-height: 1.3; }
+  table.wu th { background: var(--wu-navy); color: var(--wu-white); font-weight: bold; }
+  table.wu tbody tr:nth-child(even) { background: var(--wu-ice); }
+
+  .div-title { position: absolute; left: 65px; top: 14px; width: 1000px; height: 114px; margin: 0;
+    display: flex; align-items: center; font-family: var(--font-title); font-weight: bold;
+    font-size: var(--size-slide-title); line-height: 1.0; }
+  .div-sub { position: absolute; left: 65px; top: 150px; width: 1000px; margin: 0;
+    font-family: var(--font-body); font-size: 20px; line-height: var(--leading-body); }
+
+  .kicker { margin: 0; font-family: var(--font-body); font-size: 17px; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--wu-cyan); }
+
+  /* In-class activity slides */
+  .act-kicker { position: absolute; left: 65px; top: 148px; margin: 0; font-family: var(--font-body);
+    font-size: 17px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--wu-cyan); font-weight: bold; }
+  .act-obj { position: absolute; left: 65px; top: 180px; width: 1120px; margin: 0; font-family: var(--font-body);
+    font-size: 18px; font-style: italic; color: var(--wu-gray-footer); line-height: 1.35; }
+  .act-box { position: absolute; left: 65px; width: 1150px; background: var(--wu-ice); padding: 22px 30px; box-sizing: border-box; }
+  ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: st; display: flex; flex-direction: column; gap: 11px; }
+  ol.steps li { counter-increment: st; font-family: var(--font-body); font-size: 19px; line-height: 1.32;
+    color: var(--wu-black); display: flex; gap: 14px; align-items: baseline; }
+  ol.steps li::before { content: counter(st); font-weight: bold; color: var(--wu-cyan); flex: none; min-width: 22px; }
+
+  .colhead { margin: 0 0 12px 0; font-family: var(--font-title); font-weight: bold; font-size: 22px; color: var(--wu-navy); }
+
+  @media print {
+    body { background: #fff; padding: 0; gap: 0; }
+    .slide { box-shadow: none; page-break-after: always; break-after: page; }
+    .stage { max-width: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 1 · TITLE -->
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:30px;width:980px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:58px;line-height:1.1;color:var(--wu-white)">Introduction to<br>International Business</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:770px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:24px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026 · Session 1<br>Cavusgil, Knight &amp; Riesenberger — Chapters 1 and 2<br><b>Course Instructor: Dr. Arne Floh</b><br>arne.floh@wu.ac.at</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+
+<!-- 2 · AGENDA -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Session agenda</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:18px">
+    <li>Part 1 (Chapter 1): what international business is — key concepts, participants, and motives for internationalization</li>
+    <li>Part 2 (Chapter 2): globalization of markets — phases, driving forces, dimensions, and consequences</li>
+    <li>Five in-class activities woven through the session; a live debate to close</li>
+    <li>Learning objectives 1.1–1.6 and 2.1–2.6 combined into one 90-minute arc</li>
+    <li>Running question for the session: why can no firm — or graduate — afford to ignore global markets?</li>
+  </ul>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 3 · DIVIDER PART 1 -->
+<div class="stage"><div class="slide">
+  <h1 class="div-title" style="color:var(--wu-black)">Part 1 — What is international business?</h1>
+  <div class="rule" style="top:122px"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="div-sub" style="top:150px;color:var(--wu-black)">Cavusgil, Knight &amp; Riesenberger, Chapter 1 · Learning objectives 1.1–1.6</p>
+  <p class="div-sub" style="top:300px;color:var(--wu-black);font-size:22px">Opening hook: Instagram — available in 32 languages, largest audience in India,<br>3 billion monthly users, chief rival a Chinese firm. Global business in one app.</p>
+  <img src="assets/accreditations-black.png" alt="" style="position:absolute;left:66px;top:362px;width:232px;height:37px">
+  <img src="assets/patterns/pattern-blocks-dense-cyan.png" alt="" style="position:absolute;left:0;top:399px;width:1280px;height:321px;object-fit:cover;object-position:left top">
+</div></div>
+
+<!-- 4 · KEY CONCEPTS -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Key concepts in international business</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:16px">
+    <li><span><b>International business</b> — trade and investment activities by firms across national borders</span></li>
+    <li><span><b>Globalization of markets</b> — ongoing economic integration and growing interdependency of countries worldwide</span></li>
+    <li><span>Six elements (Exhibit 1.1): market globalization · trade · investment · risks · participants · entry strategies</span></li>
+    <li><span>Enablers: cross-border flows of capital, technology and data; global financial systems; multilateral institutions (WTO, IMF)</span></li>
+    <li><span>Internationalization + integration + interdependency + interconnectedness — the four I's of globalization</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 5 · FLOWS: TRADE AND FDI -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">The flows: trade and foreign direct investment</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:15px">
+    <li><span><b>Exporting</b>: outbound sale of products and services abroad · <b>importing / global sourcing</b>: inbound procurement from foreign suppliers</span></li>
+    <li><span>Both flows cover intermediate as well as finished products</span></li>
+    <li><span><b>FDI</b> is the ultimate commitment level of internationalization; motivations map onto the value chain — plants, sales offices, regional headquarters</span></li>
+    <li><span>In trade, products cross borders; in FDI, <i>the firm itself</i> crosses borders</span></li>
+    <li><span>Global challengers: Haier's climb via Fisher &amp; Paykel, GE Appliances and Candy to no. 1 global appliance brand</span></li>
+    <li><span>Developing economies have out-received advanced economies in FDI inflows since 2010 — still over half of the ~$1.5 trillion total in 2024</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 6 · TRADE IN TURBULENT TIMES -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">International trade in turbulent times</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:15px">
+    <li><span><b>1980–2008 boom</b>: emerging-market middle class, sourcing to low-cost locations (China, India, Mexico), technology, falling trade barriers</span></li>
+    <li><span><b>2009</b>: world trade declined, ending a 27-year expansion; recovery to normal levels by 2012</span></li>
+    <li><span><b>2010s</b>: protectionist policies flattened the globalization trend line</span></li>
+    <li><span><b>2020</b>: COVID-19 slowed cross-border trade; the WTO judged globalization had peaked</span></li>
+    <li><span>FDI similarly interrupted by 9/11, the 2008 recession and COVID — the 2021 rebound was slow and uneven</span></li>
+    <li><span>Yet interconnectedness is largely irreversible: world trade reached a record ~$33 trillion in 2024 (UNCTAD)</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 7 · ACTIVITY 1 -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Where in the world was this made?</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 10 minutes · think-pair-share</p>
+  <p class="act-obj">Objective (LO 1.1, 1.3): trace the key concepts and participants of international business in products you personally own.</p>
+  <div class="act-box" style="top:240px">
+    <ol class="steps">
+      <li>Inspect three items you have with you — phone, clothing labels, watch, backpack. Note where each was designed and manufactured; for the phone, which foreign apps you used in the last 24 hours.</li>
+      <li>Two minutes to record findings individually, then two minutes to compare with your neighbour.</li>
+      <li>Live tally on the board: which countries of manufacture appear in the room — and add your home country to the map.</li>
+      <li>Debrief: connect the tally to the six elements of Exhibit 1.1 — which participants (focal firm, intermediary, facilitator, government) moved your item from factory to your hands?</li>
+      <li>Closing distinction: exporting versus foreign direct investment as alternative ways your item could have reached you.</li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 8 · FOUR RISKS (two col) -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">How international differs from domestic:<br>the four risks</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:185px;width:545px">
+    <p class="colhead">What changes across borders</p>
+    <ul class="wu" style="gap:12px">
+      <li style="font-size:19px"><span>Economic conditions, culture, legal and political systems all vary by country</span></li>
+      <li style="font-size:19px"><span>A VUCA environment: volatility, uncertainty, complexity, ambiguity</span></li>
+      <li style="font-size:19px"><span>International failures cost far more than domestic blunders</span></li>
+      <li style="font-size:19px"><span>All four risks (Exhibit 1.8) are manageable but never fully avoidable — anticipation beats reaction</span></li>
+    </ul>
+  </div>
+  <div style="position:absolute;left:660px;top:185px;width:555px">
+    <p class="colhead">The four risks</p>
+    <ul class="wu" style="gap:12px">
+      <li style="font-size:19px"><span><b>Commercial</b>: losses from poor strategy or execution — partner choice, timing, pricing, product</span></li>
+      <li style="font-size:19px"><span><b>Cross-cultural</b>: values, negotiation styles and ethics differ across markets</span></li>
+      <li style="font-size:19px"><span><b>Country (political)</b>: government intervention, instability, legal exposure</span></li>
+      <li style="font-size:19px"><span><b>Currency (financial)</b>: exchange-rate volatility hits pricing, costs and repatriated profits</span></li>
+    </ul>
+  </div>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 9 · PARTICIPANTS -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Who participates in international business?</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:15px">
+    <li><span><b>Focal firms</b> — the initiators: multinational enterprises (MNEs) and small and medium-sized enterprises (SMEs)</span></li>
+    <li><span><b>Distribution channel intermediaries</b> — logistics and marketing specialists moving goods to market</span></li>
+    <li><span><b>Facilitators</b> — banks, lawyers, customs brokers, freight forwarders providing specialized expertise</span></li>
+    <li><span><b>Governments</b> — simultaneously suppliers, buyers and regulators; state-owned enterprises significant in China, Russia, Brazil — and France, Australia, Sweden</span></li>
+    <li><span>MNEs (Coca-Cola, Nestlé, Sony, Unilever) run worldwide subsidiary networks; many earn over half their sales abroad</span></li>
+    <li><span>SMEs are ~90% of all firms and over half of employment worldwide — and born globals internationalize at founding</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 10 · WHY INTERNATIONALIZE -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Why do firms internationalize?</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:16px">
+    <li><span>Overarching motive: growth and profit opportunities that strengthen competitive advantage</span></li>
+    <li><span><b>Proactive</b>: seek market diversification, higher margins, new ideas; scale economies in production, marketing and R&amp;D</span></li>
+    <li><span><b>Sourcing</b>: access lower-cost or better-value inputs; locate near supply sources; gain sourcing flexibility</span></li>
+    <li><span><b>Reactive / competitive</b>: follow key customers abroad, confront international rivals, thwart home-market competition</span></li>
+    <li><span><b>Relationship</b>: invest in potentially rewarding partnerships with foreign firms</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 10</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 11 · WHY STUDY IB -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Why study international business?</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:15px">
+    <li><span><b>Global economy</b>: since GATT (1947), trade and investment have grown at unprecedented rates; globalization and technology are mutually accelerating megatrends</span></li>
+    <li><span><b>National economy</b>: trade is a pivotal engine of job creation; exporting firms create jobs faster and pay better than non-exporters</span></li>
+    <li><span><b>The firm</b>: international markets are where growth, ideas and competitive threats now originate</span></li>
+    <li><span><b>You as manager</b>: employability depends on ambiguity tolerance, interpersonal skill, self-confidence and goal commitment</span></li>
+    <li><span>CKR career kit: intangible human skills — communication, ethical reasoning, analytics, multicultural teamwork — plus tangible process tools close the college-to-career gap</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 11</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 12 · ACTIVITY 2: VODAFONE/OYO MINI-CASE -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Mini-case: why did Vodafone — and OYO — go abroad?</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · small groups, mixed nationalities</p>
+  <p class="act-obj">Objective (LO 1.2, 1.4, 2.5): apply the internationalization motives and the four-risk framework to two contrasting firms — the incremental MNE versus the born global.</p>
+  <div class="act-box" style="top:255px">
+    <ol class="steps">
+      <li>Cases: <b>Vodafone</b> — founded 1982, ~444M customers in 26 countries at the textbook's writing (2025: over 340M after exits from Spain and Italy); entered markets by buying the number-two operator. <b>OYO</b> — founded 2013 in India, global within three years, 80 countries within a decade, asset-light and app-driven.</li>
+      <li>Groups of four to five; half the groups take Vodafone, half take OYO (seven minutes).</li>
+      <li>Each group identifies: (a) which internationalization motives its firm pursued — proactive or reactive; (b) which of the four risks it faces most acutely and why.</li>
+      <li>Vodafone groups: why acquire the number-two operator rather than the incumbent? OYO groups: which technologies made born-global expansion possible?</li>
+      <li>Cross-brief in pairs of groups, then plenary: motives and risks on a two-column board — incremental internationalizer versus born global.</li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 12</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 13 · ACTIVITY 3: GUESS THE NUMBER -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Guess the number: the rise, shock and maturity of world trade</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 10 minutes · estimation game, show of hands</p>
+  <p class="act-obj">Objective (LO 1.1, 2.2, 2.3): calibrate intuitions about the scale and turning points of globalization before we examine its historical phases.</p>
+  <div class="act-box" style="top:255px">
+    <ol class="steps">
+      <li>Six estimation questions, one at a time — answer by show of hands across displayed ranges; confer briefly in pairs before committing.</li>
+      <li>Sample questions: In how many languages is Instagram available? (32) · In what year did world trade first decline after a 27-year boom? (2009) · By what share did computing costs fall per year for three decades? (~30 percent) · Within how many years of founding did OYO reach 80 countries? (~10) · Whose revenue exceeds the GDP of Greece or Poland? (Walmart)</li>
+      <li>After each reveal, one student who guessed closely explains in one sentence why the number is so high or low; instructor adds a 30-second link to the underlying driver.</li>
+      <li>Informal score by seating row or country group to sustain friendly competition.</li>
+      <li>Arrange the revealed facts on a rough timeline on the board — the bridge into the phases of globalization.</li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 13</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 14 · DIVIDER PART 2 (BLUE) -->
+<div class="stage"><div class="slide" style="background:var(--wu-rule-cyan)">
+  <img src="assets/patterns/pattern-facade-white.png" alt="" style="position:absolute;left:-130px;top:360px;width:1410px;height:360px;object-fit:cover;object-position:left top">
+  <h1 class="div-title" style="top:0;color:var(--wu-white)">Part 2 — Globalization of markets and<br>the internationalization of the firm</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" class="logo-white">
+  <p class="div-sub" style="top:165px;color:var(--wu-white)">Cavusgil, Knight &amp; Riesenberger, Chapter 2 · Learning objectives 2.1–2.6<br>From describing international business to explaining the forces that produce it</p>
+  <img src="assets/accreditations-white.png" alt="" style="position:absolute;left:65px;top:362px;width:232px;height:37px">
+</div></div>
+
+<!-- 15 · PHASES TABLE -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Phases of globalization (Exhibit 2.1)</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:175px">
+    <thead>
+      <tr><th style="width:170px">Phase</th><th style="width:300px">Technologies &amp; triggers</th><th>Characteristic firms &amp; institutions</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><b>1 · 1830–1900</b><br>peak ~1880</td><td>Railroads, ocean transport, telegraph and telephone</td><td>Rise of large manufacturing and trading firms</td></tr>
+      <tr><td><b>2 · 1900–1930</b></td><td>Electricity and steel; colonization</td><td>Earliest MNE subsidiaries — BASF, Nestlé, Shell, Siemens, BP by 1900; peaks before the 1929 Depression</td></tr>
+      <tr><td><b>3 · 1948–1970</b></td><td>Post-war reconstruction; Bretton Woods (1947)</td><td>GATT (WTO precursor), IMF, World Bank, UN; US dominance, then European and Japanese challengers</td></tr>
+      <tr><td><b>4 · 1980s–today</b></td><td>Emerging-market liberalization, ICT revolution, FDI-driven integration</td><td>The era today's students inherit — and the first to see globalization flatten</td></tr>
+    </tbody>
+  </table>
+  <p style="position:absolute;left:65px;top:590px;margin:0;font-family:var(--font-body);font-size:18px;font-style:italic;color:var(--wu-gray-footer)">Globalization has peaked and retreated before — connect back to the trade cycles of Chapter 1.</p>
+  <div class="footer"><span class="pg">Page 14</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 16 · FRAMEWORK -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">An organizing framework for market globalization</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:16px">
+    <li><span>Exhibit 2.2 as a systems model: <b>driving forces</b> (inputs) → <b>dimensions</b> (processes) → <b>consequences</b> (outputs)</span></li>
+    <li><span>Outputs split in two: firm-level consequences and societal consequences</span></li>
+    <li><span>Double arrows: globalization and its consequences interact — outcomes feed back into the drivers</span></li>
+    <li><span>Three mega-drivers: falling trade and investment barriers · market liberalization · technological advances</span></li>
+    <li><span>This framework structures the rest of today's session</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 15</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 17 · DRIVING FORCES -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Driving forces of globalization</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:14px">
+    <li><span><b>Falling trade and investment barriers</b>: WTO-facilitated — now 166 members; tariffs on many industrial goods near zero; China's 2001 accession opened its market</span></li>
+    <li><span><b>Market liberalization</b>: fall of the Berlin Wall (1989), Soviet collapse, China's reforms — roughly one-third of the world opened to freer trade</span></li>
+    <li><span><b>Industrialization and modernization</b>: emerging markets move from commodities to premium exports — Embraer aircraft, Czech autos, Indian software</span></li>
+    <li><span><b>Integration of world financial markets</b>: capital, currency and banking flows connect national economies</span></li>
+    <li><span><b>Technological advances</b> — the enabler that gets its own slide next</span></li>
+    <li><span>Countercurrent: nationalist politics has hindered — but not reversed — the trend toward free trade</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 16</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 18 · TECHNOLOGY -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Technology's role: from leapfrogging to born globals</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:14px">
+    <li><span>Globalization and technology are twin megatrends: globalization makes internationalization imperative; technology provides the means</span></li>
+    <li><span>Computing costs fell ~30% per year for three decades; the marginal cost of transmitting data is essentially zero</span></li>
+    <li><span><b>Technological leapfrogging</b>: emerging markets skip stages — Africa bypassed landlines for mobile; Nigeria from 500,000 lines to 30M+ subscribers in six years</span></li>
+    <li><span><b>Digitalization</b>: e-commerce, the sharing economy (Uber, Airbnb), big data, AI and the Internet of Things reshape competition globally (Alibaba, Amazon)</span></li>
+    <li><span><b>Born globals</b>: OYO (founded 2013, India) used proprietary AI-driven apps to rebrand budget hotels and reach 80 countries within a decade</span></li>
+    <li><span>Scale check (2025): 6.0 billion people online — 75% of the world; ~7.3 billion smartphone subscriptions (ITU, Ericsson)</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 17</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 19 · DIMENSIONS -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Dimensions of market globalization</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:15px">
+    <li><span>Integration and interdependence of national economies, supported by supranational institutions — World Bank, IMF, WTO</span></li>
+    <li><span>Rise of regional economic blocs: USMCA, APEC, Mercosur; the EU as the only economic and monetary union (euro)</span></li>
+    <li><span>Growth of global investment and financial flows — with contagion as the dark side (1997 Asia, 2008 worldwide)</span></li>
+    <li><span>Convergence of buyer lifestyles and preferences across markets</span></li>
+    <li><span>Globalization of production activities — and, increasingly, of services</span></li>
+    <li><span>These are the manifestations: how we recognize globalization when we see it</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 18</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 20 · ACTIVITY 4: IPO EXERCISE -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Rebuild the framework: input — process — output</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · four groups</p>
+  <p class="act-obj">Objective (LO 2.1, 2.4): reconstruct Exhibit 2.2 from memory — each group masters one component of the systems model and teaches it to the class.</p>
+  <div class="act-box" style="top:250px">
+    <ol class="steps">
+      <li>Four groups, one framework component each: (1) driving forces, (2) dimensions, (3) firm-level consequences, (4) societal consequences.</li>
+      <li>Ten minutes to master the component and articulate how it fits the overall input–process–output model.</li>
+      <li>One designated member per group presents to the class — about one minute each.</li>
+      <li>Goal: the class can reconstruct the full framework on the board before we discuss consequences in depth.</li>
+      <li>If time is short: cut group preparation to six minutes and have groups annotate the board diagram instead of presenting.</li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 19</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 21 · VALUE CHAIN (two col) -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Firm-level consequences:<br>internationalizing the value chain</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:190px;width:545px">
+    <p class="colhead">The value chain (Exhibit 2.6)</p>
+    <ul class="wu" style="gap:12px">
+      <li style="font-size:19px"><span>R&amp;D → procurement → manufacturing → marketing → distribution → sales → service</span></li>
+      <li style="font-size:19px"><span><b>Upstream</b>: R&amp;D, procurement, manufacturing · <b>downstream</b>: marketing, distribution, sales, service</span></li>
+      <li style="font-size:19px"><span>Exporters keep upstream at home and perform downstream activities abroad</span></li>
+    </ul>
+  </div>
+  <div style="position:absolute;left:660px;top:190px;width:555px">
+    <p class="colhead">Three reconfiguration moves</p>
+    <ul class="wu" style="gap:12px">
+      <li style="font-size:19px"><span><b>Outsourcing</b>: delegating an activity to an external supplier — global outsourcing when that supplier is abroad</span></li>
+      <li style="font-size:19px"><span><b>Offshoring</b>: relocating a major value-chain activity to a foreign location</span></li>
+      <li style="font-size:19px"><span><b>Global sourcing</b>: reconfiguring the whole chain to exploit the most advantageous locations worldwide</span></li>
+    </ul>
+  </div>
+  <p style="position:absolute;left:65px;top:560px;margin:0;font-family:var(--font-body);font-size:18px;font-style:italic;color:var(--wu-gray-footer)">Lecture starter: trace a shoe or laptop through the chain — where would each activity locate if efficiency were the only criterion?</p>
+  <div class="footer"><span class="pg">Page 20</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 22 · CONTAGION & SOVEREIGNTY -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Societal consequences: contagion and national sovereignty</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:14px">
+    <li><span><b>Contagion</b>: integrated economies transmit crises rapidly — the 2008 US subprime crisis spread worldwide; the 1997 Thai crisis swept East Asia; EU rescue packages for Greece, Ireland, Portugal (2010)</span></li>
+    <li><span>COVID-19 triggered the sharpest global growth decline since WWII — yet the global economy has always rebounded to net GDP growth</span></li>
+    <li><span><b>Sovereignty</b>: some MNEs out-scale nations — Walmart's revenue exceeds the GDP of Greece or Poland</span></li>
+    <li><span>Yet market forces constrain even the largest firms; the policy answer is open regimes with rule of law, property protection and sound bank regulation</span></li>
+    <li><span>Regulation in practice: Sarbanes-Oxley (2002) after Enron and WorldCom; the 2023 failures of SVB, First Republic and Signature — 2.4% of US banking assets — as a live discussion hook</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 21</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 23 · JOBS, WAGES, POVERTY, ENVIRONMENT -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Societal consequences: jobs, wages, poverty and the environment</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:14px">
+    <li><span><b>Offshoring waves</b>: manufacturing to Mexico and Southeast Asia (1960s–70s), then services — software, accounting, banking (1990s)</span></li>
+    <li><span>Job flight is real (Polaris and Electrolux to Mexico, Toyota's Australian exit) — but US MNEs also employed 14 million workers abroad in 2023; largest hosts: India, Mexico, UK, China, Canada (BEA)</span></li>
+    <li><span><b>Reshoring</b> (Ford, Boeing, GE, Apple) accelerates on automation, China tensions, supply-chain shocks and tariffs; <b>nearshoring</b> (Mexico, Honduras) blends low cost with short chains</span></li>
+    <li><span><b>Wages and poverty</b>: exporters pay higher wages than non-exporters and trade correlates with rising incomes — yet critics argue the gains are uneven and the rich–poor gap widens</span></li>
+    <li><span><b>Environment and culture</b>: growth and sustainability need not be mutually exclusive — Motorola in China, Coca-Cola in Africa, GSK with the WHO</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 22</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 24 · ACTIVITY 5: DEBATE -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Roundtable debate: is globalization doing more good or harm?</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · three stakeholder camps · session synthesis</p>
+  <p class="act-obj">Objective (LO 2.6): evaluate the societal consequences of globalization from multiple stakeholder perspectives — arguing positions independent of personal views.</p>
+  <div class="act-box" style="top:255px">
+    <ol class="steps">
+      <li>Three camps: <b>Activists</b> (job losses, environment, sovereignty, cultural homogenization, inequality) · <b>Business Executives</b> (better-paying jobs, higher taxes, local suppliers, rising living standards) · <b>Trade Officials</b> (open markets, rule of law, protecting citizens).</li>
+      <li>Five minutes of preparation: two arguments per student individually, then the strongest three consolidated per camp — drawing on evidence from your home countries.</li>
+      <li>Three moderated exchange rounds of two minutes: one spokesperson presents one argument; one direct rebuttal from another camp; rotate speakers each round.</li>
+      <li>Before-and-after poll by show of hands: has globalization done more good than harm? Discuss what shifted opinions.</li>
+      <li>Debrief: map every argument onto the drivers–dimensions–consequences framework of Exhibit 2.2.</li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 23</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 25 · STATS: TEXTBOOK VS TODAY -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">By the numbers: textbook figures vs. today</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:162px;font-size:16px">
+    <thead>
+      <tr><th style="width:250px">Indicator</th><th style="width:270px">Textbook (6e, ~2020–22)</th><th style="width:430px">Today (verified 2024–26)</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>World merchandise exports</td><td>~$22 trillion</td><td>$24.4 trillion (2024)</td><td>WTO</td></tr>
+      <tr><td>Commercial services exports</td><td>&gt;$7 trillion (2023)</td><td>$8.7 trillion (2024), +9% — 26% of all trade</td><td>WTO</td></tr>
+      <tr><td>World trade, goods + services</td><td>~$25 trillion</td><td>Record ~$33 trillion (2024); ~$34.7 trillion (2025)</td><td>UNCTAD</td></tr>
+      <tr><td>Global FDI inflows</td><td>2021 rebound slow, uneven</td><td>~$1.5 trillion (2024); developing economies receive over half</td><td>UNCTAD</td></tr>
+      <tr><td>WTO members</td><td>164</td><td>166 — Comoros and Timor-Leste acceded 2024</td><td>WTO</td></tr>
+      <tr><td>Fortune Global 500 leaders</td><td>China 136 vs US 124 (2022)</td><td>US 138 vs China 130 — the US retook the lead (2025)</td><td>Fortune</td></tr>
+      <tr><td>Instagram monthly users</td><td>2 billion</td><td>3 billion (Q3 2025) — over one-third of humanity</td><td>Meta</td></tr>
+      <tr><td>Internet users worldwide</td><td>—</td><td>6.0 billion online — 75% of world population (2025)</td><td>ITU</td></tr>
+      <tr><td>Extreme poverty</td><td>"End poverty by 2030"</td><td>808M people (9.9%) below the $3.00/day line (2025); goal off track</td><td>World Bank</td></tr>
+    </tbody>
+  </table>
+  <p style="position:absolute;left:65px;top:648px;margin:0;font-family:var(--font-body);font-size:15px;font-style:italic;color:var(--wu-gray-footer)">Figures verified against WTO, UNCTAD, World Bank, IMF, ITU and company disclosures, July 2026.</p>
+  <div class="footer"><span class="pg">Page 24</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 26 · KEY TAKEAWAYS -->
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Key takeaways</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:14px">
+    <li><span>International business is cross-border trade and investment, distinguished from domestic business by four added risks: commercial, cross-cultural, country and currency</span></li>
+    <li><span>Firms internationalize proactively — growth, margins, ideas, scale, sourcing — and reactively, following customers and confronting rivals</span></li>
+    <li><span>Globalization is a system: drivers (falling barriers, liberalization, technology) produce dimensions (integration, blocs, financial flows) and consequences</span></li>
+    <li><span>Technology is the great enabler — born globals like OYO internationalize at founding, and emerging markets leapfrog development stages</span></li>
+    <li><span>Globalization delivers growth and rising incomes but carries real costs — contagion, sovereignty pressure, job dislocation — that management and policy must address</span></li>
+    <li><span>Next session: globalization and the changing international environment; assigned reading follows on the LMS</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 25</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<!-- 27 · CLOSING -->
+<div class="stage"><div class="slide">
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <img src="assets/emblem-vertical-blue.png" alt="Vienna University of Economics and Business" style="position:absolute;left:86px;top:236px;width:69px;height:284px">
+  <div style="position:absolute;left:236px;top:248px;width:720px">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Department of Global Trade</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;text-transform:uppercase;color:var(--wu-gray-footer)">WU Vienna</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Dr. Arne Floh</p>
+    <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Senior Lecturer in International Marketing</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Deputy Program Director MSc Export- and Internationalisation Management</p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)"><a href="mailto:arne.floh@wu.ac.at">arne.floh@wu.ac.at</a></p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Welthandelsplatz 1, 1020 Wien, Austria</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;color:var(--wu-black)">www.wu.ac.at</p>
+  </div>
+  <div class="footer"><span class="pg">Page 26</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<script>
+  function fit() {
+    var vw = document.body.clientWidth - 40;
+    var scale = Math.min(1, vw / 1280);
+    document.querySelectorAll('.stage').forEach(function (st) {
+      var slide = st.querySelector('.slide');
+      slide.style.transform = 'scale(' + scale + ')';
+      st.style.height = (720 * scale) + 'px';
+      st.style.width = (1280 * scale) + 'px';
+    });
+  }
+  window.addEventListener('resize', fit);
+  fit();
+</script>
+</body>
+</html>

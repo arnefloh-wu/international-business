@@ -1,0 +1,20 @@
+/* WU Vienna — layout tokens. Source: WU PowerPoint template (10160000×5715000 EMU = 16:9).
+   Values expressed for a 1280×720 slide canvas. */
+:root {
+  --slide-w: 1280px;
+  --slide-h: 720px;
+  --slide-margin-x: 64px;    /* 508000 EMU left margin */
+  --slide-title-top: 17px;   /* title block offset 139700 EMU */
+  --slide-title-h: 114px;    /* 903822 EMU title band, text vertically centered */
+  --slide-body-top: 169px;   /* 1344613 EMU */
+  --slide-footer-y: 690px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+
+  --radius-none: 0px;        /* WU uses no rounded corners anywhere */
+}

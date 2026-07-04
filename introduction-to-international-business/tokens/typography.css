@@ -1,0 +1,22 @@
+/* WU Vienna — type tokens. Source: WU PowerPoint template master + layouts.
+   Slide titles: Georgia Bold. Body: Verdana. Meta/accent text: Avenir (not bundled — see readme).
+   Clarendon LT Std exists only in legacy defaults / the wordmark; do not set text in it.
+   px values assume a 1280×720 slide canvas (800×450pt → 1.6px/pt). */
+:root {
+  --font-title: Georgia, 'Times New Roman', serif;
+  --font-body: Verdana, Tahoma, sans-serif;
+  --font-accent: 'Avenir', 'Avenir Next', 'Nunito Sans', Verdana, sans-serif;
+
+  --size-title-hero: 51px;    /* 32pt Georgia bold — title slides & dividers */
+  --size-slide-title: 38px;   /* 24pt Georgia bold — content slide titles */
+  --size-title-sub: 26px;     /* 16pt Verdana — subtitle box on title slides */
+  --size-body-1: 26px;        /* 16pt Verdana body bullets (layout override) */
+  --size-body-2: 24px;        /* 15pt second-level */
+  --size-body-3: 22px;        /* 14pt third-level */
+  --size-meta: 19px;          /* 12pt meta text */
+  --size-contact: 18px;       /* 11pt closing-slide contact block */
+  --size-footer: 13px;        /* 8pt Verdana footer, #888888, uppercase */
+
+  --leading-tight: 1.0;       /* template uses 100% line spacing */
+  --leading-body: 1.25;
+}

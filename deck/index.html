@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="styles.css">
 <style>
   :root { color-scheme: light; }
+  /* Deck-wide override: all text set in the Georgia title face */
+  :root { --font-body: Georgia, 'Times New Roman', serif; }
   html, body { margin: 0; background: #55606b; }
   body {
     font-family: var(--font-body);
@@ -81,11 +83,6 @@
 
   .kicker { position: absolute; left: 65px; top: 148px; font-family: var(--font-body); font-size: 17px;
     text-transform: uppercase; letter-spacing: 0.12em; color: var(--wu-cyan); }
-
-  /* Slide variant: all text in the title (Georgia) face */
-  .slide.serif .fact .l,
-  .slide.serif table.wu,
-  .slide.serif .footer { font-family: var(--font-title); }
 
   @media print {
     body { background: #fff; padding: 0; gap: 0; }

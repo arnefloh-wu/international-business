@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction to International Business — Cavusgil Ch. 1–2 (WU)</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page); box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+  .s-title { position:absolute; left:65px; top:16px; width:1000px; height:114px; margin:0; display:flex; align-items:center; font-family:var(--font-title); font-weight:bold; font-size:var(--size-slide-title); line-height:1.05; color:var(--wu-black); }
+  .rule { position:absolute; left:64px; top:126px; width:108px; height:7px; background:var(--wu-rule-cyan); }
+  .logo-black { position:absolute; left:1106px; top:22px; width:121px; height:90px; }
+  ul.wu { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; }
+  ul.wu li { font-family:var(--font-body); color:var(--wu-black); line-height:1.3; display:flex; gap:15px; align-items:baseline; font-size:var(--fs,20px); }
+  ul.wu li::before { content:"\25AA"; color:var(--accent-bullet); flex:none; }
+  .footer { position:absolute; left:65px; top:688px; display:flex; font-family:var(--font-body); font-size:var(--size-footer); color:var(--wu-gray-footer); text-transform:uppercase; letter-spacing:0.04em; }
+  .footer .pg { width:130px; flex:none; }
+  .accred-b { position:absolute; left:1052px; top:678px; width:200px; height:32px; }
+  table.wu { border-collapse:collapse; width:1150px; font-family:var(--font-body); }
+  table.wu th, table.wu td { padding:9px 14px; text-align:left; vertical-align:top; line-height:1.28; }
+  table.wu th { background:var(--wu-navy); color:var(--wu-white); font-weight:bold; }
+  table.wu tbody tr:nth-child(even) { background:var(--wu-ice); }
+  .exh { position:absolute; left:65px; top:168px; width:1150px; height:470px; display:flex; align-items:center; justify-content:center; }
+  .exh img { max-width:100%; max-height:100%; object-fit:contain; }
+  .exh.photo { height:440px; }
+  .src { position:absolute; left:65px; top:650px; width:1150px; margin:0; font-family:var(--font-body); font-size:13.5px; font-style:italic; color:var(--wu-gray-footer); line-height:1.3; }
+  .panelcap { margin:0 0 4px 0; font-family:var(--font-body); font-size:16px; font-weight:bold; color:var(--wu-navy); }
+  .etile { background:var(--wu-ice); padding:18px 20px; min-height:96px; }
+  .et-h { margin:0; font-family:var(--font-title); font-weight:bold; font-size:19px; color:var(--wu-navy); }
+  .et-d { margin:8px 0 0 0; font-family:var(--font-body); font-size:16px; color:var(--wu-black); line-height:1.3; }
+  .rtile { background:var(--wu-ice); padding:16px 22px; }
+  .rt-h { margin:0 0 8px 0; font-family:var(--font-title); font-weight:bold; font-size:20px; color:var(--wu-navy); }
+  .rt-l { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:5px; }
+  .rt-l li { font-family:var(--font-body); font-size:16.5px; color:var(--wu-black); line-height:1.25; padding-left:18px; position:relative; }
+  .rt-l li::before { content:"\25AA"; color:var(--wu-cyan); position:absolute; left:0; }
+  .slide a { color:var(--wu-link); text-decoration:underline; }
+  .act-kicker { position:absolute; left:65px; top:148px; margin:0; font-family:var(--font-body); font-size:17px; text-transform:uppercase; letter-spacing:0.12em; color:var(--wu-cyan); font-weight:bold; }
+  .act-obj { position:absolute; left:65px; top:180px; width:1120px; margin:0; font-family:var(--font-body); font-size:18px; font-style:italic; color:var(--wu-gray-footer); line-height:1.35; }
+  .act-box { position:absolute; left:65px; width:1150px; background:var(--wu-ice); padding:22px 30px; box-sizing:border-box; }
+  ol.steps { margin:0; padding:0; list-style:none; counter-reset:st; display:flex; flex-direction:column; gap:11px; }
+  ol.steps li { counter-increment:st; font-family:var(--font-body); font-size:19px; line-height:1.32; color:var(--wu-black); display:flex; gap:14px; align-items:baseline; }
+  ol.steps li::before { content:counter(st); font-weight:bold; color:var(--wu-cyan); flex:none; min-width:22px; }
+  .vc-sbar { background:var(--wu-ice); color:var(--wu-navy); font-weight:bold; padding:11px 18px; font-family:var(--font-body); font-size:17px; border-left:6px solid var(--wu-sky); }
+  .vc-pbox { flex:1; background:var(--wu-cyan); color:#fff; font-weight:bold; padding:16px 8px; font-family:var(--font-body); font-size:16px; text-align:center; display:flex; align-items:center; justify-content:center; line-height:1.2; }
+  .vc-margin { background:var(--wu-navy); color:#fff; font-weight:bold; padding:16px 16px; font-family:var(--font-body); font-size:16px; display:flex; align-items:center; }
+  .swot { background:var(--wu-ice); border-left:5px solid var(--wu-cyan); min-height:82px; padding:9px 12px; font-family:var(--font-body); font-weight:bold; font-size:16px; color:var(--wu-navy); box-sizing:border-box; }
+  .minihdr { font-family:var(--font-body); font-size:14px; font-weight:bold; text-transform:uppercase; letter-spacing:0.08em; color:var(--wu-cyan); }
+  .tl-row { display:flex; gap:12px; align-items:baseline; margin-bottom:6px; }
+  .tl-y { flex:none; width:54px; font-family:var(--font-title); font-weight:bold; font-size:16px; color:var(--wu-cyan); }
+  .tl-e { font-family:var(--font-body); font-size:15.5px; color:var(--wu-black); line-height:1.28; }
+  @media print { body{background:#fff;padding:0;gap:0;} .slide{box-shadow:none;page-break-after:always;break-after:page;} .stage{max-width:none;} }
+
+  .fwtile { background:var(--wu-ice); padding:18px 22px; min-height:118px; }
+  .fw-h { margin:0 0 8px 0; font-family:var(--font-title); font-weight:bold; font-size:21px; }
+  .fw-d { margin:0; font-family:var(--font-body); font-size:16.5px; color:var(--wu-black); line-height:1.34; }
+  .vcs { background:var(--wu-ice); padding:14px 18px; min-height:120px; border-top:4px solid var(--wu-cyan); }
+  .vcs-h { margin:0 0 7px 0; font-family:var(--font-title); font-weight:bold; font-size:17px; color:var(--wu-navy); }
+  .vcs-d { margin:0; font-family:var(--font-body); font-size:15px; color:var(--wu-black); line-height:1.3; }
+</style>
+</head>
+<body>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:30px;width:1000px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:52px;line-height:1.1;color:var(--wu-white)">Introduction:<br>What Is International Business?</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Business: The New Realities — Chapter 1<br>Cavusgil, Knight &amp; Riesenberger, 6th Global Edition<br>International Summer University<sup>WU</sup> 2026 · <b>Dr. Arne Floh</b></p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:10px;--fs:19px">
+    <li><span>1.1 Describe the key concepts in international business</span></li>
+    <li><span>1.2 Understand how international business differs from domestic business</span></li>
+    <li><span>1.3 Identify major participants in international business</span></li>
+    <li><span>1.4 Explain why firms internationalize</span></li>
+    <li><span>1.5 Appreciate why you should study international business</span></li>
+    <li><span>1.6 Learn the CKR Intangible Human Skills and the CKR Tangible Process Tools to improve your employability and success in the workplace</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Opening vignette: spot a multinational</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class opener · 10 minutes · write, then think–pair–share</p>
+  <p class="act-obj">Objective: build a concrete, shared starting point for today’s core ideas — the definition of international business, its elements, and its risks — from real firms you already know.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span>On your own, choose a <b>multinational enterprise (MNE)</b> you know well — a firm from your home country, or one whose products or services you use.</span></li>
+      <li><span>In three or four sentences, describe <b>what it does and where</b>: which foreign countries it operates in, and how it entered them (exporting, a foreign subsidiary, an acquisition, a joint venture?).</span></li>
+      <li><span>Name one <b>international business activity</b> it performs abroad — sourcing, manufacturing, sales, R&amp;D — and one <b>risk</b> it faces there: cross-cultural, country, currency or commercial.</span></li>
+      <li><span>Turn to your neighbour and compare your two firms: which <b>motives and risks</b> do they share?</span></li>
+      <li><span>We will collect several examples on the board and use them to build the <b>definition of international business, its six elements, and the four risks</b> — the roadmap for today’s session.</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 3</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The value chain: how a business creates value</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:168px;width:1150px;margin:0;font-family:var(--font-body);font-size:19px;line-height:1.4;color:var(--wu-black)"><b>Business:</b> an organisation that creates value by producing goods or services customers are willing to pay for. Michael Porter’s <b>value chain</b> (1985) is the sequence of value-adding activities a firm performs to design, produce, market, deliver and support its product; <b>margin</b> is the value created less the cost of creating it.</p>
+  <p style="position:absolute;left:65px;top:256px;margin:0;font-family:var(--font-body);font-size:15px;font-weight:bold;text-transform:uppercase;letter-spacing:0.08em;color:var(--wu-cyan)">Support activities</p>
+  <div style="position:absolute;left:65px;top:282px;width:1150px;display:flex;flex-direction:column;gap:5px">
+    <div class="vc-sbar">Firm infrastructure</div>
+    <div class="vc-sbar">Human resource management</div>
+    <div class="vc-sbar">Technology development</div>
+    <div class="vc-sbar">Procurement</div>
+  </div>
+  <p style="position:absolute;left:65px;top:486px;margin:0;font-family:var(--font-body);font-size:15px;font-weight:bold;text-transform:uppercase;letter-spacing:0.08em;color:var(--wu-cyan)">Primary activities</p>
+  <div style="position:absolute;left:65px;top:512px;width:1150px;display:flex;gap:5px">
+    <div class="vc-pbox">Inbound logistics</div>
+    <div class="vc-pbox">Operations</div>
+    <div class="vc-pbox">Outbound logistics</div>
+    <div class="vc-pbox">Marketing &amp; sales</div>
+    <div class="vc-pbox">Service</div>
+    <div class="vc-margin">Margin</div>
+  </div>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">International (global) value chains</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:172px;width:1150px;background:var(--wu-ice);padding:18px 26px;box-sizing:border-box">
+    <p style="margin:0;font-family:var(--font-body);font-size:19px;line-height:1.4;color:var(--wu-black)">Firms increasingly <b>disperse the activities of the value chain across countries</b>, locating each activity where it can be performed best or most cheaply — creating an international, or global, value chain.</p>
+  </div>
+  <ul class="wu" style="position:absolute;left:65px;top:292px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Upstream</b> activities (R&amp;D, procurement, manufacturing) versus <b>downstream</b> activities (marketing, distribution, sales, service).</span></li>
+    <li><span><b>Outsourcing</b>: delegating an activity to an external supplier — global outsourcing when that supplier is abroad.</span></li>
+    <li><span><b>Offshoring</b>: relocating a major value-chain activity to a foreign location.</span></li>
+    <li><span><b>Global sourcing</b>: configuring the whole chain to exploit the most advantageous locations worldwide.</span></li>
+    <li><span>Example: a smartphone is designed in the United States, its chips made in Taiwan and South Korea, assembled in China or Vietnam, and sold worldwide.</span></li>
+    <li><span>The pay-off is efficiency and access to capabilities — at the cost of greater country, currency and supply-chain risk.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">International and domestic business: how they differ</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:13px;--fs:21px">
+    <li><span>International business ….</span></li>
+    <li><span>is conducted across national borders.</span></li>
+    <li><span>uses distinctive business methods.</span></li>
+    <li><span>is in contact with countries that differ in terms of culture, language, political system, legal system, economic situation, infrastructure, and other factors.</span></li>
+    <li><span>Stated differently, when they venture abroad, firms encounter four major types of risk.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Six elements of international business (Exhibit 1.1)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:186px;width:1150px;background:var(--wu-navy);color:#fff;padding:12px 22px;font-family:var(--font-title);font-weight:bold;font-size:20px">Elements of international business</div>
+  <div style="position:absolute;left:65px;top:250px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px"><div class="etile"><p class="et-h">Globalization of markets</p><p class="et-d">Growing economic integration and interdependency of countries</p></div><div class="etile"><p class="et-h">International trade</p><p class="et-d">Exporting and importing of products and services</p></div><div class="etile"><p class="et-h">International investment</p><p class="et-d">Foreign direct investment and portfolio investment</p></div><div class="etile"><p class="et-h">International business risks</p><p class="et-d">Cross-cultural, country, currency and commercial risk</p></div><div class="etile"><p class="et-h">Participants</p><p class="et-d">Firms, intermediaries, facilitators and governments</p></div><div class="etile"><p class="et-h">Foreign market entry strategies</p><p class="et-d">Exporting, FDI and other entry modes</p></div></div>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Globalization of markets</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:13px;--fs:21px">
+    <li><span>Unprecedented growth of international trade. In 1960 global trade was about US$300 billion a year; by 2024 world merchandise exports reached roughly US$24 trillion, and total world trade in goods and services hit a record ~US$33 trillion.</span></li>
+    <li><span>Trade between nations, accompanied by substantial flows of capital, technology, and knowledge.</span></li>
+    <li><span>Development of sophisticated global financial systems that facilitate the cross-border flow of products, money, technology, and knowledge.</span></li>
+    <li><span>Greater collaboration among nations through multilateral agencies such as the World Trade Organization (166 members in 2024) and the International Monetary Fund.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The “flows” of international business</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div class="exh"><img src="assets/ch1/ch1_s10_image7.jpg" alt="The “flows” of international business"></div>
+  
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The four risks of international business (Exhibit 1.8)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:178px;width:1150px;display:grid;grid-template-columns:1fr 1fr;gap:20px"><div class="rtile"><p class="rt-h">Cross-cultural risk</p><ul class="rt-l"><li>Cultural differences</li><li>Negotiation patterns</li><li>Decision-making styles</li><li>Ethical practices</li></ul></div><div class="rtile"><p class="rt-h">Country (political) risk</p><ul class="rt-l"><li>Government intervention and protectionism</li><li>Laws and regulations unfavourable to foreign firms</li><li>Inadequate or underdeveloped legal system</li><li>Bureaucracy, red tape and corruption</li><li>Economic mismanagement or failure</li></ul></div><div class="rtile"><p class="rt-h">Currency (financial) risk</p><ul class="rt-l"><li>Currency exposure</li><li>Asset valuation</li><li>Foreign taxation</li><li>Inflationary and transfer pricing</li></ul></div><div class="rtile"><p class="rt-h">Commercial risk</p><ul class="rt-l"><li>Weak partner</li><li>Operational problems</li><li>Timing of entry</li><li>Competitive intensity</li><li>Poor execution of strategy</li></ul></div></div>
+  <div class="footer"><span class="pg">Page 10</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Cross-cultural risk</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:13px;--fs:21px">
+    <li><span>Cultural Differences. Risk arising from differences in language, lifestyle, attitudes, customs, and religion, where a cultural miscommunication jeopardizes a culturally-valued mindset or behavior.</span></li>
+    <li><span>Negotiation Patterns. Negotiations are required in many types of business transactions. For example, where Mexicans are friendly and emphasize social relations, Americans are assertive and get down to business quickly.</span></li>
+    <li><span>Decision-Making Styles. Managers make decisions continually on the operations and future direction of the firm. For example, Japanese take considerable time to make important decisions. Canadians tend to be decisive, and “shoot from the hip”.</span></li>
+    <li><span>Ethical Practices. Standards of right and wrong vary considerably around the world. For example, bribery is relatively accepted in some countries in Africa, but is generally unacceptable in Sweden.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 11</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Country risk (political risk)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:10px;--fs:17px">
+    <li><span>Government intervention, protectionism, and barriers to trade and investment.</span></li>
+    <li><span>Bureaucracy, red tape, administrative delays, and corruption.</span></li>
+    <li><span>Lack of legal safeguards for intellectual property rights.</span></li>
+    <li><span>Legislation unfavorable to foreign firms.</span></li>
+    <li><span>Economic failures and mismanagement.</span></li>
+    <li><span>Social and political unrest and instability.</span></li>
+    <li><span>The United States imposes tariffs on imports of sugar and other agricultural products.</span></li>
+    <li><span>Doing business in Russia often requires paying bribes to government officials.</span></li>
+    <li><span>Venezuela’s government has interfered much with the operations of foreign firms.</span></li>
+    <li><span>Argentina has suffered high inflation and other economic turmoil.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 12</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Currency risk (financial risk)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:10px;--fs:19px">
+    <li><span>Currency exposure. General risk of unfavorable exchange rate fluctuations.</span></li>
+    <li><span>Asset valuation. Risk that exchange rate fluctuations will adversely affect the value of the firm’s assets and liabilities.</span></li>
+    <li><span>Foreign taxation. Income, sales, and other taxes vary widely worldwide, with implications for company performance and profitability.</span></li>
+    <li><span>Inflationary pricing. High inflation, common to many countries, complicates business planning, and the pricing of inputs and finished goods.</span></li>
+    <li><span>The Japanese yen has fluctuated a lot in recent years.</span></li>
+    <li><span>The United States has relatively high corporate income taxes.</span></li>
+    <li><span>Argentina and Turkey have experienced very high inflation.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 13</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Commercial Risk</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:10px;--fs:19px">
+    <li><span>Weak partner</span></li>
+    <li><span>Operational problems</span></li>
+    <li><span>Timing of entry</span></li>
+    <li><span>Competitive intensity</span></li>
+    <li><span>Poor execution of strategy</span></li>
+    <li><span>General commercial risks such as these lead to sub-optimal formulation and implementation of the firm’s international value-chain activities.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 14</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Who participates in international business?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:10px;--fs:19px">
+    <li><span>Multinational enterprise (MNE): A large company with substantial resources that performs various business activities through a network of subsidiaries and affiliates located in multiple countries (e.g., Disney, Microsoft, Samsung, Unilever, Vodafone).</span></li>
+    <li><span>Small and medium-sized enterprise (SME): Typically, companies with 500 or fewer employees, comprising over 90% of all firms in most countries. SMEs increasingly engage in international business.</span></li>
+    <li><span>Born global firm: A young, entrepreneurial SME that undertakes substantial international business at or near its founding.</span></li>
+    <li><span>Governments: Associated with government intervention and specific political systems</span></li>
+    <li><span>Non-governmental organizations(NGOs): Many such non-profit organizations conduct cross-border activities. They pursue special causes and serve as advocates for social issues, education, politics, and research.</span></li>
+    <li><span>The Bill and Melinda Gates Foundation and the British Welcome Trust both support health and educational initiatives.</span></li>
+    <li><span>CARE is an international non-profit organization dedicated to reducing poverty.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 15</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Case study: Uber — the company and its history</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:178px;width:600px">
+    <p style="margin:0;font-family:var(--font-body);font-size:16.5px;line-height:1.42;color:var(--wu-black)">Uber Technologies is an American mobility <b>platform</b> founded in San Francisco in 2009. Its app matches passengers with independent drivers who use their own cars; fares are <b>dynamic</b>, rising with demand and typically undercutting conventional taxis. Uber owns no cars and employs no drivers — it runs a two-sided marketplace and keeps roughly <b>20–25%</b> of each fare.</p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:16.5px;line-height:1.42;color:var(--wu-black)">From ride-hailing it has expanded into food delivery (<b>Uber Eats</b>), freight (<b>Uber Freight</b>) and business travel (<b>Uber for Business</b>). By 2025 it operated in about <b>15,000 cities across ~70 countries</b>, serving roughly <b>202 million</b> monthly users and <b>~42 million</b> trips and orders a day, with group revenue near <b>US$44 billion</b> in 2024.</p>
+  </div>
+  <div style="position:absolute;left:702px;top:178px;width:513px">
+    <p class="minihdr" style="margin:0 0 10px 0">A brief history</p>
+    <div class="tl-row"><span class="tl-y">2009</span><span class="tl-e">Founded as UberCab in San Francisco by Travis Kalanick and Garrett Camp</span></div><div class="tl-row"><span class="tl-y">2011</span><span class="tl-e">First international city — Paris; app becomes “Uber”</span></div><div class="tl-row"><span class="tl-y">2012</span><span class="tl-e">Low-cost UberX launches; rapid global expansion begins</span></div><div class="tl-row"><span class="tl-y">2014</span><span class="tl-e">Uber Eats food delivery introduced</span></div><div class="tl-row"><span class="tl-y">2016</span><span class="tl-e">Sells Uber China to rival Didi Chuxing for a ~18% stake</span></div><div class="tl-row"><span class="tl-y">2018</span><span class="tl-e">Exits South-East Asia (sold to Grab) and Russia (merged with Yandex)</span></div><div class="tl-row"><span class="tl-y">2019</span><span class="tl-e">Goes public on the NYSE at roughly US$82 billion</span></div><div class="tl-row"><span class="tl-y">2020</span><span class="tl-e">Buys Postmates; sells Uber Eats India to Zomato</span></div><div class="tl-row"><span class="tl-y">2023</span><span class="tl-e">Reports its first full-year operating profit</span></div><div class="tl-row"><span class="tl-y">2025</span><span class="tl-e">~15,000 cities in ~70 countries; ~202 m monthly users</span></div>
+  </div>
+  <div class="footer"><span class="pg">Page 16</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Case study: Uber — going global</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class case · SWOT analysis + discussion</p>
+  <div style="position:absolute;left:65px;top:182px;width:625px">
+    <p class="minihdr" style="margin:0 0 5px 0">International successes</p>
+    <ul class="wu" style="gap:6px;--fs:15px">
+      <li><span>Market leader or strong number two across the US, Latin America (Brazil, Mexico), much of Europe and the Middle East.</span></li>
+      <li><span>Uber Eats grew into a global delivery business, lifting group revenue to about US$44 billion in 2024.</span></li>
+      <li><span>Kept equity in former rivals after retreating — ~18% of Didi (China) and ~27% of Grab (SE Asia) — profiting even where it withdrew.</span></li>
+    </ul>
+    <p class="minihdr" style="margin:14px 0 5px 0">International setbacks</p>
+    <ul class="wu" style="gap:6px;--fs:15px">
+      <li><span>Lost costly price wars and exited: sold Uber China to Didi (2016) and South-East Asia to Grab (2018).</span></li>
+      <li><span>London: Transport for London stripped its licence in 2017 and 2019; Uber ran only on appeal.</span></li>
+      <li><span>2021 UK Supreme Court reclassified drivers as “workers” (minimum wage, holiday pay); bans and limits in several other cities.</span></li>
+    </ul>
+  </div>
+  <div style="position:absolute;left:715px;top:182px;width:500px">
+    <p class="minihdr" style="margin:0 0 8px 0">Your task — SWOT analysis</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <div class="swot">Strengths</div>
+      <div class="swot">Weaknesses</div>
+      <div class="swot">Opportunities</div>
+      <div class="swot">Threats</div>
+    </div>
+  </div>
+  <div class="act-box" style="left:715px;top:430px;width:500px">
+    <p style="margin:0;font-family:var(--font-body);font-size:16.5px;line-height:1.35;color:var(--wu-black)"><b>Discuss:</b> using your SWOT, <b>why should Uber internationalize</b> — and are there markets where it should <i>not</i>?</p>
+  </div>
+  <div class="footer"><span class="pg">Page 17</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Why do firms internationalize? (1 of 3)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:720px;gap:13px;--fs:21px">
+    <li><span>Seek opportunities for growth through market diversification. For example, Harley-Davidson, IKEA, H&amp;M.</span></li>
+    <li><span>Earn higher margins and profits. Often, foreign markets are more profitable.</span></li>
+    <li><span>Gain new ideas about products, services, and business methods. For example, GM refined its knowledge for making small, fuel-efficient cars in Europe. Retailer H&amp;M gains new product ideas by following fashion trends around the world.</span></li>
+  </ul>
+  <img src="assets/ch1/ch1_s34_image16.jpg" alt="" style="position:absolute;left:812px;top:180px;width:400px;height:300px;object-fit:cover">
+  <div class="footer"><span class="pg">Page 18</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Why do firms internationalize? (2 of 3)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:720px;gap:13px;--fs:21px">
+    <li><span>Serve key customers that have relocated abroad. For example, when Toyota launched its operations in Britain, many of its suppliers followed suit.</span></li>
+    <li><span>Be closer to supply sources, benefit from global sourcing advantages, or gain flexibility in the sourcing of products. For example, Apple sources parts and components from the best suppliers worldwide.</span></li>
+    <li><span>Gain access to lower-cost or better-value factors of production. For example, Sony does much manufacturing in China.</span></li>
+  </ul>
+  <img src="assets/ch1/ch1_s35_image17.jpg" alt="" style="position:absolute;left:812px;top:180px;width:400px;height:300px;object-fit:cover">
+  <div class="footer"><span class="pg">Page 19</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Why do firms internationalize? (3 of 3)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:13px;--fs:21px">
+    <li><span>Develop economies of scale in sourcing, production, marketing, and R&amp;D. For example, Airbus lowers its overall costs by sourcing, manufacturing, and selling aircraft worldwide.</span></li>
+    <li><span>Confront international competitors more effectively or thwart the growth of competition in the home market. Chinese appliance maker Haier established operations in the United States, partly to gain competitive knowledge about Whirlpool, its chief US rivals.</span></li>
+    <li><span>Invest in a potentially rewarding relationship with a foreign partner. French computer firm Groupe Bull partnered with Toshiba in Japan to gain insights for developing information technology.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 20</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">International business by the numbers</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:960px;margin:0;font-family:var(--font-body);font-size:20px;color:var(--wu-black)">Trade, investment and services statistics — updated to 2024–2025</p>
+  <img src="assets/accreditations-black.png" alt="" style="position:absolute;left:66px;top:362px;width:232px;height:37px">
+  <img src="assets/patterns/pattern-blocks-dense-cyan.png" alt="" style="position:absolute;left:0;top:399px;width:1280px;height:321px;object-fit:cover;object-position:left top">
+  <div class="footer"><span class="pg">Page 21</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">World trade as a share of world GDP, 1980–2024 (%)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><line x1="48" y1="436.0" x2="1134" y2="436.0" stroke="#E5F5FA" stroke-width="1"/><text x="40" y="440.0" font-size="12" text-anchor="end" fill="#888888">0</text><line x1="48" y1="375.7" x2="1134" y2="375.7" stroke="#E5F5FA" stroke-width="1"/><text x="40" y="379.7" font-size="12" text-anchor="end" fill="#888888">10</text><line x1="48" y1="315.4" x2="1134" y2="315.4" stroke="#E5F5FA" stroke-width="1"/><text x="40" y="319.4" font-size="12" text-anchor="end" fill="#888888">20</text><line x1="48" y1="255.1" x2="1134" y2="255.1" stroke="#E5F5FA" stroke-width="1"/><text x="40" y="259.1" font-size="12" text-anchor="end" fill="#888888">30</text><line x1="48" y1="194.9" x2="1134" y2="194.9" stroke="#E5F5FA" stroke-width="1"/><text x="40" y="198.9" font-size="12" text-anchor="end" fill="#888888">40</text><line x1="48" y1="134.6" x2="1134" y2="134.6" stroke="#E5F5FA" stroke-width="1"/><text x="40" y="138.6" font-size="12" text-anchor="end" fill="#888888">50</text><line x1="48" y1="74.3" x2="1134" y2="74.3" stroke="#E5F5FA" stroke-width="1"/><text x="40" y="78.3" font-size="12" text-anchor="end" fill="#888888">60</text><line x1="48" y1="14.0" x2="1134" y2="14.0" stroke="#E5F5FA" stroke-width="1"/><text x="40" y="18.0" font-size="12" text-anchor="end" fill="#888888">70</text><line x1="48" y1="14" x2="48" y2="436" stroke="#002350" stroke-width="1.5"/><line x1="48" y1="436" x2="1134" y2="436" stroke="#002350" stroke-width="1.5"/><text x="48.0" y="456" font-size="11.5" text-anchor="middle" fill="#888888">1980</text><text x="294.8" y="456" font-size="11.5" text-anchor="middle" fill="#888888">1990</text><text x="541.6" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2000</text><text x="739.1" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2008</text><text x="911.9" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2015</text><text x="1035.3" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2020</text><text x="1134.0" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2024</text><polyline points="48.0,203.3 294.8,203.9 541.6,128.5 739.1,70.1 763.8,119.5 911.9,86.9 1010.6,97.8 1035.3,122.7 1060.0,94.1 1084.6,59.7 1109.3,85.1 1134.0,95.0" fill="none" stroke="#0096D3" stroke-width="3"/><circle cx="48.0" cy="203.3" r="3.4" fill="#002350"/><circle cx="294.8" cy="203.9" r="3.4" fill="#002350"/><circle cx="541.6" cy="128.5" r="3.4" fill="#002350"/><circle cx="739.1" cy="70.1" r="3.4" fill="#002350"/><circle cx="763.8" cy="119.5" r="3.4" fill="#002350"/><circle cx="911.9" cy="86.9" r="3.4" fill="#002350"/><circle cx="1010.6" cy="97.8" r="3.4" fill="#002350"/><circle cx="1035.3" cy="122.7" r="3.4" fill="#002350"/><circle cx="1060.0" cy="94.1" r="3.4" fill="#002350"/><circle cx="1084.6" cy="59.7" r="3.4" fill="#002350"/><circle cx="1109.3" cy="85.1" r="3.4" fill="#002350"/><circle cx="1134.0" cy="95.0" r="3.4" fill="#002350"/></svg></div>
+  <p class="src">Exports + imports of goods and services as a percentage of world GDP. Source: World Bank, World Development Indicators (NE.TRD.GNFS.ZS); pre-2020 points approximate. Peak 2022 ≈ 62%.</p>
+  <div class="footer"><span class="pg">Page 22</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Leading countries in international merchandise trade</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><div style="display:flex;gap:30px"><div style="flex:1"><p class="panelcap">(a) Total trade, US$ billions</p><svg viewBox="0 0 545 420" width="100%" height="420" font-family="Verdana,Geneva,sans-serif"><text x="142" y="34.0" font-size="13" text-anchor="end" fill="#002350">China</text><rect x="150" y="19.2" width="325.0" height="21.6" fill="#0096D3"/><text x="481.0" y="34.0" font-size="12.5" fill="#002350">6,163</text><text x="142" y="70.0" font-size="13" text-anchor="end" fill="#002350">United States</text><rect x="150" y="55.2" width="282.8" height="21.6" fill="#0096D3"/><text x="438.8" y="70.0" font-size="12.5" fill="#002350">5,362</text><text x="142" y="106.0" font-size="13" text-anchor="end" fill="#002350">Germany</text><rect x="150" y="91.2" width="164.3" height="21.6" fill="#0096D3"/><text x="320.3" y="106.0" font-size="12.5" fill="#002350">3,116</text><text x="142" y="142.0" font-size="13" text-anchor="end" fill="#002350">Japan</text><rect x="150" y="127.2" width="77.9" height="21.6" fill="#0096D3"/><text x="233.9" y="142.0" font-size="12.5" fill="#002350">1,478</text><text x="142" y="178.0" font-size="13" text-anchor="end" fill="#002350">France</text><rect x="150" y="163.2" width="74.2" height="21.6" fill="#0096D3"/><text x="230.2" y="178.0" font-size="12.5" fill="#002350">1,408</text><text x="142" y="214.0" font-size="13" text-anchor="end" fill="#002350">Netherlands</text><rect x="150" y="199.2" width="71.3" height="21.6" fill="#0096D3"/><text x="227.3" y="214.0" font-size="12.5" fill="#002350">1,352</text><text x="142" y="250.0" font-size="13" text-anchor="end" fill="#002350">South Korea</text><rect x="150" y="235.2" width="69.4" height="21.6" fill="#0096D3"/><text x="225.4" y="250.0" font-size="12.5" fill="#002350">1,316</text><text x="142" y="286.0" font-size="13" text-anchor="end" fill="#002350">Italy</text><rect x="150" y="271.2" width="68.4" height="21.6" fill="#0096D3"/><text x="224.4" y="286.0" font-size="12.5" fill="#002350">1,298</text><text x="142" y="322.0" font-size="13" text-anchor="end" fill="#002350">United Kingdom</text><rect x="150" y="307.2" width="68.3" height="21.6" fill="#0096D3"/><text x="224.3" y="322.0" font-size="12.5" fill="#002350">1,295</text><text x="142" y="358.0" font-size="13" text-anchor="end" fill="#002350">Mexico</text><rect x="150" y="343.2" width="65.5" height="21.6" fill="#0096D3"/><text x="221.5" y="358.0" font-size="12.5" fill="#002350">1,242</text><text x="142" y="394.0" font-size="13" text-anchor="end" fill="#002350">Canada</text><rect x="150" y="379.2" width="56.4" height="21.6" fill="#0096D3"/><text x="212.4" y="394.0" font-size="12.5" fill="#002350">1,069</text></svg></div><div style="flex:1"><p class="panelcap">(b) Total trade as % of GDP</p><svg viewBox="0 0 545 420" width="100%" height="420" font-family="Verdana,Geneva,sans-serif"><text x="142" y="32.5" font-size="13" text-anchor="end" fill="#002350">Belgium</text><rect x="150" y="18.6" width="325.0" height="19.8" fill="#002350"/><text x="481.0" y="32.5" font-size="12.5" fill="#002350">158%</text><text x="142" y="65.5" font-size="13" text-anchor="end" fill="#002350">Netherlands</text><rect x="150" y="51.6" width="290.0" height="19.8" fill="#002350"/><text x="446.0" y="65.5" font-size="12.5" fill="#002350">141%</text><text x="142" y="98.5" font-size="13" text-anchor="end" fill="#002350">South Korea</text><rect x="150" y="84.6" width="153.0" height="19.8" fill="#002350"/><text x="309.0" y="98.5" font-size="12.5" fill="#002350">74%</text><text x="142" y="131.5" font-size="13" text-anchor="end" fill="#002350">Mexico</text><rect x="150" y="117.6" width="140.1" height="19.8" fill="#002350"/><text x="296.1" y="131.5" font-size="12.5" fill="#002350">68%</text><text x="142" y="164.5" font-size="13" text-anchor="end" fill="#002350">Germany</text><rect x="150" y="150.6" width="136.2" height="19.8" fill="#002350"/><text x="292.2" y="164.5" font-size="12.5" fill="#002350">66%</text><text x="142" y="197.5" font-size="13" text-anchor="end" fill="#002350">Italy</text><rect x="150" y="183.6" width="109.0" height="19.8" fill="#002350"/><text x="265.0" y="197.5" font-size="12.5" fill="#002350">53%</text><text x="142" y="230.5" font-size="13" text-anchor="end" fill="#002350">Canada</text><rect x="150" y="216.6" width="104.7" height="19.8" fill="#002350"/><text x="260.7" y="230.5" font-size="12.5" fill="#002350">51%</text><text x="142" y="263.5" font-size="13" text-anchor="end" fill="#002350">France</text><rect x="150" y="249.6" width="90.5" height="19.8" fill="#002350"/><text x="246.5" y="263.5" font-size="12.5" fill="#002350">44%</text><text x="142" y="296.5" font-size="13" text-anchor="end" fill="#002350">United Kingdom</text><rect x="150" y="282.6" width="79.8" height="19.8" fill="#002350"/><text x="235.8" y="296.5" font-size="12.5" fill="#002350">39%</text><text x="142" y="329.5" font-size="13" text-anchor="end" fill="#002350">Japan</text><rect x="150" y="315.6" width="74.1" height="19.8" fill="#002350"/><text x="230.1" y="329.5" font-size="12.5" fill="#002350">36%</text><text x="142" y="362.5" font-size="13" text-anchor="end" fill="#002350">China</text><rect x="150" y="348.6" width="67.7" height="19.8" fill="#002350"/><text x="223.7" y="362.5" font-size="12.5" fill="#002350">33%</text><text x="142" y="395.5" font-size="13" text-anchor="end" fill="#002350">United States</text><rect x="150" y="381.6" width="38.3" height="19.8" fill="#002350"/><text x="194.3" y="395.5" font-size="12.5" fill="#002350">19%</text></svg></div></div></div>
+  <p class="src">Exports + imports, 2024. Source: WTO World Trade Statistics 2025 and World Bank (TG.VAL.TOTL.GD.ZS); combined-trade totals reconstructed from WTO export data — approximate.</p>
+  <div class="footer"><span class="pg">Page 23</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Share of world merchandise trade, leading countries (%)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><text x="142" y="33.2" font-size="13" text-anchor="end" fill="#002350">China</text><rect x="150" y="18.9" width="252.2" height="20.6" fill="#0096D3"/><text x="408.2" y="33.2" font-size="12.5" fill="#002350">12.5%</text><text x="142" y="67.5" font-size="13" text-anchor="end" fill="#002350">United States</text><rect x="150" y="53.2" width="221.9" height="20.6" fill="#0096D3"/><text x="377.9" y="67.5" font-size="12.5" fill="#002350">11.0%</text><text x="142" y="101.8" font-size="13" text-anchor="end" fill="#002350">Germany</text><rect x="150" y="87.5" width="127.1" height="20.6" fill="#0096D3"/><text x="283.1" y="101.8" font-size="12.5" fill="#002350">6.3%</text><text x="142" y="136.1" font-size="13" text-anchor="end" fill="#002350">Japan</text><rect x="150" y="121.8" width="60.5" height="20.6" fill="#0096D3"/><text x="216.5" y="136.1" font-size="12.5" fill="#002350">3.0%</text><text x="142" y="170.4" font-size="13" text-anchor="end" fill="#002350">France</text><rect x="150" y="156.1" width="60.5" height="20.6" fill="#0096D3"/><text x="216.5" y="170.4" font-size="12.5" fill="#002350">3.0%</text><text x="142" y="204.7" font-size="13" text-anchor="end" fill="#002350">Netherlands</text><rect x="150" y="190.4" width="56.5" height="20.6" fill="#0096D3"/><text x="212.5" y="204.7" font-size="12.5" fill="#002350">2.8%</text><text x="142" y="239.0" font-size="13" text-anchor="end" fill="#002350">United Kingdom</text><rect x="150" y="224.7" width="56.5" height="20.6" fill="#0096D3"/><text x="212.5" y="239.0" font-size="12.5" fill="#002350">2.8%</text><text x="142" y="273.3" font-size="13" text-anchor="end" fill="#002350">South Korea</text><rect x="150" y="259.0" width="54.5" height="20.6" fill="#0096D3"/><text x="210.5" y="273.3" font-size="12.5" fill="#002350">2.7%</text><text x="142" y="307.6" font-size="13" text-anchor="end" fill="#002350">Italy</text><rect x="150" y="293.3" width="52.5" height="20.6" fill="#0096D3"/><text x="208.5" y="307.6" font-size="12.5" fill="#002350">2.6%</text><text x="142" y="341.9" font-size="13" text-anchor="end" fill="#002350">Mexico</text><rect x="150" y="327.6" width="50.4" height="20.6" fill="#0096D3"/><text x="206.4" y="341.9" font-size="12.5" fill="#002350">2.5%</text><text x="142" y="376.2" font-size="13" text-anchor="end" fill="#002350">Canada</text><rect x="150" y="361.9" width="48.4" height="20.6" fill="#0096D3"/><text x="204.4" y="376.2" font-size="12.5" fill="#002350">2.4%</text><text x="142" y="410.5" font-size="13" text-anchor="end" fill="#002350">India</text><rect x="150" y="396.2" width="46.4" height="20.6" fill="#0096D3"/><text x="202.4" y="410.5" font-size="12.5" fill="#002350">2.3%</text><text x="142" y="444.8" font-size="13" text-anchor="end" fill="#002350">Rest of world</text><rect x="150" y="430.6" width="930.0" height="20.6" fill="#888888"/><text x="1086.0" y="444.8" font-size="12.5" fill="#002350">46.1%</text></svg></div>
+  <p class="src">Each country’s combined exports + imports as a share of total world merchandise trade, 2024 (estimated from WTO 2024 data). Source: WTO.</p>
+  <div class="footer"><span class="pg">Page 24</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">FDI inflows by world region, 2024 (US$ billions)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><svg viewBox="0 0 1150 430" width="100%" height="430" font-family="Verdana,Geneva,sans-serif"><text x="192" y="56.6" font-size="13" text-anchor="end" fill="#002350">Developing Asia</text><rect x="200" y="40.6" width="880.0" height="24.0" fill="#0096D3"/><text x="1086.0" y="56.6" font-size="12.5" fill="#002350">605</text><text x="192" y="137.8" font-size="13" text-anchor="end" fill="#002350">North America</text><rect x="200" y="121.8" width="568.7" height="24.0" fill="#0096D3"/><text x="774.7" y="137.8" font-size="12.5" fill="#002350">391</text><text x="192" y="219.0" font-size="13" text-anchor="end" fill="#002350">Latin America</text><rect x="200" y="203.0" width="238.5" height="24.0" fill="#0096D3"/><text x="444.5" y="219.0" font-size="12.5" fill="#002350">164</text><text x="192" y="300.2" font-size="13" text-anchor="end" fill="#002350">Europe</text><rect x="200" y="284.2" width="145.5" height="24.0" fill="#0096D3"/><text x="351.5" y="300.2" font-size="12.5" fill="#002350">100</text><text x="192" y="381.4" font-size="13" text-anchor="end" fill="#002350">Africa</text><rect x="200" y="365.4" width="141.1" height="24.0" fill="#0096D3"/><text x="347.1" y="381.4" font-size="12.5" fill="#002350">97</text></svg></div>
+  <p class="src">Foreign direct investment inflows, 2024; global total ≈ US$1.5 trillion. Source: UNCTAD World Investment Report 2025.</p>
+  <div class="footer"><span class="pg">Page 25</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Service industries that are rapidly internationalizing</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:172px;font-size:15px">
+    <thead><tr><th style="width:250px">Industry</th><th style="width:470px">Representative activities</th><th>Representative companies</th></tr></thead>
+    <tbody>
+      <tr><td><b>Architectural, construction and engineering</b></td><td>Construction, power utilities, design and engineering services for airports, hospitals, dams</td><td>ABB, Bechtel Group, Halliburton, Kajima, Philip Holzman, Skanska AB</td></tr>
+      <tr><td><b>Banking, finance and insurance</b></td><td>Banking, insurance, risk evaluation and management</td><td>Bank of America, CIGNA, Barclays, HSBC, Ernst &amp; Young</td></tr>
+      <tr><td><b>Education, training and publishing</b></td><td>Management, technical and language training; publishing</td><td>Berlitz, Kumon, NOVA, Pearson, Elsevier</td></tr>
+      <tr><td><b>Entertainment</b></td><td>Movies, recorded music, Internet-based entertainment</td><td>Time Warner, Sony, Virgin, MGM</td></tr>
+      <tr><td><b>Information services</b></td><td>E-commerce, e-mail, funds transfer, data interchange and processing, computer services</td><td>Infosys, EDI, Hitachi, Qualcomm, Cisco</td></tr>
+      <tr><td><b>Professional business services</b></td><td>Accounting, advertising, legal, management consulting</td><td>Leo Burnett, EYLaw, McKinsey, A.T. Kearney, Booz Allen Hamilton</td></tr>
+      <tr><td><b>Transportation</b></td><td>Aviation, ocean shipping, railroads, trucking, airports</td><td>Maersk, Santa Fe, Port Authority of New Jersey, SNCF</td></tr>
+      <tr><td><b>Travel and tourism</b></td><td>Lodging, food and beverage, air and ocean carriers, railways</td><td>Carlson Wagonlit, Marriott, British Airways</td></tr>
+    </tbody>
+  </table>
+  <div class="footer"><span class="pg">Page 26</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Leading countries in international services trade</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><div style="display:flex;gap:30px"><div style="flex:1"><p class="panelcap">(a) Total services trade, US$ billions</p><svg viewBox="0 0 545 410" width="100%" height="410" font-family="Verdana,Geneva,sans-serif"><text x="142" y="33.5" font-size="13" text-anchor="end" fill="#002350">United States</text><rect x="150" y="19.0" width="325.0" height="21.1" fill="#0096D3"/><text x="481.0" y="33.5" font-size="12.5" fill="#002350">1,950</text><text x="142" y="68.6" font-size="13" text-anchor="end" fill="#002350">China</text><rect x="150" y="54.1" width="170.0" height="21.1" fill="#0096D3"/><text x="326.0" y="68.6" font-size="12.5" fill="#002350">1,020</text><text x="142" y="103.7" font-size="13" text-anchor="end" fill="#002350">Germany</text><rect x="150" y="89.2" width="161.7" height="21.1" fill="#0096D3"/><text x="317.7" y="103.7" font-size="12.5" fill="#002350">970</text><text x="142" y="138.8" font-size="13" text-anchor="end" fill="#002350">Ireland</text><rect x="150" y="124.3" width="166.7" height="21.1" fill="#0096D3"/><text x="322.7" y="138.8" font-size="12.5" fill="#002350">1,000</text><text x="142" y="173.9" font-size="13" text-anchor="end" fill="#002350">United Kingdom</text><rect x="150" y="159.4" width="155.0" height="21.1" fill="#0096D3"/><text x="311.0" y="173.9" font-size="12.5" fill="#002350">930</text><text x="142" y="209.0" font-size="13" text-anchor="end" fill="#002350">France</text><rect x="150" y="194.5" width="118.3" height="21.1" fill="#0096D3"/><text x="274.3" y="209.0" font-size="12.5" fill="#002350">710</text><text x="142" y="244.1" font-size="13" text-anchor="end" fill="#002350">Netherlands</text><rect x="150" y="229.6" width="103.3" height="21.1" fill="#0096D3"/><text x="259.3" y="244.1" font-size="12.5" fill="#002350">620</text><text x="142" y="279.2" font-size="13" text-anchor="end" fill="#002350">Singapore</text><rect x="150" y="264.7" width="113.3" height="21.1" fill="#0096D3"/><text x="269.3" y="279.2" font-size="12.5" fill="#002350">680</text><text x="142" y="314.3" font-size="13" text-anchor="end" fill="#002350">India</text><rect x="150" y="299.7" width="105.0" height="21.1" fill="#0096D3"/><text x="261.0" y="314.3" font-size="12.5" fill="#002350">630</text><text x="142" y="349.4" font-size="13" text-anchor="end" fill="#002350">Japan</text><rect x="150" y="334.8" width="85.0" height="21.1" fill="#0096D3"/><text x="241.0" y="349.4" font-size="12.5" fill="#002350">510</text><text x="142" y="384.5" font-size="13" text-anchor="end" fill="#002350">Belgium</text><rect x="150" y="369.9" width="51.7" height="21.1" fill="#0096D3"/><text x="207.7" y="384.5" font-size="12.5" fill="#002350">310</text></svg></div><div style="flex:1"><p class="panelcap">(b) Services trade as % of GDP</p><svg viewBox="0 0 545 410" width="100%" height="410" font-family="Verdana,Geneva,sans-serif"><text x="142" y="33.5" font-size="13" text-anchor="end" fill="#002350">Ireland</text><rect x="150" y="19.0" width="325.0" height="21.1" fill="#002350"/><text x="481.0" y="33.5" font-size="12.5" fill="#002350">146%</text><text x="142" y="68.6" font-size="13" text-anchor="end" fill="#002350">Singapore</text><rect x="150" y="54.1" width="305.6" height="21.1" fill="#002350"/><text x="461.6" y="68.6" font-size="12.5" fill="#002350">137%</text><text x="142" y="103.7" font-size="13" text-anchor="end" fill="#002350">Belgium</text><rect x="150" y="89.2" width="108.0" height="21.1" fill="#002350"/><text x="264.0" y="103.7" font-size="12.5" fill="#002350">48%</text><text x="142" y="138.8" font-size="13" text-anchor="end" fill="#002350">Netherlands</text><rect x="150" y="124.3" width="103.7" height="21.1" fill="#002350"/><text x="259.7" y="138.8" font-size="12.5" fill="#002350">46%</text><text x="142" y="173.9" font-size="13" text-anchor="end" fill="#002350">United Kingdom</text><rect x="150" y="159.4" width="62.9" height="21.1" fill="#002350"/><text x="218.9" y="173.9" font-size="12.5" fill="#002350">28%</text><text x="142" y="209.0" font-size="13" text-anchor="end" fill="#002350">France</text><rect x="150" y="194.5" width="52.4" height="21.1" fill="#002350"/><text x="208.4" y="209.0" font-size="12.5" fill="#002350">24%</text><text x="142" y="244.1" font-size="13" text-anchor="end" fill="#002350">Germany</text><rect x="150" y="229.6" width="47.1" height="21.1" fill="#002350"/><text x="203.1" y="244.1" font-size="12.5" fill="#002350">21%</text><text x="142" y="279.2" font-size="13" text-anchor="end" fill="#002350">India</text><rect x="150" y="264.7" width="31.7" height="21.1" fill="#002350"/><text x="187.7" y="279.2" font-size="12.5" fill="#002350">14%</text><text x="142" y="314.3" font-size="13" text-anchor="end" fill="#002350">Japan</text><rect x="150" y="299.7" width="23.4" height="21.1" fill="#002350"/><text x="179.4" y="314.3" font-size="12.5" fill="#002350">10%</text><text x="142" y="349.4" font-size="13" text-anchor="end" fill="#002350">United States</text><rect x="150" y="334.8" width="14.3" height="21.1" fill="#002350"/><text x="170.3" y="349.4" font-size="12.5" fill="#002350">6%</text><text x="142" y="384.5" font-size="13" text-anchor="end" fill="#002350">China</text><rect x="150" y="369.9" width="10.9" height="21.1" fill="#002350"/><text x="166.9" y="384.5" font-size="12.5" fill="#002350">5%</text></svg></div></div></div>
+  <p class="src">Services exports + imports, 2024 (value) and 2023–24 (% of GDP). Source: WTO, UNCTAD and World Bank (BG.GSR.NFSV.GD.ZS); per-country value totals are approximate.</p>
+  <div class="footer"><span class="pg">Page 27</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Geographic locations of the 500 largest MNEs</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div class="exh"><img src="assets/ch1/ch1_s31_image14.jpg" alt="Geographic locations of the 500 largest MNEs"></div>
+  <p class="src">In 2025 the United States regained the lead with 138 of the Fortune Global 500, ahead of Greater China’s 130; Walmart ranked #1 for the 12th year. Source: Fortune Global 500, 2025.</p>
+  <div class="footer"><span class="pg">Page 28</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Why study international business?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:178px;width:1120px;gap:13px;--fs:21px">
+    <li><span>Facilitator of the global economy and interconnectedness. IB brings nations closer together.</span></li>
+    <li><span>Contributor to national economic well-being. IB fuels economic growth and rising living standards.</span></li>
+    <li><span>A competitive advantage for the firm. IB provides companies with many benefits, leading to profitability and competitive advantages.</span></li>
+    <li><span>A competitive advantage for you. Working internationally offers a range of enlightening experiences, new knowledge, and other benefits that enhance careers….and it’s exciting!</span></li>
+    <li><span>An opportunity to support ethics, sustainability and corporate citizenship. Firms must be responsible in their dealings because IB affects numerous constituents</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 29</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:26px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.12;color:var(--wu-white)">Globalization of Markets and the<br>Internationalization of the Firm</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Business: The New Realities — Chapter 2<br>Cavusgil, Knight &amp; Riesenberger, 6th Global Edition<br>International Summer University<sup>WU</sup> 2026 · <b>Dr. Arne Floh</b></p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span>2.1 Understand market globalization as an organizing framework.</span></li>
+    <li><span>2.2 Learn the driving forces of globalization.</span></li>
+    <li><span>2.3 Understand the impact of technological advances and globalization.</span></li>
+    <li><span>2.4 Learn the dimensions of globalization.</span></li>
+    <li><span>2.5 Understand firm-level consequences of market globalization.</span></li>
+    <li><span>2.6 Understand the societal consequences of globalization.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 30</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Opening vignette: trace a global value chain</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class opener · 10 minutes · think–pair–share</p>
+  <p class="act-obj">Objective: see globalization at work in a single product, and build the driving-forces → dimensions → consequences framework from real examples.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span>Choose a product you own — a phone, a pair of shoes, a coffee, a car.</span></li>
+      <li><span>Map where each value-chain stage happens: <b>R&amp;D, sourcing, manufacturing, assembly, marketing, sales and service</b> — in which countries?</span></li>
+      <li><span>Which <b>driving forces</b> of globalization made this dispersion possible (falling trade barriers, market liberalization, technology)?</span></li>
+      <li><span>Name one <b>benefit</b> and one <b>societal cost</b> of this global value chain.</span></li>
+      <li><span>We will use your examples to build the framework for today: <b>drivers → dimensions → consequences</b>.</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 31</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Overview: globalization of markets</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:14px;--fs:21px">
+    <li><span>Globalization and technological advances have altered the international business landscape more than any other trends.</span></li>
+    <li><span>In this class, globalization refers to the interconnectedness of national economies and the growing interdependence of buyers, producers, suppliers, and governments around the world.</span></li>
+    <li><span>Globalization allows firms to view the world as one large marketplace for goods, services, capital, labor, and knowledge.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 32</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Phases of globalization</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:170px;font-size:14px">
+    <thead><tr><th style="width:95px">Phase</th><th style="width:190px">Approximate period</th><th style="width:300px">Triggers</th><th>Key characteristics</th></tr></thead>
+    <tbody>
+      <tr><td class="k">First</td><td>1830 to late 1800s (peak 1880)</td><td>Railroads and ocean transport</td><td>Rise of manufacturing; cross-border trade of commodities, largely by trading companies</td></tr>
+      <tr><td class="k">Second</td><td>1900 to 1930</td><td>Electricity and steel production</td><td>Early MNEs (mainly Europe and North America) dominate manufacturing, extractive and agricultural industries</td></tr>
+      <tr><td class="k">Third</td><td>1948 to 1970s</td><td>GATT formed; end of WWII; Marshall Plan</td><td>Western focus on reducing trade barriers; rise of MNEs from Japan; global capital markets; global trade names</td></tr>
+      <tr><td class="k">Fourth</td><td>1980s to ~2006</td><td>Privatization in transition economies; ICT and transport revolution; growth of emerging markets</td><td>Rapid growth in cross-border trade of products, services and capital; internationally active SMEs and services firms</td></tr>
+      <tr><td class="k">Fifth</td><td>2007 to present</td><td>Rise of digital and other new technologies</td><td>Technology facilitates trade and local production; rising digitally enabled services but slowing merchandise trade</td></tr>
+    </tbody>
+  </table>
+  <div class="footer"><span class="pg">Page 33</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">The death of distance</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:170px;font-size:18px">
+    <thead><tr><th style="width:300px">Time period</th><th style="width:560px">Fastest transportation was via</th><th>At a speed of…</th></tr></thead>
+    <tbody>
+      <tr><td class="k">1500 to 1840s</td><td>Human-powered ships and horse-drawn carriages</td><td>10 mph</td></tr>
+      <tr><td class="k">1850 to 1900</td><td>Steamships · steam locomotive trains</td><td>36 mph · 65 mph</td></tr>
+      <tr><td class="k">Early 1900s to today</td><td>Motor vehicles · propeller airplanes · jet aircraft</td><td>75 · 300–400 · 500–700 mph</td></tr>
+    </tbody>
+  </table>
+  <div class="footer"><span class="pg">Page 34</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">An organizing framework for market globalization</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-gray-footer)">Exhibit 2.2 — market globalization as a system: driving forces produce dimensions, which produce firm-level and societal consequences.</p>
+  <div style="position:absolute;left:65px;top:200px;width:1150px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px"><div class="fwtile"><p class="fw-h" style="color:#0096D3">Driving forces</p><p class="fw-d">Falling trade &amp; investment barriers · market liberalization · industrialization · integrated financial markets · technology</p></div><div class="fwtile"><p class="fw-h" style="color:#457AA0">Dimensions</p><p class="fw-d">Integration of economies · regional blocs · global financial flows · converging lifestyles · globalized production &amp; services</p></div><div class="fwtile"><p class="fw-h" style="color:#002350">Firm-level consequences</p><p class="fw-d">New opportunities and rivals · more demanding, globally sourcing buyers · proactive internationalization of the value chain</p></div><div class="fwtile"><p class="fw-h" style="color:#4B2582">Societal consequences</p><p class="fw-d">Contagion · loss of sovereignty · offshoring &amp; job flight · effects on the poor, the environment and national culture</p></div></div>
+  <div class="footer"><span class="pg">Page 35</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Driving forces of market globalization</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span><b>Reduction of trade and investment barriers.</b> Governments have greatly lowered barriers, aided by the World Trade Organization — now <b>166 member nations</b> (2024) representing over 98% of world trade.</span></li>
+    <li><span>Market liberalization and free markets — reforms in China, India and elsewhere opened about one third of the world to freer trade.</span></li>
+    <li><span>Industrialization and modernization — developing economies moved from low-value to higher-value goods (electronics, computers) and became attractive target markets.</span></li>
+    <li><span>Integration of world financial markets — firms raise capital, borrow and trade currencies wherever they operate.</span></li>
+    <li><span>Advances in technology — cut the cost of doing business internationally and let even small firms internationalize.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 36</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Dimensions of market globalization</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span><b>Integration and interdependence</b> of national economies, as governments lower trade and investment barriers.</span></li>
+    <li><span><b>Rise of regional economic blocs</b> — free-trade areas such as the EU, USMCA and MERCOSUR.</span></li>
+    <li><span><b>Growth of global investment and financial flows</b> — FDI, currency trading and global capital markets.</span></li>
+    <li><span><b>Convergence of buyer lifestyles and preferences</b>, enabling firms to market more standardized products.</span></li>
+    <li><span><b>Globalization of production</b> — manufacturing in low-cost locations and sourcing services abroad.</span></li>
+    <li><span><b>Globalization of services</b> — banking, retail and business processes internationalize rapidly.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 37</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Firm-level consequences: internationalizing the value chain</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:14px;--fs:21px">
+    <li><span>A purely domestic focus is no longer viable in most industries — market globalization compels firms to internationalize.</span></li>
+    <li><span><b>Value chain:</b> the sequence of value-adding activities a firm performs to develop, produce and market a product or service.</span></li>
+    <li><span>The truly international firm configures sourcing, manufacturing, marketing and other activities on a global scale.</span></li>
+    <li><span>Rationale: <b>cost savings</b>; greater efficiency, productivity and flexibility; access to customers, inputs, labour or technology; and the capabilities of foreign partners.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 38</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Internationalizing the firm’s value chain (Exhibit 2.6)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:180px;width:1150px;background:var(--wu-navy);color:#fff;padding:11px 22px;font-family:var(--font-title);font-weight:bold;font-size:19px">Stages in the firm’s value chain — performed wherever they are done best</div>
+  <div style="position:absolute;left:65px;top:238px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px"><div class="vcs"><p class="vcs-h">1. Research &amp; development</p><p class="vcs-d">Pfizer runs R&amp;D in Singapore and Japan to access scientific talent.</p></div><div class="vcs"><p class="vcs-h">2. Procurement (sourcing)</p><p class="vcs-d">Steelcase sources low-cost parts from China and Mexico; Dell offshores back-office tasks to India.</p></div><div class="vcs"><p class="vcs-h">3. Manufacturing</p><p class="vcs-d">Genzyme makes and tests products in Germany, Switzerland and the UK; Renault builds cars in Eastern Europe.</p></div><div class="vcs"><p class="vcs-h">4. Marketing</p><p class="vcs-d">BMW and Honda place marketing subsidiaries in the US; Carrefour and Barclays build worldwide networks.</p></div><div class="vcs"><p class="vcs-h">5. Distribution</p><p class="vcs-d">Wolverine World Wide contracts with independent retail stores abroad to reach customers.</p></div><div class="vcs"><p class="vcs-h">6. Sales &amp; service</p><p class="vcs-d">Amway and Avon use their own sales forces in China and Mexico; Toyota runs service operations abroad.</p></div></div>
+  <div class="footer"><span class="pg">Page 39</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Technology: digital, IoT and transport</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span><b>Digitalization</b> transforms business functions by leveraging digital technologies and data; it opened the global marketplace to firms that once lacked the resources to internationalize.</span></li>
+    <li><span><b>The Internet of Things (IoT)</b> connects machines online; mobile telephony and apps have created millions of jobs and big GDP gains — smartphone subscriptions passed <b>7 billion</b> worldwide by 2025 (~5.8 billion users).</span></li>
+    <li><span>Videotelephony (FaceTime, Zoom, Teams) hugely increased the volume and quality of global communication for firms, schools and governments.</span></li>
+    <li><span><b>Manufacturing</b>: low-scale, low-cost production and online platforms raise industrial productivity.</span></li>
+    <li><span><b>Transportation</b>: fuel-efficient jets, giant freighters and containerization sharply cut international transport costs, spurring trade.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 40</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Societal consequences: sovereignty, jobs and the poor</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:14px;--fs:21px">
+    <li><span><b>Loss of national sovereignty.</b> MNE activities can limit governments’ control of their economies; some firms are bigger than many national economies (e.g., Walmart, Shell). Yet global competition can also make MNEs less powerful.</span></li>
+    <li><span><b>Offshoring and the flight of jobs.</b> Firms shift production abroad to cut costs; firms benefit while communities are disrupted. Some MNEs now <b>reshore</b> to capture home-based advantages.</span></li>
+    <li><span><b>Effect on the poor.</b> Globalization usually creates jobs and raises wages, but disrupts local labour markets; benefits are unevenly distributed and some firms pay low wages.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 41</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Nike’s foreign factories</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:14px;--fs:21px">
+    <li><span>Nike relies on <b>664 contract factories</b> employing about <b>1.26 million workers</b> across some 40 countries (2025).</span></li>
+    <li><span>Nike was long criticized for low wages and sweatshop conditions; labour exploitation remains a genuine concern in many developing economies.</span></li>
+    <li><span>Consideration must be given to the other choices available to workers in those countries.</span></li>
+    <li><span>Nike and many other MNEs have taken important steps to improve conditions and monitoring in their foreign plants.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 42</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Societal consequences: the environment and national culture</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:14px;--fs:21px">
+    <li><span><b>Effect on the natural environment.</b> Globalization can promote industrialization that generates pollution and habitat loss — for example, air and water pollution as China and India industrialized.</span></li>
+    <li><span>As economies develop they tend to pass environmental-protection laws (Japan from the 1960s–80s; Mexico more recently).</span></li>
+    <li><span><b>Effect on national culture.</b> Global brands and media spread similar, often Western, products and values; traditional norms may homogenize and national identity can erode toward a “global” culture.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 43</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Ethical connections: mobile telecoms in Nigeria</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:14px;--fs:21px">
+    <li><span>In six years, Nigeria increased its telecom infrastructure from just 500,000 phone lines to more than 30 million cellular subscribers.</span></li>
+    <li><span>This led to a big rise in productivity and commerce, which has helped improve living standards.</span></li>
+    <li><span>Access to cell phones saves wasted trips, provides access to education and healthcare, and facilitates communication between suppliers and customers.</span></li>
+    <li><span>MNE telecom investment in Africa allows firms to fulfill social responsibilities and improve the lives of millions of poor people.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 44</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">You can do it: Terrance Rogers</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span><b>Majors:</b> Finance and International Business. <b>Objectives:</b> exploration, an international perspective, self-awareness and career growth.</span></li>
+    <li><span><b>Career:</b> internship at Deutsche Bank, then analyst and management roles in New York; later M&amp;A at Evercore and strategy roles at Drift and Flywire in Boston.</span></li>
+    <li><span>Get early exposure to international business and study abroad; work on projects that connect you with people in different regions.</span></li>
+    <li><span>Raise your interest in working abroad early — and impress the people who make the decisions, so the move becomes easier.</span></li>
+    <li><span>Face language and cultural barriers early; learn from cultural missteps so you can be a better leader tomorrow.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 45</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Globalization by the numbers</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1000px;margin:0;font-family:var(--font-body);font-size:20px;color:var(--wu-black)">Trade, income, connectivity and industry data — redrawn in the WU palette</p>
+  <img src="assets/accreditations-black.png" alt="" style="position:absolute;left:66px;top:362px;width:232px;height:37px">
+  <img src="assets/patterns/pattern-blocks-dense-cyan.png" alt="" style="position:absolute;left:0;top:399px;width:1280px;height:321px;object-fit:cover;object-position:left top">
+  <div class="footer"><span class="pg">Page 46</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Trade and GDP by world region, 2021 (US$ billions)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><rect x="185" y="10" width="14" height="12" fill="#002350"/><text x="205" y="20" font-size="13" fill="#002350">GDP</text><rect x="305" y="10" width="14" height="12" fill="#0096D3"/><text x="325" y="20" font-size="13" fill="#002350">Merchandise exports</text><text x="177" y="73.9" font-size="12.5" text-anchor="end" fill="#002350">East Asia &amp; Pacific</text><rect x="185" y="53.9" width="689.1" height="15.0" fill="#002350"/><text x="879.1" y="66.9" font-size="11" fill="#002350">19,790</text><rect x="185" y="70.9" width="279.3" height="15.0" fill="#0096D3"/><text x="469.3" y="83.9" font-size="11" fill="#002350">8,020</text><text x="177" y="133.6" font-size="12.5" text-anchor="end" fill="#002350">Europe &amp; Central Asia</text><rect x="185" y="113.6" width="872.3" height="15.0" fill="#002350"/><text x="1062.3" y="126.6" font-size="11" fill="#002350">25,050</text><rect x="185" y="130.6" width="300.9" height="15.0" fill="#0096D3"/><text x="490.9" y="143.6" font-size="11" fill="#002350">8,640</text><text x="177" y="193.3" font-size="12.5" text-anchor="end" fill="#002350">North America</text><rect x="185" y="173.3" width="905.0" height="15.0" fill="#002350"/><text x="1095.0" y="186.3" font-size="11" fill="#002350">25,990</text><rect x="185" y="190.3" width="78.7" height="15.0" fill="#0096D3"/><text x="268.7" y="203.3" font-size="11" fill="#002350">2,260</text><text x="177" y="253.0" font-size="12.5" text-anchor="end" fill="#002350">Latin America &amp; Carib.</text><rect x="185" y="233.0" width="191.2" height="15.0" fill="#002350"/><text x="381.2" y="246.0" font-size="11" fill="#002350">5,490</text><rect x="185" y="250.0" width="45.6" height="15.0" fill="#0096D3"/><text x="235.6" y="263.0" font-size="11" fill="#002350">1,310</text><text x="177" y="312.7" font-size="12.5" text-anchor="end" fill="#002350">South Asia</text><rect x="185" y="292.7" width="142.4" height="15.0" fill="#002350"/><text x="332.4" y="305.7" font-size="11" fill="#002350">4,090</text><rect x="185" y="309.7" width="16.9" height="15.0" fill="#0096D3"/><text x="206.9" y="322.7" font-size="11" fill="#002350">485</text><text x="177" y="372.4" font-size="12.5" text-anchor="end" fill="#002350">Middle East &amp; N. Africa</text><rect x="185" y="352.4" width="126.7" height="15.0" fill="#002350"/><text x="316.7" y="365.4" font-size="11" fill="#002350">3,640</text><rect x="185" y="369.4" width="44.9" height="15.0" fill="#0096D3"/><text x="234.9" y="382.4" font-size="11" fill="#002350">1,290</text><text x="177" y="432.1" font-size="12.5" text-anchor="end" fill="#002350">Sub-Saharan Africa</text><rect x="185" y="412.1" width="66.9" height="15.0" fill="#002350"/><text x="256.9" y="425.1" font-size="11" fill="#002350">1,920</text><rect x="185" y="429.1" width="13.7" height="15.0" fill="#0096D3"/><text x="203.7" y="442.1" font-size="11" fill="#002350">394</text></svg></div>
+  <p class="src">GDP and merchandise exports by region, 2021 (US$ bn). Redrawn from World Bank data (2023); trade grew broadly in step with GDP since 2011.</p>
+  <div class="footer"><span class="pg">Page 47</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Gross national income per capita, 2022 (US$)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div class="exh"><img src="assets/ch2/ch2_s17_image8.jpg" alt="Gross national income per capita, 2022 (US$)"></div>
+  <p class="src">GNI per capita, Atlas method (current US$); darker = higher income. Source: World Bank (2023). 2024 GNI data now available.</p>
+  <div class="footer"><span class="pg">Page 48</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Proportion of internet users by region (%)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><line x1="52" y1="436.0" x2="982" y2="436.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="440.0" font-size="12" text-anchor="end" fill="#888888">0</text><line x1="52" y1="352.0" x2="982" y2="352.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="356.0" font-size="12" text-anchor="end" fill="#888888">20</text><line x1="52" y1="268.0" x2="982" y2="268.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="272.0" font-size="12" text-anchor="end" fill="#888888">40</text><line x1="52" y1="184.0" x2="982" y2="184.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="188.0" font-size="12" text-anchor="end" fill="#888888">60</text><line x1="52" y1="100.0" x2="982" y2="100.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="104.0" font-size="12" text-anchor="end" fill="#888888">80</text><line x1="52" y1="16.0" x2="982" y2="16.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="20.0" font-size="12" text-anchor="end" fill="#888888">100</text><line x1="52" y1="16" x2="52" y2="436" stroke="#002350" stroke-width="1.4"/><line x1="52" y1="436" x2="982" y2="436" stroke="#002350" stroke-width="1.4"/><text x="52.0" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2005</text><text x="325.5" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2010</text><text x="708.5" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2017</text><text x="982.0" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2022</text><polyline points="52.0,184.0 325.5,108.4 708.5,66.4 982.0,45.4" fill="none" stroke="#002350" stroke-width="2.6"/><text x="988.0" y="49.4" font-size="12" fill="#002350" font-weight="bold">North America</text><polyline points="52.0,247.0 325.5,184.0 708.5,100.0 982.0,58.0" fill="none" stroke="#0096D3" stroke-width="2.6"/><text x="988.0" y="62.0" font-size="12" fill="#0096D3" font-weight="bold">Europe</text><polyline points="52.0,368.8 325.5,289.0 708.5,175.6 982.0,91.6" fill="none" stroke="#457AA0" stroke-width="2.6"/><text x="988.0" y="95.6" font-size="12" fill="#457AA0" font-weight="bold">Latin America</text><polyline points="52.0,398.2 325.5,326.8 708.5,192.4 982.0,108.4" fill="none" stroke="#4B2582" stroke-width="2.6"/><text x="988.0" y="112.4" font-size="12" fill="#4B2582" font-weight="bold">Middle East</text><polyline points="52.0,377.2 325.5,310.0 708.5,217.6 982.0,158.8" fill="none" stroke="#0082AA" stroke-width="2.6"/><text x="988.0" y="162.8" font-size="12" fill="#0082AA" font-weight="bold">Asia</text><polyline points="52.0,427.6 325.5,394.0 708.5,331.0 982.0,242.8" fill="none" stroke="#A592C0" stroke-width="2.6"/><text x="988.0" y="246.8" font-size="12" fill="#A592C0" font-weight="bold">Africa</text></svg></div>
+  <p class="src">Share of population using the internet, 2005–2022. Redrawn from ITU / Internet World Stats data. Worldwide ~75% (6.0 billion people) were online by 2025 (ITU).</p>
+  <div class="footer"><span class="pg">Page 49</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Average annual GDP growth, selected countries, 2013–2022 (%)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><text x="142" y="33.2" font-size="12.5" text-anchor="end" fill="#002350">Venezuela</text><rect x="150.0" y="18.9" width="470.0" height="20.6" fill="#002350"/><text x="614.0" y="33.2" font-size="12" text-anchor="end" fill="#ffffff">-14.3</text><text x="142" y="67.5" font-size="12.5" text-anchor="end" fill="#002350">Argentina</text><rect x="590.4" y="53.2" width="29.6" height="20.6" fill="#002350"/><text x="614.0" y="67.5" font-size="12" text-anchor="end" fill="#ffffff">-0.9</text><text x="142" y="101.8" font-size="12.5" text-anchor="end" fill="#002350">Japan</text><rect x="620.0" y="87.5" width="13.1" height="20.6" fill="#0096D3"/><text x="639.1" y="101.8" font-size="12" text-anchor="start" fill="#002350">+0.4</text><text x="142" y="136.1" font-size="12.5" text-anchor="end" fill="#002350">Brazil</text><rect x="620.0" y="121.8" width="26.3" height="20.6" fill="#0096D3"/><text x="652.3" y="136.1" font-size="12" text-anchor="start" fill="#002350">+0.8</text><text x="142" y="170.4" font-size="12.5" text-anchor="end" fill="#002350">Germany</text><rect x="620.0" y="156.1" width="29.6" height="20.6" fill="#0096D3"/><text x="655.6" y="170.4" font-size="12" text-anchor="start" fill="#002350">+0.9</text><text x="142" y="204.7" font-size="12.5" text-anchor="end" fill="#002350">United States</text><rect x="620.0" y="190.4" width="69.0" height="20.6" fill="#0096D3"/><text x="695.0" y="204.7" font-size="12" text-anchor="start" fill="#002350">+2.1</text><text x="142" y="239.0" font-size="12.5" text-anchor="end" fill="#002350">Poland</text><rect x="620.0" y="224.7" width="118.3" height="20.6" fill="#0096D3"/><text x="744.3" y="239.0" font-size="12" text-anchor="start" fill="#002350">+3.6</text><text x="142" y="273.3" font-size="12.5" text-anchor="end" fill="#002350">Indonesia</text><rect x="620.0" y="259.0" width="138.0" height="20.6" fill="#0096D3"/><text x="764.0" y="273.3" font-size="12" text-anchor="start" fill="#002350">+4.2</text><text x="142" y="307.6" font-size="12.5" text-anchor="end" fill="#002350">Vietnam</text><rect x="620.0" y="293.3" width="190.6" height="20.6" fill="#0096D3"/><text x="816.6" y="307.6" font-size="12" text-anchor="start" fill="#002350">+5.8</text><text x="142" y="341.9" font-size="12.5" text-anchor="end" fill="#002350">India</text><rect x="620.0" y="327.6" width="190.6" height="20.6" fill="#0096D3"/><text x="816.6" y="341.9" font-size="12" text-anchor="start" fill="#002350">+5.8</text><text x="142" y="376.2" font-size="12.5" text-anchor="end" fill="#002350">China</text><rect x="620.0" y="361.9" width="216.9" height="20.6" fill="#0096D3"/><text x="842.9" y="376.2" font-size="12" text-anchor="start" fill="#002350">+6.6</text><text x="142" y="410.5" font-size="12.5" text-anchor="end" fill="#002350">Ethiopia</text><rect x="620.0" y="396.2" width="282.7" height="20.6" fill="#0096D3"/><text x="908.7" y="410.5" font-size="12" text-anchor="start" fill="#002350">+8.6</text><text x="142" y="444.8" font-size="12.5" text-anchor="end" fill="#002350">Ireland</text><rect x="620.0" y="430.6" width="289.2" height="20.6" fill="#0096D3"/><text x="915.2" y="444.8" font-size="12" text-anchor="start" fill="#002350">+8.8</text><line x1="620.0" y1="12" x2="620.0" y2="458" stroke="#002350" stroke-width="1.2"/></svg></div>
+  <p class="src">Average annual real GDP growth, 2013–2022. Source: IMF, World Economic Outlook (2023). Emerging economies (India, China, Vietnam, Ethiopia) grew fastest; India now outpaces China.</p>
+  <div class="footer"><span class="pg">Page 50</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">The rise of daily income levels, by region (US$ per day)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><line x1="52" y1="436.0" x2="982" y2="436.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="440.0" font-size="12" text-anchor="end" fill="#888888">0</text><line x1="52" y1="331.0" x2="982" y2="331.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="335.0" font-size="12" text-anchor="end" fill="#888888">10</text><line x1="52" y1="226.0" x2="982" y2="226.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="230.0" font-size="12" text-anchor="end" fill="#888888">20</text><line x1="52" y1="121.0" x2="982" y2="121.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="125.0" font-size="12" text-anchor="end" fill="#888888">30</text><line x1="52" y1="16.0" x2="982" y2="16.0" stroke="#E5F5FA" stroke-width="1"/><text x="44" y="20.0" font-size="12" text-anchor="end" fill="#888888">40</text><line x1="52" y1="16" x2="52" y2="436" stroke="#002350" stroke-width="1.4"/><line x1="52" y1="436" x2="982" y2="436" stroke="#002350" stroke-width="1.4"/><text x="52.0" y="456" font-size="11.5" text-anchor="middle" fill="#888888">1985</text><text x="429.0" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2000</text><text x="680.4" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2010</text><text x="982.0" y="456" font-size="11.5" text-anchor="middle" fill="#888888">2022</text><polyline points="52.0,394.0 429.0,331.0 680.4,257.5 982.0,68.5" fill="none" stroke="#0096D3" stroke-width="2.6"/><text x="988.0" y="72.5" font-size="12" fill="#0096D3" font-weight="bold">East Asia & Pacific</text><polyline points="52.0,386.6 429.0,320.5 680.4,226.0 982.0,205.0" fill="none" stroke="#002350" stroke-width="2.6"/><text x="988.0" y="209.0" font-size="12" fill="#002350" font-weight="bold">Latin America</text><polyline points="52.0,394.0 429.0,352.0 680.4,257.5 982.0,215.5" fill="none" stroke="#457AA0" stroke-width="2.6"/><text x="988.0" y="219.5" font-size="12" fill="#457AA0" font-weight="bold">Middle East & N.Africa</text><polyline points="52.0,427.6 429.0,423.4 680.4,404.5 982.0,376.1" fill="none" stroke="#4B2582" stroke-width="2.6"/><text x="988.0" y="380.1" font-size="12" fill="#4B2582" font-weight="bold">South Asia</text><polyline points="52.0,422.4 429.0,422.4 680.4,399.2 982.0,390.9" fill="none" stroke="#A592C0" stroke-width="2.6"/><text x="988.0" y="394.9" font-size="12" fill="#A592C0" font-weight="bold">Sub-Saharan Africa</text></svg></div>
+  <p class="src">Average daily income per capita, US$, inflation-adjusted, 1985–2022. Redrawn from World Bank / Brookings data. Extreme poverty keeps falling, though the 2030 target will be missed.</p>
+  <div class="footer"><span class="pg">Page 51</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Automaker market shares, US passenger-vehicle sales (%)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:478px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><rect x="185" y="10" width="14" height="12" fill="#457AA0"/><text x="205" y="20" font-size="13" fill="#002350">2002</text><rect x="305" y="10" width="14" height="12" fill="#0096D3"/><text x="325" y="20" font-size="13" fill="#002350">2024</text><text x="177" y="67.2" font-size="12.5" text-anchor="end" fill="#002350">General Motors</text><rect x="185" y="47.4" width="844.7" height="14.9" fill="#457AA0"/><text x="1034.7" y="60.2" font-size="11" fill="#002350">28</text><rect x="185" y="64.2" width="497.8" height="14.9" fill="#0096D3"/><text x="687.8" y="77.1" font-size="11" fill="#002350">16</text><text x="177" y="113.7" font-size="12.5" text-anchor="end" fill="#002350">Ford</text><rect x="185" y="93.8" width="633.5" height="14.9" fill="#457AA0"/><text x="823.5" y="106.7" font-size="11" fill="#002350">21</text><rect x="185" y="110.7" width="392.2" height="14.9" fill="#0096D3"/><text x="582.2" y="123.5" font-size="11" fill="#002350">13</text><text x="177" y="160.1" font-size="12.5" text-anchor="end" fill="#002350">Toyota</text><rect x="185" y="140.2" width="301.7" height="14.9" fill="#457AA0"/><text x="491.7" y="153.1" font-size="11" fill="#002350">10</text><rect x="185" y="157.1" width="452.5" height="14.9" fill="#0096D3"/><text x="642.5" y="170.0" font-size="11" fill="#002350">15</text><text x="177" y="206.6" font-size="12.5" text-anchor="end" fill="#002350">Stellantis (Chrysler)</text><rect x="185" y="186.7" width="392.2" height="14.9" fill="#457AA0"/><text x="582.2" y="199.6" font-size="11" fill="#002350">13</text><rect x="185" y="203.6" width="241.3" height="14.9" fill="#0096D3"/><text x="431.3" y="216.4" font-size="11" fill="#002350">8</text><text x="177" y="253.0" font-size="12.5" text-anchor="end" fill="#002350">Honda</text><rect x="185" y="233.1" width="211.2" height="14.9" fill="#457AA0"/><text x="401.2" y="246.0" font-size="11" fill="#002350">7</text><rect x="185" y="250.0" width="271.5" height="14.9" fill="#0096D3"/><text x="461.5" y="262.9" font-size="11" fill="#002350">9</text><text x="177" y="299.4" font-size="12.5" text-anchor="end" fill="#002350">Hyundai–Kia</text><rect x="185" y="279.6" width="60.3" height="14.9" fill="#457AA0"/><text x="250.3" y="292.4" font-size="11" fill="#002350">2</text><rect x="185" y="296.4" width="331.8" height="14.9" fill="#0096D3"/><text x="521.8" y="309.3" font-size="11" fill="#002350">11</text><text x="177" y="345.9" font-size="12.5" text-anchor="end" fill="#002350">Nissan</text><rect x="185" y="326.0" width="120.7" height="14.9" fill="#457AA0"/><text x="310.7" y="338.9" font-size="11" fill="#002350">4</text><rect x="185" y="342.9" width="181.0" height="14.9" fill="#0096D3"/><text x="371.0" y="355.8" font-size="11" fill="#002350">6</text><text x="177" y="392.3" font-size="12.5" text-anchor="end" fill="#002350">Tesla</text><rect x="185" y="372.5" width="0.5" height="14.9" fill="#457AA0"/><text x="190.0" y="385.3" font-size="11" fill="#002350">0</text><rect x="185" y="389.3" width="120.7" height="14.9" fill="#0096D3"/><text x="310.7" y="402.2" font-size="11" fill="#002350">4</text><text x="177" y="438.8" font-size="12.5" text-anchor="end" fill="#002350">Others</text><rect x="185" y="418.9" width="452.5" height="14.9" fill="#457AA0"/><text x="642.5" y="431.8" font-size="11" fill="#002350">15</text><rect x="185" y="435.8" width="527.9" height="14.9" fill="#0096D3"/><text x="717.9" y="448.6" font-size="11" fill="#002350">18</text></svg></div>
+  <p class="src">Share of US light-vehicle sales. 2002 from the textbook; 2024 approximate (Detroit’s Big Three keep losing share; Tesla and Hyundai–Kia gain). Chrysler is now part of Netherlands-based Stellantis; Tesla was founded in 2003.</p>
+  <div class="footer"><span class="pg">Page 52</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <img src="assets/emblem-vertical-blue.png" alt="Vienna University of Economics and Business" style="position:absolute;left:86px;top:236px;width:69px;height:284px">
+  <div style="position:absolute;left:236px;top:248px;width:720px">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Department of Global Trade</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;text-transform:uppercase;color:var(--wu-gray-footer)">WU Vienna</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Dr. Arne Floh</p>
+    <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Senior Lecturer in International Marketing</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Deputy Program Director MSc Export- and Internationalisation Management</p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)"><a href="mailto:arne.floh@wu.ac.at">arne.floh@wu.ac.at</a></p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Welthandelsplatz 1, 1020 Wien, Austria</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;color:var(--wu-black)">www.wu.ac.at</p>
+  </div>
+  <div class="footer"><span class="pg">Page 53</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<script>
+  function fit(){var vw=document.body.clientWidth-40;var sc=Math.min(1,vw/1280);document.querySelectorAll('.stage').forEach(function(st){var sl=st.querySelector('.slide');sl.style.transform='scale('+sc+')';st.style.height=(720*sc)+'px';st.style.width=(1280*sc)+'px';});}
+  window.addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

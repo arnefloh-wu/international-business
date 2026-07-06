@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Cultural Environment of International Business (WU)</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page); box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+  .s-title { position:absolute; left:65px; top:16px; width:1000px; height:114px; margin:0; display:flex; align-items:center; font-family:var(--font-title); font-weight:bold; font-size:var(--size-slide-title); line-height:1.05; color:var(--wu-black); }
+  .rule { position:absolute; left:64px; top:126px; width:108px; height:7px; background:var(--wu-rule-cyan); }
+  .logo-black { position:absolute; left:1106px; top:22px; width:121px; height:90px; }
+  ul.wu { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; }
+  ul.wu li { font-family:var(--font-body); color:var(--wu-black); line-height:1.3; display:flex; gap:15px; align-items:baseline; font-size:var(--fs,20px); }
+  ul.wu li::before { content:"\25AA"; color:var(--accent-bullet); flex:none; }
+  .footer { position:absolute; left:65px; top:688px; display:flex; font-family:var(--font-body); font-size:var(--size-footer); color:var(--wu-gray-footer); text-transform:uppercase; letter-spacing:0.04em; }
+  .footer .pg { width:130px; flex:none; }
+  .accred-b { position:absolute; left:1052px; top:678px; width:200px; height:32px; }
+  table.wu { border-collapse:collapse; width:1150px; font-family:var(--font-body); }
+  table.wu th, table.wu td { padding:9px 14px; text-align:left; vertical-align:top; line-height:1.3; }
+  table.wu th { background:var(--wu-navy); color:var(--wu-white); font-weight:bold; }
+  table.wu td.k { font-weight:bold; }
+  table.wu tbody tr:nth-child(even) { background:var(--wu-ice); }
+  .src { position:absolute; left:65px; top:650px; width:1150px; margin:0; font-family:var(--font-body); font-size:13.5px; font-style:italic; color:var(--wu-gray-footer); line-height:1.3; }
+  .slide a { color:var(--wu-link); text-decoration:underline; }
+  .act-kicker { position:absolute; left:65px; top:148px; margin:0; font-family:var(--font-body); font-size:17px; text-transform:uppercase; letter-spacing:0.12em; color:var(--wu-cyan); font-weight:bold; }
+  .act-obj { position:absolute; left:65px; top:180px; width:1120px; margin:0; font-family:var(--font-body); font-size:18px; font-style:italic; color:var(--wu-gray-footer); line-height:1.35; }
+  .act-box { position:absolute; left:65px; width:1150px; background:var(--wu-ice); padding:22px 30px; box-sizing:border-box; }
+  ol.steps { margin:0; padding:0; list-style:none; counter-reset:st; display:flex; flex-direction:column; gap:11px; }
+  ol.steps li { counter-increment:st; font-family:var(--font-body); font-size:19px; line-height:1.32; color:var(--wu-black); display:flex; gap:14px; align-items:baseline; }
+  ol.steps li::before { content:counter(st); font-weight:bold; color:var(--wu-cyan); flex:none; min-width:22px; }
+  .hub-t { background:var(--wu-ice); padding:16px 20px; }
+  .hub-t p { margin:0; font-family:var(--font-title); font-weight:bold; font-size:18.5px; color:var(--wu-navy); }
+  .nv-t { background:var(--wu-ice); padding:13px 15px; min-height:96px; border-top:4px solid var(--wu-cyan); }
+  .nv-h { margin:0 0 5px 0; font-family:var(--font-title); font-weight:bold; font-size:15.5px; color:var(--wu-navy); line-height:1.2; }
+  .nv-d { margin:0; font-family:var(--font-body); font-size:13.5px; color:var(--wu-gray-footer); line-height:1.3; }
+  .hof-t { background:var(--wu-ice); padding:13px 18px; }
+  .hof-h { margin:0 0 5px 0; font-family:var(--font-title); font-weight:bold; font-size:17.5px; color:var(--wu-navy); }
+  .hof-d { margin:0; font-family:var(--font-body); font-size:14px; color:var(--wu-black); line-height:1.32; }
+  @media print { body{background:#fff;padding:0;gap:0;} .slide{box-shadow:none;page-break-after:always;break-after:page;} .stage{max-width:none;} }
+</style>
+</head>
+<body>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:26px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.12;color:var(--wu-white)">The Cultural Environment of<br>International Business</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026<br><b>Dr. Arne Floh</b> · Department of Global Trade, WU Vienna</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span>Understand <b>cross-cultural risk</b> and why it matters in international business.</span></li>
+    <li><span>Learn the <b>dimensions of culture</b> — values, customs, time, space, symbols and social structure.</span></li>
+    <li><span>Describe the role of <b>language and religion</b> in culture.</span></li>
+    <li><span>Describe culture’s effect on <b>international business</b> practice.</span></li>
+    <li><span>Learn the main <b>models and explanations</b> of culture — Hall, Hofstede and beyond.</span></li>
+    <li><span>Identify <b>managerial guidelines</b> and skills for cross-cultural success.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Opening activity: culture in this room</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class opener · 10 minutes · pairs</p>
+  <p class="act-obj">Objective: use the cultural diversity of this class as a living dataset — and experience how quickly “normal” differs across borders.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span>Pair up with someone from a <b>different home country</b>.</span></li>
+      <li><span>Compare how these work at home: <b>greeting a business partner</b> · <b>punctuality</b> (what counts as “late”?) · <b>addressing a professor or boss</b> · <b>disagreeing openly in a meeting</b>.</span></li>
+      <li><span>Find <b>one thing that would be a faux pas</b> in your partner’s country but perfectly normal in yours.</span></li>
+      <li><span>Report the most surprising difference — we will map your answers onto today’s frameworks (Hall’s context, Hofstede’s dimensions).</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 3</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Key concepts</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Culture:</b> The values, beliefs, customs, arts, and other products of human thought and work that characterize the people of a given society.</span></li>
+    <li><span><b>Cross-cultural risk:</b> A situation or event where a cultural miscommunication puts some human value at stake. It arises in environments comprised of unfamiliar languages, and unique values, beliefs, and behaviors.</span></li>
+    <li><span><b>Socialization:</b> The process of learning the rules and behavioral patterns appropriate to one's society.</span></li>
+    <li><span><b>Acculturation:</b> The process of adjusting and adapting to a culture other than one's own; commonly experienced by expatriate workers.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">What culture is — and is not</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Not right or wrong — it is relative.</b> There is no cultural absolute; different nationalities simply perceive the world differently.</span></li>
+    <li><span><b>Not about individuals — it is about groups.</b> Culture is a collective phenomenon of shared values and meanings.</span></li>
+    <li><span><b>Not inherited — it derives from the social environment.</b> We are not born with a shared set of values; we acquire them through socialization.</span></li>
+    <li><span>Consequence for managers: cultural differences are <b>learned — and therefore learnable</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Culture: the essential elements</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-gray-footer)">Culture radiates into every part of international business — today’s agenda follows these six elements.</p>
+  <div style="position:absolute;left:490px;top:250px;width:300px;height:130px;background:var(--wu-navy);display:flex;align-items:center;justify-content:center">
+    <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:30px;color:#fff">Culture</p>
+  </div>
+  <div style="position:absolute;left:65px;top:430px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px"><div class="hub-t" style="border-top:5px solid #0096D3"><p>Cross-cultural risk</p></div><div class="hub-t" style="border-top:5px solid #457AA0"><p>Dimensions of culture</p></div><div class="hub-t" style="border-top:5px solid #002350"><p>Language</p></div><div class="hub-t" style="border-top:5px solid #4B2582"><p>Religion</p></div><div class="hub-t" style="border-top:5px solid #A592C0"><p>Models &amp; explanations</p></div><div class="hub-t" style="border-top:5px solid #0082AA"><p>Managerial implications</p></div></div>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Culture as an iceberg</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:170px;width:1150px">
+    <div style="background:var(--wu-ice);padding:16px 26px;border-left:8px solid var(--wu-sky)">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px;color:var(--wu-navy)">High culture — visible</p>
+      <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:16.5px">Fine arts · literature · drama · classical music</p>
+    </div>
+    <div style="height:6px;background:var(--wu-cyan);margin:10px 0"></div>
+    <div style="background:var(--wu-sky);padding:16px 26px;border-left:8px solid var(--wu-cyan)">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px;color:var(--wu-navy)">Folk culture — we are aware of it</p>
+      <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:16.5px">Humor · religion · etiquette · popular music · cooking · dress · rites of passage · courtship</p>
+    </div>
+    <div style="background:var(--wu-navy);padding:18px 26px;margin-top:10px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px;color:#fff">Deep culture — below the waterline, we are unaware of it</p>
+      <p style="margin:6px 0 0 0;font-family:var(--font-body);font-size:16.5px;color:var(--wu-ice);line-height:1.5">Gender roles · greeting rituals · superior–subordinate relationships · family ties · conversational patterns · nonverbal communication · concepts of beauty · right vs. wrong · cooperation vs. competition · decision-making · problem-solving · perceptions of color … and much more</p>
+    </div>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:17px;color:var(--wu-black)"><b>The management problem:</b> business blunders happen mostly <b>below the waterline</b> — in the part of culture nobody can see or explain to you.</p>
+  </div>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Key dimensions: values and attitudes</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Values</b> are a person’s judgments about what is good or bad, acceptable or unacceptable, important or unimportant — the bedrock of culture.</span></li>
+    <li><span><b>Attitudes and preferences</b> are developed from values; like opinions, but often held unconsciously.</span></li>
+    <li><span>Values common to Japan, North America and Northern Europe: <b>hard work, punctuality, wealth acquisition</b> — yet their meaning and weight differ across the three.</span></li>
+    <li><span>Managers cannot observe values directly — they must <b>infer</b> them from behavior, which is where misreadings begin.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Manners, customs and perceptions of space</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Manners and customs:</b> ways of behaving and conducting oneself in public and business situations — greetings, gift-giving, dining, dress codes.</span></li>
+    <li><span><b>Perceptions of space:</b> each culture’s orientation to personal space and conversational distance — Latin cultures stand close; Northern Europeans keep distance; open-plan vs. private offices.</span></li>
+    <li><span>Getting these wrong rarely kills a deal by itself — but it quietly signals <b>lack of respect and preparation</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Perceptions of time: monochronic vs. polychronic</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Time dictates expectations about <b>planning, scheduling, profit horizons and what counts as “late”</b>.</span></li>
+    <li><span><b>Monochronic:</b> a rigid orientation — schedules, punctuality, time as a resource to be spent, saved or wasted; “time is money”. Typical: Northern Europe, North America, Japan (for schedules).</span></li>
+    <li><span><b>Polychronic:</b> a flexible, non-linear orientation — long-term perspective, several things at once, relationships before schedules. Typical: Middle East, Latin America, Africa, parts of Asia.</span></li>
+    <li><span>Practical consequence: a Viennese agenda with minute-slots meets a Brazilian meeting that <i>starts</i> with 40 minutes of relationship talk — <b>neither side is “wrong”</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 10</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Symbols: the meaning of colors around the world</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:170px;font-size:15.5px">
+    <thead><tr><th style="width:90px">Color</th><th style="width:300px">Europe &amp; North America</th><th style="width:255px">China</th><th style="width:255px">Japan</th><th>Middle East</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Red</td><td>Danger, stop, anger, love, passion</td><td>Good luck, joy, celebration, long life</td><td>Celebration, danger, anger</td><td>Danger, anger, evil</td></tr>
+      <tr><td class="k">White</td><td>Purity, peace, brides</td><td>Mourning, death, humility</td><td>Mourning, death, purity</td><td>Mourning, death, purity</td></tr>
+      <tr><td class="k">Black</td><td>Death, evil, mourning</td><td>Evil, color for young boys</td><td>Evil</td><td>Evil</td></tr>
+      <tr><td class="k">Green</td><td>Money, safety, luck, prosperity</td><td>Youth, growth, adultery</td><td>Life, energy, freshness, youth</td><td>Strength, luck, fertility</td></tr>
+      <tr><td class="k">Blue</td><td>Sadness, calm, trust, masculinity</td><td>Strength, power, immortality</td><td>Purity, cleanliness</td><td>Protective</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Why packaging, branding and web design rarely translate one-to-one. Based on Gao &amp; Xin, Color Research &amp; Application; cross-cultural color-meaning studies.</p>
+  <div class="footer"><span class="pg">Page 11</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Social structure</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Social structure</b> is the pattern of social arrangements and organized relationships that characterize a society.</span></li>
+    <li><span>Building blocks: <b>individuals → family → reference groups → social stratification</b>.</span></li>
+    <li><span><b>Family</b> means the nuclear family in some cultures and the extended clan in others — with direct consequences for consumption, saving and hiring.</span></li>
+    <li><span><b>Reference groups</b> (friends, colleagues, community) shape buying behavior; <b>stratification</b> (class, caste, mobility) shapes who can buy, sell and lead.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 12</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Language: a key dimension of culture</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Language is the <b>“mirror” of culture</b> — essential for communication and a window into how a society thinks.</span></li>
+    <li><span>There are about <b>7,160 living languages</b> (Ethnologue 2025) — roughly 2,290 in Asia and 2,150 in Africa, together nearly two-thirds of the total.</span></li>
+    <li><span>Language has <b>verbal and nonverbal</b> layers — unspoken cues, facial expressions and gestures carry much of the meaning.</span></li>
+    <li><span><b>Linguistic proficiency is a strategic asset</b> in international business: it builds trust, reveals nuance and prevents costly misunderstandings.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 13</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Most spoken native languages (millions of first-language speakers)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:158px;width:1150px;height:470px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><text x="182" y="38.3" font-size="13" text-anchor="end" fill="#002350">Mandarin Chinese</text><rect x="190" y="22.3" width="890.0" height="24.0" fill="#0096D3"/><text x="1086.0" y="38.3" font-size="12.5" fill="#002350">941</text><text x="182" y="82.9" font-size="13" text-anchor="end" fill="#002350">Spanish</text><rect x="190" y="66.9" width="459.7" height="24.0" fill="#0096D3"/><text x="655.7" y="82.9" font-size="12.5" fill="#002350">486</text><text x="182" y="127.5" font-size="13" text-anchor="end" fill="#002350">English</text><rect x="190" y="111.5" width="359.4" height="24.0" fill="#0096D3"/><text x="555.4" y="127.5" font-size="12.5" fill="#002350">380</text><text x="182" y="172.1" font-size="13" text-anchor="end" fill="#002350">Hindi</text><rect x="190" y="156.1" width="326.3" height="24.0" fill="#0096D3"/><text x="522.3" y="172.1" font-size="12.5" fill="#002350">345</text><text x="182" y="216.7" font-size="13" text-anchor="end" fill="#002350">Portuguese</text><rect x="190" y="200.7" width="223.2" height="24.0" fill="#0096D3"/><text x="419.2" y="216.7" font-size="12.5" fill="#002350">236</text><text x="182" y="261.3" font-size="13" text-anchor="end" fill="#002350">Bengali</text><rect x="190" y="245.3" width="221.3" height="24.0" fill="#0096D3"/><text x="417.3" y="261.3" font-size="12.5" fill="#002350">234</text><text x="182" y="305.9" font-size="13" text-anchor="end" fill="#002350">Russian</text><rect x="190" y="289.9" width="139.0" height="24.0" fill="#0096D3"/><text x="335.0" y="305.9" font-size="12.5" fill="#002350">147</text><text x="182" y="350.5" font-size="13" text-anchor="end" fill="#002350">Japanese</text><rect x="190" y="334.5" width="116.3" height="24.0" fill="#0096D3"/><text x="312.3" y="350.5" font-size="12.5" fill="#002350">123</text><text x="182" y="395.1" font-size="13" text-anchor="end" fill="#002350">Yue Chinese (Cantonese)</text><rect x="190" y="379.1" width="81.3" height="24.0" fill="#0096D3"/><text x="277.3" y="395.1" font-size="12.5" fill="#002350">86</text><text x="182" y="439.7" font-size="13" text-anchor="end" fill="#002350">Vietnamese</text><rect x="190" y="423.7" width="80.4" height="24.0" fill="#0096D3"/><text x="276.4" y="439.7" font-size="12.5" fill="#002350">85</text></svg></div>
+  <p class="src">First-language speakers, millions. By total speakers the order flips: English ~1.53 bn, Mandarin ~1.18 bn, Hindi ~0.61 bn, Spanish ~0.56 bn. Source: Ethnologue, 27th/28th ed. (2024/2025); Bengali and Portuguese are near-tied and swap ranks between editions.</p>
+  <div class="footer"><span class="pg">Page 14</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Idioms: culture in a single sentence</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>An <b>idiom</b> is an expression whose symbolic meaning differs from its literal meaning — you cannot decode it word by word.</span></li>
+    <li><span><b>Australia:</b> “The tall poppy gets cut down” — don’t be showy or pretentious.</span></li>
+    <li><span><b>Thailand:</b> “If you follow older people, dogs won’t bite you” — respect experience and wisdom.</span></li>
+    <li><span><b>Japan:</b> “The nail that sticks out gets hammered down” — group conformity beats individual display.</span></li>
+    <li><span>Each idiom compresses a <b>core cultural value</b> into one sentence — which is why they resist translation.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 15</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Blunders in international advertising</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:170px;font-size:17px">
+    <thead><tr><th style="width:300px">Firm and location</th><th style="width:380px">Intended slogan</th><th>Literal translation</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Parker Pen, Latin America</td><td>“Use Parker Pen, avoid embarrassment”</td><td>“Use Parker Pen, avoid pregnancy!”</td></tr>
+      <tr><td class="k">Pepsi, Germany</td><td>“Come Alive with Pepsi”</td><td>“Come out of the grave with Pepsi”</td></tr>
+      <tr><td class="k">Pepsi, Taiwan</td><td>“Come Alive with Pepsi”</td><td>“Pepsi brings your ancestors back from the dead”</td></tr>
+      <tr><td class="k">Fisher Body, Belgium</td><td>“Body by Fisher”</td><td>“Corpse by Fisher”</td></tr>
+      <tr><td class="k">Salem cigarettes, Japan</td><td>“Salem — Feeling Free”</td><td>“Smoking Salem makes your mind feel free and empty”</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Translation is not localization: every slogan needs a native-speaker back-translation test before launch.</p>
+  <div class="footer"><span class="pg">Page 16</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Even one language is two: US vs. British English</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:170px;font-size:17px">
+    <thead><tr><th style="width:220px">Word</th><th style="width:430px">Meaning in US English</th><th>Meaning in British English</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Redundant</td><td>repetitive</td><td>fired or laid off</td></tr>
+      <tr><td class="k">Scheme</td><td>a somewhat devious plan</td><td>a plan</td></tr>
+      <tr><td class="k">Sharp</td><td>smart, clever</td><td>conniving, unethical</td></tr>
+      <tr><td class="k">Windscreen</td><td>a screen that protects against the wind</td><td>automobile windshield</td></tr>
+      <tr><td class="k">To table</td><td>to put an issue on hold</td><td>to take up an issue</td></tr>
+      <tr><td class="k">To bomb</td><td>to fail miserably</td><td>to succeed grandly</td></tr>
+    </tbody>
+  </table>
+  <p class="src">If “to table a proposal” can mean opposite things in Washington and London, imagine what happens across genuinely different languages.</p>
+  <div class="footer"><span class="pg">Page 17</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Nonverbal communication</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-gray-footer)">Much of what we “say” never passes our lips — and every channel below is culturally coded.</p>
+  <div style="position:absolute;left:65px;top:206px;width:1150px;display:grid;grid-template-columns:repeat(5,1fr);gap:16px"><div class="nv-t"><p class="nv-h">Facial expressions</p><p class="nv-d">smiling, frowning</p></div><div class="nv-t"><p class="nv-h">Eye movements</p><p class="nv-d">direction of gaze</p></div><div class="nv-t"><p class="nv-h">Hand movements</p><p class="nv-d">waving, gestures</p></div><div class="nv-t"><p class="nv-h">Head movements</p><p class="nv-d">nodding — not always “yes”</p></div><div class="nv-t"><p class="nv-h">Posture and stance</p><p class="nv-d">slouching, bowing</p></div><div class="nv-t"><p class="nv-h">Body contact</p><p class="nv-d">handshakes, embraces</p></div><div class="nv-t"><p class="nv-h">Closeness</p><p class="nv-d">body proximity</p></div><div class="nv-t"><p class="nv-h">Appearance</p><p class="nv-d">tidiness, dress</p></div><div class="nv-t"><p class="nv-h">Ways of talking</p><p class="nv-d">volume, inflection</p></div><div class="nv-t"><p class="nv-h">Sounds</p><p class="nv-d">quietness, silence</p></div></div>
+  <ul class="wu" style="position:absolute;left:65px;top:480px;width:1150px;gap:9px;--fs:17.5px">
+    <li><span>The Bulgarian head-shake for “yes”, the Japanese pause before answering, the American firm handshake — identical signals, different meanings.</span></li>
+    <li><span>In high-context cultures (next section), the nonverbal channel often carries <b>more</b> information than the words.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 18</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Religion</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Religion:</b> a system of common beliefs or attitudes about a being or system of thought that people consider sacred, divine or the highest truth — plus the associated moral codes, rituals and institutions.</span></li>
+    <li><span>Religion shapes culture — and through it, <b>business and consumer behavior</b>: working days, holidays, diet, banking, dress, advertising norms.</span></li>
+    <li><span>Example: the <b>“Protestant work ethic”</b> (Max Weber) emphasized hard work, individual achievement and the sense that people can control their environment — one classic explanation for early industrial capitalism.</span></li>
+    <li><span>For managers, religion is not an opinion topic: it is <b>market infrastructure</b> — from halal and kosher certification to Ramadan campaign calendars and interest-free (sharia-compliant) finance.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 19</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">World religions by adherents (billions, share of world population)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:158px;width:1150px;height:470px"><svg viewBox="0 0 1150 440" width="100%" height="440" font-family="Verdana,Geneva,sans-serif"><text x="222" y="45.7" font-size="13" text-anchor="end" fill="#002350">Christians (28.8%)</text><rect x="230" y="29.7" width="850.0" height="24.0" fill="#457AA0"/><text x="1086.0" y="45.7" font-size="12.5" fill="#002350">2.30 bn</text><text x="222" y="105.1" font-size="13" text-anchor="end" fill="#002350">Muslims (25.6%)</text><rect x="230" y="89.1" width="739.1" height="24.0" fill="#457AA0"/><text x="975.1" y="105.1" font-size="12.5" fill="#002350">2.00 bn</text><text x="222" y="164.6" font-size="13" text-anchor="end" fill="#002350">Unaffiliated (24.2%)</text><rect x="230" y="148.6" width="702.2" height="24.0" fill="#888888"/><text x="938.2" y="164.6" font-size="12.5" fill="#002350">1.90 bn</text><text x="222" y="224.0" font-size="13" text-anchor="end" fill="#002350">Hindus (14.9%)</text><rect x="230" y="208.0" width="443.5" height="24.0" fill="#457AA0"/><text x="679.5" y="224.0" font-size="12.5" fill="#002350">1.20 bn</text><text x="222" y="283.4" font-size="13" text-anchor="end" fill="#002350">Buddhists (4.1%)</text><rect x="230" y="267.4" width="118.3" height="24.0" fill="#457AA0"/><text x="354.3" y="283.4" font-size="12.5" fill="#002350">0.32 bn</text><text x="222" y="342.9" font-size="13" text-anchor="end" fill="#002350">Other religions (2.2%)</text><rect x="230" y="326.9" width="62.8" height="24.0" fill="#457AA0"/><text x="298.8" y="342.9" font-size="12.5" fill="#002350">0.17 bn</text><text x="222" y="402.3" font-size="13" text-anchor="end" fill="#002350">Jews (0.2%)</text><rect x="230" y="386.3" width="5.5" height="24.0" fill="#457AA0"/><text x="241.5" y="402.3" font-size="12.5" fill="#002350">0.01 bn</text></svg></div>
+  <p class="src">Adherents in billions, share of world population, 2020 data. Islam is the fastest-growing religion: +347 million Muslims 2010-2020, more than all other groups combined; the unaffiliated grew by +270 million. Source: Pew Research Center, Global Religious Landscape update, June 2025.</p>
+  <div class="footer"><span class="pg">Page 20</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The role of religion: business in Islamic societies</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>In many Islamic societies, Islam is the basis for <b>government, legal and social systems</b> — and since outcomes reflect God’s will, planning and forecasting carry a different meaning.</span></li>
+    <li><span>The Qur’an prohibits <b>alcohol, gambling, usury (interest) and immodest exposure</b> — with direct consequences for product design, marketing and finance.</span></li>
+    <li><span><b>Example — Nokia:</b> launched a phone showing Muslims the direction of Mecca.</span></li>
+    <li><span><b>Example — Heineken:</b> rolled out Fayrouz, a non-alcoholic malt drink, for Islamic markets.</span></li>
+    <li><span><b>Islamic finance</b> replaces interest with profit-sharing and leasing structures — a global industry now worth trillions of US dollars.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 21</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">In business, culture affects…</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span>Managing employees — motivation, hierarchy, feedback and what “good leadership” means.</span></li>
+    <li><span>Communicating and dealing with distributors and other business partners.</span></li>
+    <li><span>Negotiating and structuring business ventures.</span></li>
+    <li><span>Developing products and services — what needs adapting, what can stay global.</span></li>
+    <li><span>Preparing advertising and promotional materials.</span></li>
+    <li><span>Screening and selecting foreign partners and employees.</span></li>
+    <li><span>Preparing for trade fairs, business meetings and negotiations abroad.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 22</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Models of culture: cultural metaphors</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>A <b>cultural metaphor</b> is a distinctive tradition or institution strongly associated with a society — a decoding key for the whole culture.</span></li>
+    <li><span><b>American football:</b> systematic planning, strategy, leadership, struggle against rivals.</span></li>
+    <li><span><b>The Swedish stuga</b> (summer cottage): love of nature and the desire for individualism.</span></li>
+    <li><span><b>The Spanish bullfight:</b> ritual, style, courage and pride.</span></li>
+    <li><span>And Austria? Suggestions from the class — the <i>Kaffeehaus</i>? The <i>Heuriger</i>? What would each say about doing business here?</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 23</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">E. T. Hall: high- and low-context cultures</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>E. T. Hall</b> distinguished cultures by how much meaning sits in the words themselves versus the surrounding context.</span></li>
+    <li><span><b>Low-context cultures</b> rely on explicit, spoken explanations — clear, efficient communication; agreements are specific, legalistic contracts; “get down to business first”.</span></li>
+    <li><span><b>High-context cultures</b> emphasize nonverbal and indirect language — communication aims at smooth, harmonious relationships; trust comes first, negotiations are slower and more ritualistic.</span></li>
+    <li><span>Neither is better: a Swiss engineer’s directness reads as rude in Tokyo; Japanese indirectness reads as evasive in Zurich. <b>Both sides are communicating correctly — in their own code.</b></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 24</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Hall’s context continuum</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:158px;width:640px;display:flex;flex-direction:column;gap:9px"><div style="display:flex;align-items:center;gap:14px"><div style="width:560px;height:17px;background:#002350"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Chinese</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:525px;height:17px;background:#002350"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Korean</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:490px;height:17px;background:#002350"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Japanese</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:456px;height:17px;background:#002350"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Vietnamese</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:421px;height:17px;background:#457AA0"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Arab</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:387px;height:17px;background:#457AA0"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Spanish</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:352px;height:17px;background:#457AA0"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Italian</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:318px;height:17px;background:#457AA0"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">English</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:283px;height:17px;background:#0096D3"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">North American</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:249px;height:17px;background:#0096D3"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Scandinavian</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:214px;height:17px;background:#0096D3"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">Swiss</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:180px;height:17px;background:#0096D3"></div><span style="font-family:var(--font-body);font-size:15.5px;color:var(--wu-black)">German</span></div></div>
+  <div style="position:absolute;left:790px;top:170px;width:425px">
+    <div style="background:var(--wu-navy);color:#fff;padding:14px 20px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px">High context</p>
+      <p style="margin:5px 0 0 0;font-family:var(--font-body);font-size:14.5px;line-height:1.4;color:var(--wu-ice)">Establish social trust first · personal relations and goodwill valued · agreements built on trust · negotiations slow and ritualistic</p>
+    </div>
+    <div style="background:var(--wu-ice);padding:14px 20px;margin-top:14px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px;color:var(--wu-navy)">Low context</p>
+      <p style="margin:5px 0 0 0;font-family:var(--font-body);font-size:14.5px;line-height:1.4;color:var(--wu-black)">Get down to business first · expertise and performance valued · specific, legalistic contracts · negotiations as efficient as possible</p>
+    </div>
+  </div>
+  <p class="src">Based on Edward T. Hall, Beyond Culture (1976). Bar length ≈ context-dependence of communication.</p>
+  <div class="footer"><span class="pg">Page 25</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Hofstede’s six dimensions of national culture</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:165px;width:1150px;display:grid;grid-template-columns:repeat(2,1fr);gap:15px"><div class="hof-t"><p class="hof-h">1. Power distance</p><p class="hof-d">How a society handles inequality. High: steep hierarchies, autocratic bosses (Malaysia, Philippines). Low: flat structures, consultative bosses (Austria, Denmark).</p></div><div class="hof-t"><p class="hof-h">2. Individualism vs. collectivism</p><p class="hof-d">Do people act as individuals or group members? Individualist: self-interest, competition (US, UK). Collectivist: group loyalty, business in relationships (China, Colombia).</p></div><div class="hof-t"><p class="hof-h">3. Masculinity vs. femininity</p><p class="hof-d">Achievement orientation. “Masculine”: competitiveness, ambition, wealth (Japan, Austria). “Feminine”: nurturing, interdependence, quality of life (Sweden, Norway).</p></div><div class="hof-t"><p class="hof-h">4. Uncertainty avoidance</p><p class="hof-d">Tolerance for risk and ambiguity. High: rules, stable careers, slow decisions (Japan, Greece, Austria is fairly high). Low: entrepreneurial, comfortable with risk (Singapore, Denmark).</p></div><div class="hof-t"><p class="hof-h">5. Long-term vs. short-term</p><p class="hof-d">Deferring gratification for the long view. Long-term: East Asia. Short-term: US and most Western countries.</p></div><div class="hof-t"><p class="hof-h">6. Indulgence vs. restraint</p><p class="hof-d">Free gratification of desires and enjoying life (Denmark, Mexico, US) versus strict norms curbing it (China, Iraq, South Korea).</p></div></div>
+  <p class="src">Geert Hofstede’s IBM studies (1980) and later extensions (Hofstede, Hofstede &amp; Minkov 2010); today maintained by The Culture Factor Group.</p>
+  <div class="footer"><span class="pg">Page 26</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Hofstede scores compared: six countries</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:170px;font-size:16px">
+    <thead><tr><th style="width:330px">Dimension</th><th>Austria</th><th>USA</th><th>China</th><th>Japan</th><th>Brazil</th><th>Sweden</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Power distance</td><td>11</td><td>40</td><td>80</td><td>54</td><td>69</td><td>31</td></tr>
+      <tr><td class="k">Individualism</td><td>55</td><td>91</td><td>20</td><td>46</td><td>38</td><td>71</td></tr>
+      <tr><td class="k">Masculinity</td><td>79</td><td>62</td><td>66</td><td>95</td><td>49</td><td>5</td></tr>
+      <tr><td class="k">Uncertainty avoidance</td><td>70</td><td>46</td><td>30</td><td>92</td><td>76</td><td>29</td></tr>
+      <tr><td class="k">Long-term orientation</td><td>60</td><td>26</td><td>87</td><td>88</td><td>59</td><td>53</td></tr>
+      <tr><td class="k">Indulgence</td><td>63</td><td>68</td><td>24</td><td>42</td><td>59</td><td>78</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Scores 0-100: Austria - extremely low power distance; Japan - extreme masculinity and uncertainty avoidance; Sweden - most 'feminine' (5); China - collectivist, long-term. Source: Hofstede, Hofstede & Minkov (2010); theculturefactor.com's 2023-rescaled individualism/long-term scores are not comparable.</p>
+  <div class="footer"><span class="pg">Page 27</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Deal orientation vs. relationship orientation</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Deal-oriented cultures:</b> managers focus on the task, stay impersonal, rely on contracts and want to “just get down to business” — e.g. Northern Europe, North America, Australia.</span></li>
+    <li><span><b>Relationship-oriented cultures:</b> managers value affiliation, rapport and getting to know the other party — deals emerge from relationships, not the other way round. E.g. China, Latin America, the Middle East.</span></li>
+    <li><span>Practical rule: in relationship-oriented markets, the first trip is <b>never</b> about the contract — budget for time, meals and repeated visits.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 28</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Guanxi: relationships in Chinese business</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Guanxi (关系):</b> social connections and relationships based on mutual benefit — central to doing business in China.</span></li>
+    <li><span>Emphasizes the <b>reciprocal exchange of favors</b> and mutual obligations over time.</span></li>
+    <li><span>Rooted in <b>Confucian philosophy</b>, which values social hierarchy and reciprocity.</span></li>
+    <li><span>Engenders trust — serving as a form of <b>insurance</b> in an environment where formal institutions may be weaker.</span></li>
+    <li><span>Western analogue: networking — but guanxi is deeper, longer-term and carries genuine obligations; treating it as a quick transaction is itself a cultural blunder.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 29</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Three layers: national, professional and corporate culture</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:175px;width:1150px;display:flex;gap:18px">
+    <div style="flex:1.15;background:var(--wu-navy);color:#fff;padding:20px 24px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px">National culture</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:15.5px;line-height:1.5;color:var(--wu-ice)">Nationality · ethnicity · gender · religion · social institutions · social class · educational systems</p>
+    </div>
+    <div style="flex:1.15;background:var(--wu-steel,#457AA0);color:#fff;padding:20px 24px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px">Professional culture</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:15.5px;line-height:1.5">Academe · business · banking · engineering · IT · legal · medical · military</p>
+    </div>
+    <div style="flex:1;background:var(--wu-cyan);color:#fff;padding:20px 24px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px">Corporate culture</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:15.5px;line-height:1.5">The firm’s own norms — “how we do things around here”</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:65px;top:420px;width:1150px">
+    <ul class="wu" style="--fs:18px;gap:10px">
+      <li><span>These are <b>progressive socializations</b> through a person’s life: we acquire national culture as children, professional culture in education, corporate culture on the job.</span></li>
+      <li><span>Your counterpart is never <i>only</i> “Chinese” or “American” — an engineer at Siemens Shanghai carries all three layers at once.</span></li>
+    </ul>
+  </div>
+  <p class="src">Based on Terpstra &amp; David, The Cultural Environment of International Business (3rd ed.).</p>
+  <div class="footer"><span class="pg">Page 30</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Managerial orientations: ethnocentric, polycentric, geocentric</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Ethnocentric orientation:</b> Using our own culture as the standard for judging other cultures.</span></li>
+    <li><span><b>Polycentric orientation:</b> A mindset in which the manager develops a greater affinity for the country in which he or she works than for the home country.</span></li>
+    <li><span><b>Geocentric orientation:</b> A global mindset in which the manager is able to understand a business or market without regard to national boundaries. Managers should strive for a geocentric orientation.</span></li>
+    <li><span>The goal of this course: move you from an <b>ethnocentric</b> toward a <b>geocentric</b> mindset.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 31</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Adult literacy rates, selected countries (% of population 15+)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:158px;width:1150px;height:470px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Verdana,Geneva,sans-serif"><text x="152" y="34.6" font-size="13" text-anchor="end" fill="#002350">Afghanistan</text><rect x="160" y="19.4" width="340.4" height="22.3" fill="#0096D3"/><text x="506.4" y="34.6" font-size="12.5" fill="#002350">37%</text><text x="152" y="71.8" font-size="13" text-anchor="end" fill="#002350">Niger</text><rect x="160" y="56.6" width="349.6" height="22.3" fill="#0096D3"/><text x="515.6" y="71.8" font-size="12.5" fill="#002350">38%</text><text x="152" y="108.9" font-size="13" text-anchor="end" fill="#002350">Pakistan</text><rect x="160" y="93.8" width="533.6" height="22.3" fill="#0096D3"/><text x="699.6" y="108.9" font-size="12.5" fill="#002350">58%</text><text x="152" y="146.1" font-size="13" text-anchor="end" fill="#002350">Nigeria</text><rect x="160" y="130.9" width="570.4" height="22.3" fill="#0096D3"/><text x="736.4" y="146.1" font-size="12.5" fill="#002350">62%</text><text x="152" y="183.2" font-size="13" text-anchor="end" fill="#002350">Egypt</text><rect x="160" y="168.1" width="680.8" height="22.3" fill="#0096D3"/><text x="846.8" y="183.2" font-size="12.5" fill="#002350">74%</text><text x="152" y="220.4" font-size="13" text-anchor="end" fill="#002350">India</text><rect x="160" y="205.3" width="699.2" height="22.3" fill="#0096D3"/><text x="865.2" y="220.4" font-size="12.5" fill="#002350">76%</text><text x="152" y="257.6" font-size="13" text-anchor="end" fill="#002350">World average</text><rect x="160" y="242.4" width="806.8" height="22.3" fill="#002350"/><text x="972.8" y="257.6" font-size="12.5" fill="#002350">88%</text><text x="152" y="294.7" font-size="13" text-anchor="end" fill="#002350">Brazil</text><rect x="160" y="279.6" width="869.4" height="22.3" fill="#0096D3"/><text x="1035.4" y="294.7" font-size="12.5" fill="#002350">94%</text><text x="152" y="331.9" font-size="13" text-anchor="end" fill="#002350">Mexico</text><rect x="160" y="316.8" width="886.9" height="22.3" fill="#0096D3"/><text x="1052.9" y="331.9" font-size="12.5" fill="#002350">96%</text><text x="152" y="369.1" font-size="13" text-anchor="end" fill="#002350">China</text><rect x="160" y="353.9" width="892.4" height="22.3" fill="#0096D3"/><text x="1058.4" y="369.1" font-size="12.5" fill="#002350">97%</text><text x="152" y="406.2" font-size="13" text-anchor="end" fill="#002350">Turkey</text><rect x="160" y="391.1" width="892.4" height="22.3" fill="#0096D3"/><text x="1058.4" y="406.2" font-size="12.5" fill="#002350">97%</text><text x="152" y="443.4" font-size="13" text-anchor="end" fill="#002350">Austria / high-income</text><rect x="160" y="428.3" width="910.8" height="22.3" fill="#0096D3"/><text x="1076.8" y="443.4" font-size="12.5" fill="#002350">99%</text></svg></div>
+  <p class="src">Share of population aged 15+ able to read and write; latest available year per country (2018-2024). Egypt and Turkey approximate. Source: World Bank / UNESCO Institute for Statistics (SE.ADT.LITR.ZS); UNESCO International Literacy Day factsheet 2025 (world ~88%).</p>
+  <div class="footer"><span class="pg">Page 32</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Managerial guidelines for cross-cultural success</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Acquire <b>factual and interpretive knowledge</b> about the other culture; try to speak the language.</span></li>
+    <li><span><b>Avoid cultural bias</b> — beware the <b>self-reference criterion</b>: the unconscious tendency to view other cultures through the lens of your own.</span></li>
+    <li><span>Develop <b>cross-cultural skills</b>: perceptiveness, interpersonal skill, adaptability.</span></li>
+    <li><span>Use <b>critical incident analysis</b> for awkward moments: (1) identify the situation, (2) suspend judgment, (3) develop your best interpretation of the other side’s behavior, (4) only then formulate your response — and learn from every incident.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 33</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Personality traits for cross-cultural proficiency</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Tolerance for ambiguity:</b> Ability to tolerate uncertainty and lack of clarity in the thinking and actions of others.</span></li>
+    <li><span><b>Perceptiveness:</b> Ability to closely observe and comprehend subtle information in the speech and behavior of others.</span></li>
+    <li><span><b>Valuing personal relationships:</b> Ability to appreciate personal relationships; which are often more important than achieving one-time goals or “winning” arguments.</span></li>
+    <li><span><b>Flexibility and adaptability:</b> Ability to be creative in devising innovative solutions, be open-minded about outcomes, and show “grace under pressure.”</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 34</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Apply it: the critical-incident clinic</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · small groups</p>
+  <p class="act-obj">Objective: practice the self-reference criterion and critical incident analysis on a real cross-cultural misfire.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span>Take one real incident: an advertising blunder from today’s table, a faux pas from the opening activity, or a case a group member has experienced.</span></li>
+      <li><span><b>Diagnose it with the frameworks:</b> which layer of the iceberg failed? Was it a context issue (Hall) — and which Hofstede dimensions collided?</span></li>
+      <li><span><b>Run critical incident analysis:</b> suspend judgment, build the most charitable interpretation of the other side’s behavior.</span></li>
+      <li><span><b>Fix it:</b> what should the firm or manager do differently — in preparation, communication and follow-up?</span></li>
+      <li><span>Present your incident and fix in 2 minutes; the class votes for the best diagnosis.</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 35</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Discussion questions</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Is globalization making national cultures converge — or are the deep layers of the iceberg immune to Netflix and Instagram?</span></li>
+    <li><span>Austria scores very low on power distance but fairly high on uncertainty avoidance. Where do you see that in Austrian business life — and in this classroom?</span></li>
+    <li><span>Can a manager ever become truly geocentric, or is some self-reference criterion inescapable?</span></li>
+    <li><span>When does adapting to a local culture cross the line into violating your own ethical standards — and what should a firm do then?</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 36</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <img src="assets/emblem-vertical-blue.png" alt="Vienna University of Economics and Business" style="position:absolute;left:86px;top:236px;width:69px;height:284px">
+  <div style="position:absolute;left:236px;top:248px;width:720px">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Department of Global Trade</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;text-transform:uppercase;color:var(--wu-gray-footer)">WU Vienna</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Dr. Arne Floh</p>
+    <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Senior Lecturer in International Marketing</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Deputy Program Director MSc Export- and Internationalisation Management</p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)"><a href="mailto:arne.floh@wu.ac.at">arne.floh@wu.ac.at</a></p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Welthandelsplatz 1, 1020 Wien, Austria</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;color:var(--wu-black)">www.wu.ac.at</p>
+  </div>
+  <div class="footer"><span class="pg">Page 37</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<script>
+  function fit(){var vw=document.body.clientWidth-40;var sc=Math.min(1,vw/1280);document.querySelectorAll('.stage').forEach(function(st){var sl=st.querySelector('.slide');sl.style.transform='scale('+sc+')';st.style.height=(720*sc)+'px';st.style.width=(1280*sc)+'px';});}
+  window.addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

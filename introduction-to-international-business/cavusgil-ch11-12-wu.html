@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strategy, Organization and Global Market Opportunity (WU)</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page); box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+  .s-title { position:absolute; left:65px; top:16px; width:1000px; height:114px; margin:0; display:flex; align-items:center; font-family:var(--font-title); font-weight:bold; font-size:var(--size-slide-title); line-height:1.05; color:var(--wu-black); }
+  .rule { position:absolute; left:64px; top:126px; width:108px; height:7px; background:var(--wu-rule-cyan); }
+  .logo-black { position:absolute; left:1106px; top:22px; width:121px; height:90px; }
+  ul.wu { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; }
+  ul.wu li { font-family:var(--font-body); color:var(--wu-black); line-height:1.3; display:flex; gap:15px; align-items:baseline; font-size:var(--fs,20px); }
+  ul.wu li::before { content:"\25AA"; color:var(--accent-bullet); flex:none; }
+  .footer { position:absolute; left:65px; top:688px; display:flex; font-family:var(--font-body); font-size:var(--size-footer); color:var(--wu-gray-footer); text-transform:uppercase; letter-spacing:0.04em; }
+  .footer .pg { width:130px; flex:none; }
+  .accred-b { position:absolute; left:1052px; top:678px; width:200px; height:32px; }
+  table.wu { border-collapse:collapse; width:1150px; font-family:var(--font-body); }
+  table.wu th, table.wu td { padding:9px 14px; text-align:left; vertical-align:top; line-height:1.3; }
+  table.wu th { background:var(--wu-navy); color:var(--wu-white); font-weight:bold; }
+  table.wu td.k { font-weight:bold; }
+  table.wu tbody tr:nth-child(even) { background:var(--wu-ice); }
+  .src { position:absolute; left:65px; top:650px; width:1150px; margin:0; font-family:var(--font-body); font-size:13.5px; font-style:italic; color:var(--wu-gray-footer); line-height:1.3; }
+  .slide a { color:var(--wu-link); text-decoration:underline; }
+  .act-kicker { position:absolute; left:65px; top:148px; margin:0; font-family:var(--font-body); font-size:17px; text-transform:uppercase; letter-spacing:0.12em; color:var(--wu-cyan); font-weight:bold; }
+  .act-obj { position:absolute; left:65px; top:180px; width:1120px; margin:0; font-family:var(--font-body); font-size:18px; font-style:italic; color:var(--wu-gray-footer); line-height:1.35; }
+  .act-box { position:absolute; left:65px; width:1150px; background:var(--wu-ice); padding:22px 30px; box-sizing:border-box; }
+  ol.steps { margin:0; padding:0; list-style:none; counter-reset:st; display:flex; flex-direction:column; gap:11px; }
+  ol.steps li { counter-increment:st; font-family:var(--font-body); font-size:19px; line-height:1.32; color:var(--wu-black); display:flex; gap:14px; align-items:baseline; }
+  ol.steps li::before { content:counter(st); font-weight:bold; color:var(--wu-cyan); flex:none; min-width:22px; }
+  .fwtile { background:var(--wu-ice); padding:22px 26px; min-height:170px; }
+  .fw-h { margin:0 0 10px 0; font-family:var(--font-title); font-weight:bold; font-size:22px; }
+  .fw-d { margin:0; font-family:var(--font-body); font-size:16.5px; color:var(--wu-black); line-height:1.4; }
+  .gd { background:var(--wu-navy); color:#fff; font-family:var(--font-body); font-size:16px; padding:9px 18px; }
+  .stg-box { flex:1; background:var(--wu-navy); color:#fff; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:18px 8px; min-height:96px; }
+  .stg-n { font-family:var(--font-title); font-weight:bold; font-size:22px; color:var(--wu-sky); }
+  .stg-t { font-family:var(--font-title); font-weight:bold; font-size:16px; line-height:1.18; margin-top:6px; }
+  .stg-arrow { flex:none; display:flex; align-items:center; justify-content:center; width:34px; font-size:40px; font-weight:bold; color:var(--wu-cyan); }
+  ul.mt-l { margin:0; padding:0 0 0 18px; font-family:var(--font-body); font-size:14.5px; line-height:1.4; }
+  ul.mt-l li { margin-bottom:6px; }
+.tsk { background:var(--wu-ice); padding:16px 20px; min-height:130px; position:relative; border-top:5px solid var(--wu-cyan); }
+  .tsk-n { position:absolute; right:14px; top:8px; font-family:var(--font-title); font-weight:bold; font-size:38px; color:var(--wu-sky); }
+  .tsk-h { margin:0 0 7px 0; font-family:var(--font-title); font-weight:bold; font-size:18.5px; color:var(--wu-navy); width:85%; }
+  .tsk-d { margin:0; font-family:var(--font-body); font-size:14.5px; color:var(--wu-black); line-height:1.35; }
+  .nv-t { background:var(--wu-ice); padding:14px 17px; min-height:104px; border-top:4px solid var(--wu-cyan); }
+  .nv-h { margin:0 0 6px 0; font-family:var(--font-title); font-weight:bold; font-size:16.5px; color:var(--wu-navy); line-height:1.2; }
+  .nv-d { margin:0; font-family:var(--font-body); font-size:14px; color:var(--wu-black); line-height:1.32; }
+  @media print { body{background:#fff;padding:0;gap:0;} .slide{box-shadow:none;page-break-after:always;break-after:page;} .stage{max-width:none;} }
+</style>
+</head>
+<body>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:26px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.12;color:var(--wu-white)">Strategy and Organization<br>in the International Firm</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026<br><b>Dr. Arne Floh</b> · Department of Global Trade, WU Vienna</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Session agenda</h1>
+  <div class="rule"></div>
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:170px;width:1150px;display:flex;gap:26px">
+    <div style="flex:1;background:var(--wu-ice);padding:22px 28px">
+      <p style="margin:0 0 12px 0;font-family:var(--font-title);font-weight:bold;font-size:23px;color:var(--wu-navy)">Part I · Strategy and organization</p>
+      <ul class="wu" style="--fs:17px;gap:9px">
+        <li><span>Strategy in international business — efficiency, flexibility, learning</span></li>
+        <li><span>Building the global firm: leadership, culture, processes</span></li>
+        <li><span>The integration–responsiveness framework and its pressures</span></li>
+        <li><span>Four strategies: home replication, multidomestic, global, transnational</span></li>
+        <li><span>Organizational structures: export department to global matrix</span></li>
+        <li><span>Entry strategies and the stages of internationalization</span></li>
+        <li><span>Megatrends of the 2020s and what they mean for strategy</span></li>
+      </ul>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:22px 28px">
+      <p style="margin:0 0 12px 0;font-family:var(--font-title);font-weight:bold;font-size:23px;color:var(--wu-navy)">Part II · Global market opportunity assessment</p>
+      <ul class="wu" style="--fs:17px;gap:9px">
+        <li><span>The six tasks of GMOA</span></li>
+        <li><span>Organizational readiness and product suitability</span></li>
+        <li><span>Country screening: methods, the Market Potential Index, connectedness</span></li>
+        <li><span>Industry market potential and how to estimate it</span></li>
+        <li><span>Choosing foreign business partners</span></li>
+        <li><span>Estimating company sales potential</span></li>
+        <li><span>Application: re-screening a market pick for an Austrian brand</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span class="pg">Page 1</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span>Describe <b>strategy</b> in international business.</span></li>
+    <li><span>Understand what it takes to <b>build the global firm</b> — leadership, culture and processes.</span></li>
+    <li><span>Describe the <b>integration–responsiveness framework</b> and the pressures behind both forces.</span></li>
+    <li><span>Identify the <b>four strategies</b> that emerge from the framework — and when each fits.</span></li>
+    <li><span>Understand <b>organizational structures</b> for international business, from export department to global matrix.</span></li>
+    <li><span>Understand <b>foreign market entry strategies</b> and how firms choose among them.</span></li>
+    <li><span>Connect <b>global megatrends</b> of the 2020s to international strategy.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Opening activity: same brand, same product — everywhere?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class opener · 10 minutes · think–pair–share</p>
+  <p class="act-obj">Objective: build the integration–responsiveness intuition from brands you know — before we name the framework.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span>Consider six brands: <b>Red Bull · McDonald’s · Rolex · IKEA · Netflix · Coca-Cola</b>.</span></li>
+      <li><span>For each: is the <b>product</b> the same everywhere? Is the <b>marketing</b>? Is the <b>price</b>?</span></li>
+      <li><span>Rank the six from “identical worldwide” to “heavily adapted per country”.</span></li>
+      <li><span>Pair up and defend your ranking — where do you disagree, and why?</span></li>
+      <li><span>Keep your notes: by the end of today you will place all six on a 2×2 strategy map.</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 3</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">What is strategy?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Strategy:</b> a planned set of actions that managers take to make the best use of the firm’s resources and core competences — to gain <b>competitive advantage</b>.</span></li>
+    <li><span>Managers examine the firm’s strengths and weaknesses and the opportunities and challenges it faces (SWOT).</span></li>
+    <li><span>They then decide which customers to target, what product lines to offer, how to contend with competitors — and how to configure and coordinate the firm’s activities.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">International strategy</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>International strategy:</b> strategy carried out in <b>two or more countries</b>.</span></li>
+    <li><span>Allocate scarce resources and configure value-adding activities on a worldwide scale.</span></li>
+    <li><span>Participate in major markets.</span></li>
+    <li><span>Implement valuable partnerships abroad.</span></li>
+    <li><span>Engage in competitive moves in response to foreign rivals.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Three strategic objectives: efficiency, flexibility, learning</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Bartlett &amp; Ghoshal: the aspiring global firm must “develop, at one and the same time, <b>global scale efficiency, multinational flexibility, and worldwide learning</b>.”</span></li>
+    <li><span><b>Efficiency:</b> lower the cost of the firm’s operations and activities on a global scale.</span></li>
+    <li><span><b>Flexibility:</b> the agility to manage country-specific risks and opportunities by tapping local resources and exploiting local opportunities.</span></li>
+    <li><span><b>Learning:</b> develop products, technologies, capabilities and skills by internalizing knowledge gained from international ventures.</span></li>
+    <li><span><i>Reality check: even successful firms usually excel at only one or two of the three.</i></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Building the global firm: three essentials</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:152px;width:1120px;margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-gray-footer)">Successful global firms rest on three organizational foundations — each is a management choice, not an accident.</p>
+  <div style="position:absolute;left:65px;top:222px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px"><div class="fwtile" style="border-top:6px solid #0096D3"><p class="fw-h" style="color:#002350">Visionary leadership</p><p class="fw-d">Senior managers with an international mindset who commit resources and articulate where the firm is going</p></div><div class="fwtile" style="border-top:6px solid #457AA0"><p class="fw-h" style="color:#002350">Organizational culture</p><p class="fw-d">Shared values and norms that put the global perspective at the heart of every initiative</p></div><div class="fwtile" style="border-top:6px solid #002350"><p class="fw-h" style="color:#002350">Organizational processes</p><p class="fw-d">Routines and mechanisms — global teams, global IT — that make worldwide coordination actually work</p></div></div>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Visionary leadership</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Visionary leadership:</b> senior management that provides superior strategic guidance for managing efficiency, flexibility and learning. Four traits:</span></li>
+    <li><span><b>International mindset and cosmopolitan values</b> — openness to, and awareness of, diversity across cultures.</span></li>
+    <li><span><b>Willingness to commit resources</b> — financial, human and other.</span></li>
+    <li><span><b>Strategic vision</b> — articulating what the firm wants to be in the future, and how it will get there.</span></li>
+    <li><span><b>Willingness to invest in human assets</b> — employing foreign nationals, promoting multi-country careers, training international managers.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Organizational culture</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span><b>Organizational culture:</b> the pattern of shared values, behavioral norms, systems and procedures that employees learn and adopt — usually shaped by founders, visionary leaders or the firm’s unique history.</span></li>
+    <li><span>Firms with a <b>global</b> organizational culture:</span></li>
+    <li><span>Value and promote a global perspective in all major initiatives.</span></li>
+    <li><span>Value international competence and cross-cultural skills among employees.</span></li>
+    <li><span>Adopt a single corporate language for business communication.</span></li>
+    <li><span>Promote interdependency between headquarters and subsidiaries.</span></li>
+    <li><span>Subscribe to appropriate ethical standards.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Ethical connections: scale brings responsibility</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>The revenues of the largest corporations rival the GDPs of whole countries — Walmart’s annual revenue (~US$680 bn) exceeds the GDP of all but roughly two dozen nations.</span></li>
+    <li><span>MNEs can do much to help reduce poverty.</span></li>
+    <li><span>Global pharmaceutical firms provide AIDS and other medications to the poor in Africa; global retailers build distribution infrastructure that increases access to needed goods at lower prices.</span></li>
+    <li><span>Bimbo, Pfizer and Unilever are among the many MNEs that support the world’s poor <i>while</i> running profitable worldwide operations — doing well and doing good are not opposites.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 10</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Organizational processes</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Organizational processes:</b> managerial routines, behaviors and mechanisms that allow the firm to function as intended — collecting information, quality control, payment systems.</span></li>
+    <li><span><b>Example — Samsung:</b> built competitive advantage by perfecting countless processes — digitizing key documents and automating activities via intranets and the internet.</span></li>
+    <li><span>Two processes matter especially for <b>international coordination</b>:</span></li>
+    <li><span><b>Global teams:</b> internationally distributed employee groups with a problem-solving or best-practice mandate that affects the whole firm.</span></li>
+    <li><span><b>Global information systems:</b> worldwide IT infrastructure — intranets, shared platforms, electronic data interchange — creating virtual interconnectedness across countries.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 11</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Multidomestic industries</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Multidomestic industry:</b> competition takes place <b>country by country</b> — processed food, consumer products, fashion, retailing, publishing.</span></li>
+    <li><span>The firm adapts its offering to each country’s language, culture, laws and income level; each country tends to have its own set of competitors.</span></li>
+    <li><span><b>Bloomsbury</b> translates every Harry Potter volume into the local language wherever it is sold.</span></li>
+    <li><span><b>Coca-Cola</b> sells “Georgia Coffee” in Japan and Inca Kola in Peru; <b>KFC</b> in Asia runs multi-storey restaurants with distinctive local flavours.</span></li>
+    <li><span>→ Multidomestic industries call for <b>multidomestic (“localization”) strategy</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 12</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Global industries</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Global industry:</b> competition is <b>regional or worldwide</b> — aerospace, cars, computers, chemicals, industrial equipment.</span></li>
+    <li><span>Customer needs vary little across countries; firms sell relatively standardized offerings worldwide; a handful of the same rivals compete everywhere.</span></li>
+    <li><span><b>DuPont</b> sells essentially the same chemicals around the world; <b>American Standard</b> and Japan’s <b>Toto</b> compete with similar fixtures in most major markets; <b>Caterpillar</b> and <b>Komatsu</b> offer similar machines in every major market.</span></li>
+    <li><span>→ Global industries call for <b>global strategy</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 13</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Two forces: global integration vs. local responsiveness</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Global integration:</b> coordinating value-chain activities across countries to achieve worldwide efficiency, synergy and cross-fertilization — standardized products, regional or worldwide competition, centralized activities and scale economies.</span></li>
+    <li><span><b>Local responsiveness:</b> meeting the specific needs of buyers in individual countries — adapting offerings, marketing and practices to local customer needs and the local competitive environment.</span></li>
+    <li><span>Every international firm must strike its own <b>balance</b> between the two — that balance is the strategy choice.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 14</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Pressures for global integration</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span><b>Cost reduction through scale economies</b> — concentrate manufacturing in a few advantageous locations.</span></li>
+    <li><span><b>Converging consumer trends and universal needs</b> — Nike, Dell, ING and Coca-Cola appeal to customers everywhere.</span></li>
+    <li><span><b>Uniform service to global customers</b> — easiest when creation and delivery are centralized.</span></li>
+    <li><span><b>Global sourcing</b> of raw materials, components, energy and labour from large-scale central suppliers.</span></li>
+    <li><span><b>Global competitors</b> — coordinating the response to competitive threats is more effective firm-wide.</span></li>
+    <li><span><b>Global media</b> — advertise across many countries simultaneously via the internet and cross-national TV.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 15</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Pressures for local responsiveness</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span><b>Natural endowments</b> — each country offers specific resources the foreign firm should access.</span></li>
+    <li><span><b>Local customer needs</b> — multidomestic industries must adapt products, services and marketing.</span></li>
+    <li><span><b>Distribution channels</b> differ — Japan’s consumer-goods distribution runs through small retailers.</span></li>
+    <li><span><b>Local competition</b> — out-competing local rivals requires offerings that best meet local demand.</span></li>
+    <li><span><b>Cultural differences</b> — where culture matters (food, fashion, media), adapt product and marketing.</span></li>
+    <li><span><b>Host-government requirements</b> — legal and regulatory compliance varies substantially by country.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 16</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The integration–responsiveness framework</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:158px"><svg viewBox="0 0 700 470" width="700" height="470" font-family="Verdana,Geneva,sans-serif">
+  <line x1="80" y1="20" x2="80" y2="410" stroke="#002350" stroke-width="2"/>
+  <line x1="80" y1="410" x2="680" y2="410" stroke="#002350" stroke-width="2"/>
+  <text x="40" y="220" font-size="14" fill="#002350" font-weight="bold" transform="rotate(-90 40 220)" text-anchor="middle">Pressure for global integration →</text>
+  <text x="380" y="450" font-size="14" fill="#002350" font-weight="bold" text-anchor="middle">Pressure for local responsiveness →</text>
+  <rect x="95" y="30" width="280" height="180" fill="#457AA0"/>
+  <text x="235" y="105" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">Global strategy</text>
+  <text x="235" y="128" font-size="12.5" fill="#E5F5FA" text-anchor="middle">standardize worldwide,</text>
+  <text x="235" y="145" font-size="12.5" fill="#E5F5FA" text-anchor="middle">centralize at HQ</text>
+  <rect x="390" y="30" width="280" height="180" fill="#002350"/>
+  <text x="530" y="105" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">Transnational strategy</text>
+  <text x="530" y="128" font-size="12.5" fill="#E5F5FA" text-anchor="middle">standardize where feasible,</text>
+  <text x="530" y="145" font-size="12.5" fill="#E5F5FA" text-anchor="middle">adapt where appropriate</text>
+  <rect x="95" y="222" width="280" height="180" fill="#E5F5FA"/>
+  <text x="235" y="297" font-size="17" fill="#002350" font-weight="bold" text-anchor="middle">Home replication</text>
+  <text x="235" y="320" font-size="12.5" fill="#002350" text-anchor="middle">domestic products sold</text>
+  <text x="235" y="337" font-size="12.5" fill="#002350" text-anchor="middle">abroad with little change</text>
+  <rect x="390" y="222" width="280" height="180" fill="#0096D3"/>
+  <text x="530" y="297" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">Multidomestic strategy</text>
+  <text x="530" y="320" font-size="12.5" fill="#E5F5FA" text-anchor="middle">adapt fully to each</text>
+  <text x="530" y="337" font-size="12.5" fill="#E5F5FA" text-anchor="middle">country, local autonomy</text>
+</svg></div>
+  <div style="position:absolute;left:800px;top:180px;width:415px">
+    <ul class="wu" style="--fs:16.5px;gap:12px">
+      <li><span>Summarizes the balance every international firm must strike between <b>integrating value chains globally</b> and <b>responding to local markets</b>.</span></li>
+      <li><span>Emphasize integration → maximize <b>efficiency</b> of the worldwide value chain.</span></li>
+      <li><span>Emphasize responsiveness → maximize <b>sales and market share</b> in each country.</span></li>
+      <li><span>The two pressures combine into <b>four strategies</b> — the quadrants on the left.</span></li>
+    </ul>
+  </div>
+  <p class="src">Based on Bartlett &amp; Ghoshal, Managing Across Borders (1989), and Prahalad &amp; Doz, The Multinational Mission (1987).</p>
+  <div class="footer"><span class="pg">Page 17</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Strategy 1: home replication</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>The firm views international business as <b>separate from and secondary to</b> its domestic business — expansion abroad generates incremental sales for domestic product lines.</span></li>
+    <li><span>Products are designed for domestic customers; international business mainly extends the life of home-market products.</span></li>
+    <li><span>Management holds little interest in foreign markets and expects little knowledge to flow back from them.</span></li>
+    <li><span><i>Typical for firms taking their first international steps — low integration, low responsiveness.</i></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 18</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Strategy 2: multidomestic</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Also known as <b>“localization strategy”</b> — low integration, high responsiveness.</span></li>
+    <li><span>The firm builds subsidiaries in each foreign market; local managers operate independently and respond to local conditions.</span></li>
+    <li><span>Products and services are adapted to buyers in each country; headquarters accepts that national markets differ.</span></li>
+    <li><span>Country managers are usually host-country nationals — but they <b>rarely share knowledge</b> with managers elsewhere: duplication and lost learning are the price of autonomy.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 19</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Strategy 3: global</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Headquarters seeks <b>substantial control</b> over all country operations — minimizing redundancy and maximizing efficiency, learning and integration worldwide.</span></li>
+    <li><span>The guiding question: <b>“Why not make the same thing, the same way, everywhere?”</b> Products, marketing and practices are relatively standardized.</span></li>
+    <li><span>R&amp;amp;D, manufacturing and marketing tend to be concentrated at headquarters and centrally coordinated.</span></li>
+    <li><span>Management views the world as <b>one large marketplace</b> — high integration, low responsiveness.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 20</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Strategy 4: transnational</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>A coordinated approach that strives to be <b>responsive to local needs while retaining central control</b> — combining the advantages of multidomestic and global strategy.</span></li>
+    <li><span>The operating rule: <b>standardize where feasible, adapt where appropriate.</b></span></li>
+    <li><span>Exploit scale economies through a reduced set of global suppliers and concentrated production; organize value-chain activities globally.</span></li>
+    <li><span>Optimize local responsiveness and flexibility; facilitate global learning and knowledge transfer; coordinate competitive moves globally.</span></li>
+    <li><span><i>Most firms find full transnational strategy very challenging to implement — it is a direction, not a destination.</i></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 21</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">How IKEA strives for transnational strategy</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Some <b>90% of the product line is identical</b> across more than two dozen countries — but IKEA modifies selected furniture to suit local tastes.</span></li>
+    <li><span>A <b>standardized marketing plan</b> is developed centrally in Sweden — and implemented with local adjustments.</span></li>
+    <li><span>Selected decisions are <b>decentralized to local stores</b>: product displays, advertising language.</span></li>
+    <li><span>Remember the cultural chapter: in India, IKEA added <b>assembly services</b> and adapted its restaurant menu — standardize where feasible, adapt where appropriate, in action.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 22</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Organizational structure</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Organizational structure:</b> the reporting relationships inside the firm — “the boxes and lines” linking people, functions and processes.</span></li>
+    <li><span>In large MNEs these linkages span subsidiaries, affiliates, suppliers and partners worldwide.</span></li>
+    <li><span>The fundamental issue: <b>centralization vs. decentralization</b> — how much decision-making stays at headquarters, and how much is delegated to foreign subsidiaries?</span></li>
+    <li><span>Experienced global firms manage the tension deliberately: they rotate employees through the corporate network, bring country managers together regularly, and use incentives to align subsidiaries with headquarters’ goals.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 23</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Who does what: value chains in the typical global MNE</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:175px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:20px 26px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px">Concentrated at headquarters / few locations</p>
+      <ul class="wu" style="--fs:16px;gap:8px;margin-top:12px">
+        <li style="color:#fff"><span>Research &amp; development</span></li>
+        <li style="color:#fff"><span>Product design and development</span></li>
+        <li style="color:#fff"><span>Manufacturing of key components</span></li>
+        <li style="color:#fff"><span>Global branding and strategy</span></li>
+      </ul>
+      <p style="margin:12px 0 0 0;font-family:var(--font-body);font-size:14px;color:var(--wu-sky)">Why: scale economies, control over knowledge, consistency</p>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:20px 26px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px;color:var(--wu-navy)">Dispersed to subsidiaries / local markets</p>
+      <ul class="wu" style="--fs:16px;gap:8px;margin-top:12px">
+        <li><span>Marketing and local advertising</span></li>
+        <li><span>Sales and distribution</span></li>
+        <li><span>Customer service and after-sales support</span></li>
+        <li><span>Final assembly / adaptation where needed</span></li>
+      </ul>
+      <p style="margin:12px 0 0 0;font-family:var(--font-body);font-size:14px;color:var(--wu-gray-footer)">Why: proximity to customers, responsiveness, local knowledge</p>
+    </div>
+  </div>
+  <p class="src">The exact split follows the strategy: global strategy pushes activities into the left column, multidomestic strategy into the right — transnational firms optimize activity by activity.</p>
+  <div class="footer"><span class="pg">Page 24</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Alternative organizational arrangements</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-gray-footer)">As international involvement deepens, structure typically evolves through six arrangements — each fits a stage and a strategy.</p>
+  <div style="position:absolute;left:65px;top:216px;width:1150px;display:flex;flex-wrap:wrap;gap:12px"><span class="gd">1. Export department</span><span class="gd">2. International division</span><span class="gd">3. Geographic area structure</span><span class="gd">4. Product structure</span><span class="gd">5. Functional structure</span><span class="gd">6. Global matrix structure</span></div>
+  <ul class="wu" style="position:absolute;left:65px;top:320px;width:1150px;gap:11px;--fs:18px">
+    <li><span><b>Structure follows strategy</b> (Chandler): home replication pairs with an export department; multidomestic with geographic areas; global with product or functional structures; transnational firms experiment with the matrix.</span></li>
+    <li><span>Each arrangement trades off <b>central control</b> against <b>local flexibility</b> — the same tension as the IR framework, drawn as an organigram.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 25</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">1 · Export department</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:186px;width:690px;gap:12px;--fs:17.5px">
+    <li><span>A unit within the firm charged with managing <b>export operations</b> — the classic first step, paired with home replication strategy.</span></li>
+    <li><span><b>Advantages:</b> small resource commitment; selling, distribution and shipping unified in one department.</span></li>
+    <li><span><b>Drawbacks:</b> minimal control over foreign operations; strong reliance on intermediaries; few chances to learn about foreign markets.</span></li>
+  </ul>
+  <div style="position:absolute;left:786px;top:196px"><svg viewBox="0 0 430 270" width="430" height="270" font-family="Verdana,Geneva,sans-serif"><rect x="145.0" y="16" width="140" height="40" fill="#002350"/><text x="215.0" y="41" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">Headquarters</text><line x1="215.0" y1="56" x2="215.0" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="68.75" y1="86" x2="361.25" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="68.75" y1="86" x2="68.75" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="21.75" y="150" width="94" height="62" fill="#457AA0"/><text x="68.75" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Production</text><line x1="166.25" y1="86" x2="166.25" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="119.25" y="150" width="94" height="62" fill="#457AA0"/><text x="166.25" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Marketing</text><line x1="263.75" y1="86" x2="263.75" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="216.75" y="150" width="94" height="62" fill="#457AA0"/><text x="263.75" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Finance</text><line x1="361.25" y1="86" x2="361.25" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="314.25" y="150" width="94" height="62" fill="#0096D3"/><text x="361.25" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Export</text><text x="361.25" y="188" font-size="11.5" text-anchor="middle" fill="#fff">department</text></svg></div>
+  
+  <div class="footer"><span class="pg">Page 26</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">2 · International division</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:186px;width:690px;gap:12px;--fs:17.5px">
+    <li><span>All international activities are <b>centralized in one division</b>, separate from the domestic units — the firm now takes international business seriously.</span></li>
+    <li><span><b>Advantages:</b> concentrates international expertise; better coordination of foreign operations.</span></li>
+    <li><span><b>Drawbacks:</b> domestic and international units <b>compete for resources</b>; limited knowledge sharing between the foreign units and with headquarters.</span></li>
+  </ul>
+  <div style="position:absolute;left:786px;top:196px"><svg viewBox="0 0 430 270" width="430" height="270" font-family="Verdana,Geneva,sans-serif"><rect x="145.0" y="16" width="140" height="40" fill="#002350"/><text x="215.0" y="41" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">Headquarters</text><line x1="215.0" y1="56" x2="215.0" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="85.0" y1="86" x2="345.0" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="85.0" y1="86" x2="85.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="25.0" y="150" width="120" height="62" fill="#457AA0"/><text x="85.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Domestic</text><text x="85.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">division A</text><line x1="215.0" y1="86" x2="215.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="155.0" y="150" width="120" height="62" fill="#457AA0"/><text x="215.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Domestic</text><text x="215.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">division B</text><line x1="345.0" y1="86" x2="345.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="285.0" y="150" width="120" height="62" fill="#0096D3"/><text x="345.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">International</text><text x="345.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">division</text></svg></div>
+  
+  <div class="footer"><span class="pg">Page 27</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">3 · Geographic area structure</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:186px;width:690px;gap:12px;--fs:17.5px">
+    <li><span>Management and control are <b>decentralized to regions</b>; area managers run operations in their territory — typical for firms selling standardized products across regions.</span></li>
+    <li><span><b>Advantages:</b> highly responsive to each market; a good balance of integration and adaptation.</span></li>
+    <li><span><b>Drawbacks:</b> managers think <b>regionally, not globally</b>; global scale economies and worldwide product development can suffer.</span></li>
+  </ul>
+  <div style="position:absolute;left:786px;top:196px"><svg viewBox="0 0 430 270" width="430" height="270" font-family="Verdana,Geneva,sans-serif"><rect x="145.0" y="16" width="140" height="40" fill="#002350"/><text x="215.0" y="41" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">Headquarters</text><line x1="215.0" y1="56" x2="215.0" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="68.75" y1="86" x2="361.25" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="68.75" y1="86" x2="68.75" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="21.75" y="150" width="94" height="62" fill="#457AA0"/><text x="68.75" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Europe</text><line x1="166.25" y1="86" x2="166.25" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="119.25" y="150" width="94" height="62" fill="#457AA0"/><text x="166.25" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Americas</text><line x1="263.75" y1="86" x2="263.75" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="216.75" y="150" width="94" height="62" fill="#457AA0"/><text x="263.75" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Asia-Pacific</text><line x1="361.25" y1="86" x2="361.25" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="314.25" y="150" width="94" height="62" fill="#457AA0"/><text x="361.25" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Middle East</text><text x="361.25" y="188" font-size="11.5" text-anchor="middle" fill="#fff">&amp; Africa</text></svg></div>
+  
+  <div class="footer"><span class="pg">Page 28</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">4 · Product structure</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:186px;width:690px;gap:12px;--fs:17.5px">
+    <li><span>International operations are organized by <b>major product line</b>; each product division is responsible for its products worldwide.</span></li>
+    <li><span><b>Advantages:</b> global expertise per product; scale economies; worldwide knowledge sharing within each line.</span></li>
+    <li><span><b>Drawbacks:</b> support functions are <b>duplicated</b> in every division; risk of too much product focus and too little country focus.</span></li>
+  </ul>
+  <div style="position:absolute;left:786px;top:196px"><svg viewBox="0 0 430 270" width="430" height="270" font-family="Verdana,Geneva,sans-serif"><rect x="145.0" y="16" width="140" height="40" fill="#002350"/><text x="215.0" y="41" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">Headquarters</text><line x1="215.0" y1="56" x2="215.0" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="85.0" y1="86" x2="345.0" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="85.0" y1="86" x2="85.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="25.0" y="150" width="120" height="62" fill="#457AA0"/><text x="85.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Product</text><text x="85.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">division A</text><text x="85.0" y="204" font-size="11.5" text-anchor="middle" fill="#fff">(worldwide)</text><line x1="215.0" y1="86" x2="215.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="155.0" y="150" width="120" height="62" fill="#457AA0"/><text x="215.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Product</text><text x="215.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">division B</text><text x="215.0" y="204" font-size="11.5" text-anchor="middle" fill="#fff">(worldwide)</text><line x1="345.0" y1="86" x2="345.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="285.0" y="150" width="120" height="62" fill="#457AA0"/><text x="345.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Product</text><text x="345.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">division C</text><text x="345.0" y="204" font-size="11.5" text-anchor="middle" fill="#fff">(worldwide)</text></svg></div>
+  
+  <div class="footer"><span class="pg">Page 29</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">5 · Functional structure</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:186px;width:690px;gap:12px;--fs:17.5px">
+    <li><span>International operations are organized by <b>functional activity</b> — oil firms, for example, split worldwide operations into production and marketing.</span></li>
+    <li><span><b>Advantages:</b> small central staff; strong central control; concentrated functional expertise.</span></li>
+    <li><span><b>Drawbacks:</b> unwieldy with many product lines; weak response to buyer needs in individual markets.</span></li>
+  </ul>
+  <div style="position:absolute;left:786px;top:196px"><svg viewBox="0 0 430 270" width="430" height="270" font-family="Verdana,Geneva,sans-serif"><rect x="145.0" y="16" width="140" height="40" fill="#002350"/><text x="215.0" y="41" font-size="13" text-anchor="middle" fill="#fff" font-weight="bold">Headquarters</text><line x1="215.0" y1="56" x2="215.0" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="85.0" y1="86" x2="345.0" y2="86" stroke="#888888" stroke-width="1.5"/><line x1="85.0" y1="86" x2="85.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="25.0" y="150" width="120" height="62" fill="#457AA0"/><text x="85.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Production</text><text x="85.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">(worldwide)</text><line x1="215.0" y1="86" x2="215.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="155.0" y="150" width="120" height="62" fill="#457AA0"/><text x="215.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Marketing</text><text x="215.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">(worldwide)</text><line x1="345.0" y1="86" x2="345.0" y2="150" stroke="#888888" stroke-width="1.5"/><rect x="285.0" y="150" width="120" height="62" fill="#457AA0"/><text x="345.0" y="172" font-size="11.5" text-anchor="middle" fill="#fff">Finance</text><text x="345.0" y="188" font-size="11.5" text-anchor="middle" fill="#fff">(worldwide)</text></svg></div>
+  
+  <div class="footer"><span class="pg">Page 30</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">6 · Global matrix structure</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:186px;width:690px;gap:12px;--fs:17.5px">
+    <li><span><b>Blends</b> geographic, product and functional structures — chasing the benefits of global strategy <i>and</i> local responsiveness simultaneously; emphasizes learning and knowledge sharing.</span></li>
+    <li><span><b>Drawbacks:</b> the <b>dual chain of command</b> produces contradictory instructions and conflict; with many products and markets, complexity explodes.</span></li>
+    <li><span><i>The organigram of transnational strategy — and just as hard to run in practice.</i></span></li>
+  </ul>
+  <div style="position:absolute;left:786px;top:196px"><svg viewBox="0 0 430 270" width="430" height="270" font-family="Verdana,Geneva,sans-serif">
+  <rect x="120" y="10" width="95" height="34" fill="#457AA0"/><text x="167" y="31" font-size="11" text-anchor="middle" fill="#fff">Europe</text>
+  <rect x="222" y="10" width="95" height="34" fill="#457AA0"/><text x="269" y="31" font-size="11" text-anchor="middle" fill="#fff">Americas</text>
+  <rect x="324" y="10" width="95" height="34" fill="#457AA0"/><text x="371" y="31" font-size="11" text-anchor="middle" fill="#fff">Asia-Pacific</text>
+  <rect x="10" y="60" width="100" height="52" fill="#0096D3"/><text x="60" y="83" font-size="11" text-anchor="middle" fill="#fff">Product A</text>
+  <rect x="10" y="122" width="100" height="52" fill="#0096D3"/><text x="60" y="145" font-size="11" text-anchor="middle" fill="#fff">Product B</text>
+  <rect x="10" y="184" width="100" height="52" fill="#0096D3"/><text x="60" y="207" font-size="11" text-anchor="middle" fill="#fff">Product C</text>
+  <g fill="#E5F5FA" stroke="#80CFE9">
+    <rect x="120" y="60" width="95" height="52"/><rect x="222" y="60" width="95" height="52"/><rect x="324" y="60" width="95" height="52"/>
+    <rect x="120" y="122" width="95" height="52"/><rect x="222" y="122" width="95" height="52"/><rect x="324" y="122" width="95" height="52"/>
+    <rect x="120" y="184" width="95" height="52"/><rect x="222" y="184" width="95" height="52"/><rect x="324" y="184" width="95" height="52"/>
+  </g>
+  <text x="269" y="152" font-size="10.5" text-anchor="middle" fill="#002350">dual reporting</text>
+</svg></div>
+  
+  <div class="footer"><span class="pg">Page 31</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Foreign market entry strategies — and the control they give</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:166px;font-size:15.5px">
+    <thead><tr><th style="width:280px">Entry strategy</th><th style="width:640px">What it means</th><th>Control</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Importing / global sourcing</td><td>Procure products and services from foreign suppliers</td><td>Low</td></tr>
+      <tr><td class="k">Exporting</td><td>Produce at home (or a third country), sell and distribute abroad</td><td>Low</td></tr>
+      <tr><td class="k">Countertrade</td><td>Payments made wholly or partly in kind rather than cash</td><td>Low</td></tr>
+      <tr><td class="k">Licensing</td><td>A foreign partner uses the firm’s intellectual property for royalties</td><td>Low–moderate</td></tr>
+      <tr><td class="k">Franchising</td><td>Foreign franchisees acquire rights and skills to run local operations — McDonald’s, Century 21</td><td>Moderate</td></tr>
+      <tr><td class="k">Collaborative ventures</td><td>Equity joint ventures and project-based alliances with partner firms</td><td>Moderate</td></tr>
+      <tr><td class="k">Foreign direct investment</td><td>Invest capital and take ownership of factories or subsidiaries abroad</td><td>High</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Control rises with resource commitment and risk: from arm’s-length trade through contractual and collaborative modes to wholly owned FDI.</p>
+  <div class="footer"><span class="pg">Page 32</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Choosing an entry strategy: three sets of factors</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>The firm itself:</b> goals and objectives (profitability, market share, positioning) · desired degree of control · financial, organizational and technological resources · risk tolerance.</span></li>
+    <li><span><b>The target market:</b> legal, cultural and economic conditions · distribution and transport systems · nature and extent of competition, now and later · availability and quality of partners.</span></li>
+    <li><span><b>The venture:</b> which value-adding activities to keep in-house vs. delegate to partners · long-term strategic importance of the market · characteristics of the product or service.</span></li>
+    <li><span><i>No single best mode: the right entry strategy is the one that matches firm, market and venture — and it can change as commitment grows.</i></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 33</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Typical stages of company internationalization</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-gray-footer)">Entry strategies and structures evolve together: firms typically deepen commitment step by step — and their organization follows.</p>
+  <div style="position:absolute;left:65px;top:250px;width:1150px;display:flex;align-items:stretch;justify-content:space-between"><div class="stg-box"><span class="stg-n">1</span><span class="stg-t">Domestic focus</span></div><div class="stg-arrow">›</div><div class="stg-box"><span class="stg-n">2</span><span class="stg-t">Pre-export stage</span></div><div class="stg-arrow">›</div><div class="stg-box"><span class="stg-n">3</span><span class="stg-t">Experimental involvement</span></div><div class="stg-arrow">›</div><div class="stg-box"><span class="stg-n">4</span><span class="stg-t">Active involvement</span></div><div class="stg-arrow">›</div><div class="stg-box"><span class="stg-n">5</span><span class="stg-t">Committed involvement</span></div></div>
+  <ul class="wu" style="position:absolute;left:65px;top:430px;width:1150px;gap:9px;--fs:18px">
+    <li><span>Early stages pair with exporting and an export department; later stages bring FDI, international divisions and eventually area, product or matrix structures.</span></li>
+    <li><span>Compare the Uppsala model from the theories session — incremental commitment, here seen from the inside of the firm.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 34</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Megatrend 1: shifting demographics and migration</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:158px;width:1150px;gap:7px;--fs:16.5px"><li><span>Rapidly ageing populations in advanced economies (Japan, Italy — and Austria)</span></li><li><span>Large working-age populations in many emerging markets (Nigeria, Indonesia)</span></li><li><span>Expanding middle class and growing cities in emerging markets (Brazil, India, China)</span></li><li><span>Continued increase in cross-national migration</span></li></ul>
+  <div style="position:absolute;left:65px;top:330px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:16px 22px">
+      <p style="margin:0 0 8px 0;font-family:var(--font-title);font-weight:bold;font-size:18px">Threats</p>
+      <ul class="mt-l" style="color:#fff"><li>Ageing populations mean lower productivity and falling demand for certain goods</li><li>Urban problems grow: environmental impact, waste, energy consumption</li></ul>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:16px 22px">
+      <p style="margin:0 0 8px 0;font-family:var(--font-title);font-weight:bold;font-size:18px;color:var(--wu-navy)">Opportunities</p>
+      <ul class="mt-l"><li>Demand from the elderly: health care, assisted living</li><li>Demand from working-age and middle-class consumers: housing, cars, professional services</li><li>Immigrants with distinctive skills replenish the workforce</li></ul>
+    </div>
+  </div>
+  <div class="footer"><span class="pg">Page 35</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Megatrend 2: transformation of the global economy</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:158px;width:1150px;gap:7px;--fs:16.5px"><li><span>Major economic activity keeps shifting to emerging markets (China, India, Brazil)</span></li><li><span>A more protectionist, fragmented international trading environment</span></li><li><span>National debt, inequality and persistent poverty constrain many economies</span></li></ul>
+  <div style="position:absolute;left:65px;top:330px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:16px 22px">
+      <p style="margin:0 0 8px 0;font-family:var(--font-title);font-weight:bold;font-size:18px">Threats</p>
+      <ul class="mt-l" style="color:#fff"><li>Rising competition from emerging-market multinationals</li><li>Protectionism and fragmentation disrupt efficient international trade</li><li>Debt limits public-policy options and living standards</li></ul>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:16px 22px">
+      <p style="margin:0 0 8px 0;font-family:var(--font-title);font-weight:bold;font-size:18px;color:var(--wu-navy)">Opportunities</p>
+      <ul class="mt-l"><li>Rising demand for products and services from China, India and other emerging markets</li><li>Smart planning and innovation turn economic challenges into openings for top firms</li></ul>
+    </div>
+  </div>
+  <div class="footer"><span class="pg">Page 36</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Megatrend 3: revolutionary technological advances</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:158px;width:1150px;gap:7px;--fs:16.5px"><li><span>Ground-breaking technologies: artificial intelligence, IoT, robotics, digital platforms</span></li><li><span>Ever-increasing connectivity, processing power, digitalization and data</span></li></ul>
+  <div style="position:absolute;left:65px;top:330px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:16px 22px">
+      <p style="margin:0 0 8px 0;font-family:var(--font-title);font-weight:bold;font-size:18px">Threats</p>
+      <ul class="mt-l" style="color:#fff"><li>Unequal technological access across economies</li><li>Skill gaps in managing leading-edge technologies</li><li>Job losses from automation, robotics and AI</li></ul>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:16px 22px">
+      <p style="margin:0 0 8px 0;font-family:var(--font-title);font-weight:bold;font-size:18px;color:var(--wu-navy)">Opportunities</p>
+      <ul class="mt-l"><li>Demand for cutting-edge products and services</li><li>Technology raises connectivity, innovation, productivity and value-chain control</li><li>Smarter management, marketing and finance through digital tools</li></ul>
+    </div>
+  </div>
+  <div class="footer"><span class="pg">Page 37</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Megatrend 4: the natural environment and sustainability</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:158px;width:1150px;gap:7px;--fs:16.5px"><li><span>Climate change; degradation of land, air and water</span></li><li><span>Growing scarcity of energy, water, food and other resources</span></li></ul>
+  <div style="position:absolute;left:65px;top:330px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:16px 22px">
+      <p style="margin:0 0 8px 0;font-family:var(--font-title);font-weight:bold;font-size:18px">Threats</p>
+      <ul class="mt-l" style="color:#fff"><li>Climate change hits agriculture, energy, tourism and more</li><li>Scarcity of water, rare minerals and other key inputs</li><li>Loss of the natural resources that sustain living standards</li></ul>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:16px 22px">
+      <p style="margin:0 0 8px 0;font-family:var(--font-title);font-weight:bold;font-size:18px;color:var(--wu-navy)">Opportunities</p>
+      <ul class="mt-l"><li>Rising demand for sustainable products — alternative energy, resource-efficient offerings</li><li>Growing markets for products and services that repair and restore the environment</li></ul>
+    </div>
+  </div>
+  <div class="footer"><span class="pg">Page 38</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Apply it: the strategy map</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · small groups</p>
+  <p class="act-obj">Objective: place real firms on the integration–responsiveness map and defend the placement with evidence.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span>Return to the six brands from the opener: <b>Red Bull, McDonald’s, Rolex, IKEA, Netflix, Coca-Cola</b>.</span></li>
+      <li><span>Place each in one quadrant: home replication · multidomestic · global · transnational. Use concrete evidence (product, pricing, marketing, operations).</span></li>
+      <li><span>For your two most interesting cases: which <b>organizational structure</b> would you expect — and which <b>entry strategies</b> did the firm actually use?</span></li>
+      <li><span>Pick one <b>megatrend</b> and argue how it will push one of your firms to a different quadrant by 2035.</span></li>
+      <li><span>Two minutes per group; the class challenges the placements.</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 39</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:26px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.12;color:var(--wu-white)">Global Market<br>Opportunity Assessment</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026<br><b>Dr. Arne Floh</b> · Department of Global Trade, WU Vienna</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span>Understand how firms conduct a formal assessment of their <b>readiness to internationalize</b>.</span></li>
+    <li><span>Determine the <b>suitability of products and services</b> for foreign markets.</span></li>
+    <li><span>Describe how firms <b>screen countries</b> to identify target markets — and the indices that help.</span></li>
+    <li><span>Conduct an in-depth assessment of <b>industry market potential</b>.</span></li>
+    <li><span>Explain how companies identify and choose <b>foreign business partners</b>.</span></li>
+    <li><span>Estimate <b>company sales potential</b> in a foreign market.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 40</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Opening activity: where should Manner go next?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class opener · 10 minutes · pairs — gut feeling first, framework later</p>
+  <p class="act-obj">Objective: make a market-selection call on instinct now — then test it against the systematic six-task framework at the end of the session.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span><b>Manner</b> — the Viennese wafer maker — wants one new export market for a major push.</span></li>
+      <li><span>In pairs, pick <b>one country</b> and write down your three reasons.</span></li>
+      <li><span>Now be honest: how many of your reasons are <b>data</b> — and how many are familiarity, language or holiday memories?</span></li>
+      <li><span>Park your choice. At the end of class you will re-screen it with the tools from today — market-potential indicators, connectedness, screening methods — and see if it survives.</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 41</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Global market opportunity</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Global market opportunity:</b> a favorable combination of circumstances, locations or timing that offers prospects for exporting, investing, sourcing or partnering abroad.</span></li>
+    <li><span>Sell products and services.</span></li>
+    <li><span>Establish factories or other production facilities to produce more competently or cost-effectively.</span></li>
+    <li><span>Procure raw materials, components or services of lower cost or superior quality.</span></li>
+    <li><span>Enter collaborative arrangements with foreign partners.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 42</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The six tasks of global market opportunity assessment</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-gray-footer)">GMOA is a funnel: each task narrows the field — from “are we ready at all?” to a concrete sales forecast for specific markets.</p>
+  <div style="position:absolute;left:65px;top:216px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px"><div class="tsk"><span class="tsk-n">1</span><p class="tsk-h">Organizational readiness</p><p class="tsk-d">Is the firm prepared to internationalize?</p></div><div class="tsk"><span class="tsk-n">2</span><p class="tsk-h">Product suitability</p><p class="tsk-d">Do our offerings fit foreign markets?</p></div><div class="tsk"><span class="tsk-n">3</span><p class="tsk-h">Country screening</p><p class="tsk-d">Which countries deserve a closer look?</p></div><div class="tsk"><span class="tsk-n">4</span><p class="tsk-h">Industry market potential</p><p class="tsk-d">How big is demand in each target market?</p></div><div class="tsk"><span class="tsk-n">5</span><p class="tsk-h">Business partners</p><p class="tsk-d">Who will we work with abroad?</p></div><div class="tsk"><span class="tsk-n">6</span><p class="tsk-h">Company sales potential</p><p class="tsk-d">What share can we realistically win?</p></div></div>
+  <div class="footer"><span class="pg">Page 43</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Analyze organizational readiness</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:150px;background:var(--wu-cyan);color:#fff;padding:7px 18px;font-family:var(--font-title);font-weight:bold;font-size:17px">Task 1 of 6</div>
+  <ul class="wu" style="position:absolute;left:65px;top:212px;width:1120px;gap:10px;--fs:18px">
+    <li><span>Provide an objective assessment of the firm’s <b>preparedness</b> to engage in international business:</span></li>
+    <li><span><b>Resources:</b> appropriate financial and tangible resources — and the manufacturing capacity internationalization will demand.</span></li>
+    <li><span><b>Skills and competencies:</b> relevant capabilities, including the basis of the firm’s competitive advantage.</span></li>
+    <li><span><b>Commitment:</b> is management genuinely committed — and is expansion consistent with other company goals?</span></li>
+    <li><span><b>Deficiencies:</b> identify what hinders achieving company goals — and fix it before, not after, entry.</span></li>
+    <li><span>Guiding questions: What do we hope to gain? What demands will this place on finance, personnel and capacity? What is our competitive advantage — and does it travel?</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 44</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Assess product suitability</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:150px;background:var(--wu-cyan);color:#fff;padding:7px 18px;font-family:var(--font-title);font-weight:bold;font-size:17px">Task 2 of 6</div>
+  <ul class="wu" style="position:absolute;left:65px;top:212px;width:1120px;gap:10px;--fs:18px">
+    <li><span>Systematically assess the firm’s offerings for <b>international customers</b>: what may hinder market potential, and what needs adapting per market?</span></li>
+    <li><span>Products with the best foreign prospects typically:</span></li>
+    <li><span><b>Sell well in the domestic market</b> — popular products travel (game consoles, wireless earbuds, fast food).</span></li>
+    <li><span><b>Cater to universal needs</b> — cancer drugs, personal care, energy-efficient appliances.</span></li>
+    <li><span><b>Address a need not well served</b> in the foreign market — mutual funds, portable housing.</span></li>
+    <li><span><b>Address a new or emergent need</b> — disaster relief housing after an earthquake; medications for a disease outbreak.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 45</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Questions that measure international market potential</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Who initiates purchasing? Who uses the product or service?</span></li>
+    <li><span>Why do people buy it — and where do they buy it?</span></li>
+    <li><span>What economic, cultural, geographic and other factors may limit sales?</span></li>
+    <li><span>These questions force the researcher from “our product is great” to <b>how the target market actually buys</b> — the difference between product-out and market-in thinking.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 46</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Screen countries to identify target markets</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:150px;background:var(--wu-cyan);color:#fff;padding:7px 18px;font-family:var(--font-title);font-weight:bold;font-size:17px">Task 3 of 6</div>
+  <ul class="wu" style="position:absolute;left:65px;top:212px;width:1120px;gap:12px;--fs:18px">
+    <li><span>Reduce the number of candidate countries to a <b>manageable five or six</b> that warrant in-depth investigation.</span></li>
+    <li><span>Screen on criteria such as market <b>size and growth</b>, market <b>intensity</b> (buying power), <b>consumption capacity</b> (middle-class spending), <b>infrastructure</b>, <b>receptivity</b> to imports, economic freedom and country risk.</span></li>
+    <li><span><b>Example — Brazil and health products:</b> ~100 million middle-class consumers with rising incomes spend heavily on health care; global pharma targets medications to Brazilian seniors; health insurance uptake keeps rising.</span></li>
+    <li><span>Two screening methods (next slides): <b>gradual elimination</b> and <b>indexing &amp; ranking</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 47</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Country screening: two methods</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Gradual elimination:</b> start with many prospective countries and narrow step by step with increasingly specific information — first macro indicators (GDP growth, population), then industry data, then firm-specific factors.</span></li>
+    <li><span><b>Indexing and ranking:</b> assign each country a score on a set of weighted market-attractiveness indicators and rank the list — the logic behind ready-made indices.</span></li>
+    <li><span>Two widely used public indices: the <b>Market Potential Index</b> (globalEDGE, Michigan State) for emerging markets — and the <b>DHL Global Connectedness</b> report for how deeply countries are tied into global flows.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 48</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Indexing in practice: the Market Potential Index (MPI)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:166px;font-size:15.5px">
+    <thead><tr><th style="width:330px">Dimension</th><th style="width:140px">Weight</th><th>Typical measures</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Market size</td><td>25 / 100</td><td>Urban population · electricity consumption</td></tr>
+      <tr><td class="k">Market intensity</td><td>15 / 100</td><td>GNI per capita (PPP) · private consumption % of GDP</td></tr>
+      <tr><td class="k">Market growth rate</td><td>12.5 / 100</td><td>CAGR of primary energy use · CAGR of GDP</td></tr>
+      <tr><td class="k">Market consumption capacity</td><td>12.5 / 100</td><td>Consumer expenditure · income share of the middle class</td></tr>
+      <tr><td class="k">Commercial infrastructure</td><td>10 / 100</td><td>Internet, mobile, logistics, retail density</td></tr>
+      <tr><td class="k">Market receptivity</td><td>10 / 100</td><td>Per-capita imports · trade as share of GDP</td></tr>
+      <tr><td class="k">Economic freedom</td><td>7.5 / 100</td><td>Economic freedom indices</td></tr>
+      <tr><td class="k">Country risk</td><td>7.5 / 100</td><td>Political, economic and financial risk ratings</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Michigan State University globalEDGE Market Potential Index — built for emerging markets; weights emphasize size and buying power. Source: globaledge.msu.edu/mpi.</p>
+  <div class="footer"><span class="pg">Page 49</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Country screening for foreign direct investment</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span>Long-term prospects for growth and sizeable returns.</span></li>
+    <li><span>Cost of doing business — infrastructure, tax rates, wages, worker skills.</span></li>
+    <li><span>Country risk — regulatory, financial, political and cultural barriers; intellectual-property protection.</span></li>
+    <li><span>The competitive environment.</span></li>
+    <li><span>Government incentives — tax holidays, subsidized training, grants, low-interest loans.</span></li>
+    <li><span><i>Remember BYD in Hungary from the theories session: EU market access, incentives and location advantages — and how quickly incentives can change (Turkey).</i></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 50</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Country screening for global sourcing</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Global sourcing:</b> procuring finished products, intermediate goods and services from suppliers located abroad.</span></li>
+    <li><span>Cost and quality of inputs.</span></li>
+    <li><span>Stability of exchange rates.</span></li>
+    <li><span>Reliability of suppliers.</span></li>
+    <li><span>Presence of a workforce with superior skills.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 51</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Assess industry market potential</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:150px;background:var(--wu-cyan);color:#fff;padding:7px 18px;font-family:var(--font-title);font-weight:bold;font-size:17px">Task 4 of 6</div>
+  <ul class="wu" style="position:absolute;left:65px;top:212px;width:1120px;gap:12px;--fs:18px">
+    <li><span><b>Industry market potential:</b> the likely sales of <b>all firms</b> in the industry in a target country over a specific period — different from company sales potential, the share the firm itself expects.</span></li>
+    <li><span>Most firms forecast both at least <b>three years</b> ahead.</span></li>
+    <li><span>Examine: market size, growth rate and trends · tariff and non-tariff barriers · standards and regulations · availability and sophistication of distribution · unique customer requirements · industry-specific indicators.</span></li>
+    <li><span><b>Industry-specific indicators</b> — the creative part: cooling equipment → number of restaurants and hotels; laboratory equipment → government health spending; bicycles → number of sunny days per year.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 52</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Methods for estimating industry market potential</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:186px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px"><div class="nv-t"><p class="nv-h">Simple trend analysis</p><p class="nv-d">Extrapolate aggregate industry production and consumption</p></div><div class="nv-t"><p class="nv-h">Industry-specific indicators</p><p class="nv-d">Track the unique drivers of demand in your industry</p></div><div class="nv-t"><p class="nv-h">Monitoring key competitors</p><p class="nv-d">Their estimated sales reveal the market’s size</p></div><div class="nv-t"><p class="nv-h">Following key customers</p><p class="nv-d">Where your customers go, demand for you follows</p></div><div class="nv-t"><p class="nv-h">Tapping supplier networks</p><p class="nv-d">Suppliers see sales and competitor activity early</p></div><div class="nv-t"><p class="nv-h">International trade fairs</p><p class="nv-d">Fast, dense learning about markets and rivals</p></div></div>
+  <ul class="wu" style="position:absolute;left:65px;top:470px;width:1150px;gap:9px;--fs:17.5px">
+    <li><span>In practice firms combine several methods and triangulate — no single source is reliable enough on its own.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 53</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Where to research: key public data sources</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:166px;font-size:15px">
+    <thead><tr><th style="width:330px">Site</th><th style="width:240px">Address</th><th>What you find there</th></tr></thead>
+    <tbody>
+      <tr><td class="k">globalEDGE</td><td>globaledge.msu.edu</td><td>Data, tools and rankings across all international business topics</td></tr>
+      <tr><td class="k">International Trade Administration</td><td>trade.gov</td><td>US country commercial guides and export support</td></tr>
+      <tr><td class="k">Department for Business and Trade (UK)</td><td>gov.uk</td><td>UK data and resources for international business</td></tr>
+      <tr><td class="k">UNCTAD</td><td>unctad.org</td><td>Country fact sheets; trade, FDI and economic statistics</td></tr>
+      <tr><td class="k">World Bank</td><td>worldbank.org</td><td>Development indicators, Doing Business-style data, country profiles</td></tr>
+      <tr><td class="k">IMF</td><td>imf.org</td><td>World Economic Outlook databases and country forecasts</td></tr>
+      <tr><td class="k">OECD</td><td>oecd.org</td><td>Comparative statistics and policy analysis for member economies</td></tr>
+      <tr><td class="k">WTO</td><td>wto.org</td><td>Trade statistics, tariff profiles and trade-policy reviews</td></tr>
+    </tbody>
+  </table>
+  <p class="src">A starting kit — most professional country screening can be done with free public sources before buying commercial data.</p>
+  <div class="footer"><span class="pg">Page 54</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">You can do it: Natasha Brown’s path</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Degree:</b> Computer Information Systems. A one-month study program in <b>Hungary and Turkey</b> included visits to CNN, Coca-Cola and Turkcell.</span></li>
+    <li><span>Study abroad taught her how much culture matters — on every level of business.</span></li>
+    <li><span>After graduation: technical consultant in Atlanta, then pre-sales solutions architect in New York — both at <b>Hewlett-Packard</b>; international experience on her CV helped open the door to HP’s international operations.</span></li>
+    <li><span>Her verdict: <i>“When you consider all the benefits, studying abroad and taking international business classes are well worth the investment.”</i></span></li>
+    <li><span><b>The point for you:</b> this summer university is exactly this kind of investment — use it.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 55</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Choose foreign business partners</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:150px;background:var(--wu-cyan);color:#fff;padding:7px 18px;font-family:var(--font-title);font-weight:bold;font-size:17px">Task 5 of 6</div>
+  <ul class="wu" style="position:absolute;left:65px;top:212px;width:1120px;gap:12px;--fs:18px">
+    <li><span>Decide the <b>type</b> of partner, clarify <b>ideal qualifications</b>, then craft the entry strategy: which value-adding activities must partners perform?</span></li>
+    <li><span><b>Exporters</b> work with market intermediaries — distributors and agents.</span></li>
+    <li><span><b>Licensing partners</b> apply the firm’s intellectual property in their own country; <b>franchisees</b> acquire rights and skills to run local operations.</span></li>
+    <li><span><b>Collaborative ventures</b> involve joint-venture and alliance partners; global sourcing adds suppliers and contract manufacturers.</span></li>
+    <li><span>Assess candidates on industry expertise, commitment, distribution access and financial strength.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 56</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Ideal qualifications of foreign distributors</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:9px;--fs:18px">
+    <li><span>Financially sound and resourceful.</span></li>
+    <li><span>Competent management.</span></li>
+    <li><span>Qualified technical and sales staff.</span></li>
+    <li><span>Willing and able to invest in growing the business.</span></li>
+    <li><span>Access to distribution channels and end-users.</span></li>
+    <li><span>Strong industry knowledge.</span></li>
+    <li><span>Well-known in the marketplace, well-connected with local government.</span></li>
+    <li><span>Committed and loyal.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 57</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Estimate company sales potential</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:150px;background:var(--wu-cyan);color:#fff;padding:7px 18px;font-family:var(--font-title);font-weight:bold;font-size:17px">Task 6 of 6</div>
+  <ul class="wu" style="position:absolute;left:65px;top:212px;width:1120px;gap:12px;--fs:18px">
+    <li><span><b>Company sales potential:</b> the share of annual industry sales the firm expects to generate in a target market — a 3-to-5-year forecast of the firm’s own revenues and expenses.</span></li>
+    <li><span>It requires <b>highly refined market information</b> — and it is the hardest estimate in the whole GMOA process.</span></li>
+    <li><span>Key determinants: intensity of competition · pricing and financing attractiveness · human and financial resources · <b>partner capabilities</b> · access to distribution channels · market-penetration timetable · risk tolerance of senior managers · the firm’s network and contacts · <b>reputation</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 58</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">From industry potential to company sales potential</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:186px;width:1150px"><div style="width:1150px;margin:0 auto;background:#002350;color:#fff;padding:15px 26px;box-sizing:border-box;"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px">Industry market potential</p><p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:14.5px;color:var(--wu-ice)">Total likely sales of all firms in the industry in the target market</p></div><div style="width:940px;margin:0 auto;background:#457AA0;color:#fff;padding:15px 26px;box-sizing:border-box;margin-top:12px;"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px">− competitors’ share</p><p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:14.5px;color:var(--wu-ice)">What incumbent rivals and other entrants will capture</p></div><div style="width:730px;margin:0 auto;background:#0096D3;color:#fff;padding:15px 26px;box-sizing:border-box;margin-top:12px;"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px">× the firm’s reach</p><p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:14.5px;color:var(--wu-ice)">Distribution access, partner capabilities, pricing, resources, timetable</p></div><div style="width:520px;margin:0 auto;background:#0082AA;color:#fff;padding:15px 26px;box-sizing:border-box;margin-top:12px;"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px">= Company sales potential</p><p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:14.5px;color:var(--wu-ice)">The share the firm can realistically win, forecast 3–5 years ahead</p></div></div>
+  <div class="footer"><span class="pg">Page 59</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Methods for estimating company sales potential</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:18px">
+    <li><span><b>Survey end-users and intermediaries</b> — ask the market directly.</span></li>
+    <li><span><b>Trade audits</b> — visit retail outlets, question channel members, benchmark competitors’ offerings.</span></li>
+    <li><span><b>Competitor assessment</b> — how much business can we take from each rival?</span></li>
+    <li><span><b>Estimates from local partners</b> — distributors and franchisees who already know the market.</span></li>
+    <li><span><b>Limited market entry to “test the waters”</b> — a small entry that gauges long-term potential.</span></li>
+    <li><span><b>Analogy method</b> — infer from known statistics of a comparable country.</span></li>
+    <li><span><b>Proxy indicators</b> — infer demand for one product category from a related one (both essential for data-poor emerging markets).</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 60</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Apply it: re-screen your market pick</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · same pairs as the opener</p>
+  <p class="act-obj">Objective: run your gut-feeling country from the opening activity through the systematic GMOA logic — and see whether it survives.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span>Take your country pick for <b>Manner</b> from the opener.</span></li>
+      <li><span><b>Screen it:</b> market size and growth · buying power · receptivity to imports · infrastructure · risk. Use the MPI dimensions as your checklist.</span></li>
+      <li><span><b>Industry potential:</b> name two industry-specific indicators for premium confectionery — and one entry barrier (tariffs? shelf access? labeling rules?).</span></li>
+      <li><span><b>Partner:</b> which type of partner would you choose there, and name the top three qualifications you would demand.</span></li>
+      <li><span>Verdict: keep your country or switch — and defend the decision in one minute.</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 61</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Discussion questions</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Ready-made indices like the MPI weight market size at 25%. When is a small but rich market the better choice — and which index dimension would you re-weight for premium consumer goods?</span></li>
+    <li><span>Gradual elimination vs. indexing and ranking: which method is more vulnerable to manager bias — and why?</span></li>
+    <li><span>Company sales potential is “the hardest estimate in GMOA”. Which of the nine determining factors is hardest to judge from Vienna — and how would you reduce that uncertainty?</span></li>
+    <li><span>Natasha Brown credits study abroad for her career start. What, concretely, will you be able to claim from this summer university in a job interview?</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 62</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+
+<div class="stage"><div class="slide">
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <img src="assets/emblem-vertical-blue.png" alt="Vienna University of Economics and Business" style="position:absolute;left:86px;top:236px;width:69px;height:284px">
+  <div style="position:absolute;left:236px;top:248px;width:720px">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Department of Global Trade</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;text-transform:uppercase;color:var(--wu-gray-footer)">WU Vienna</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Dr. Arne Floh</p>
+    <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Senior Lecturer in International Marketing</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Deputy Program Director MSc Export- and Internationalisation Management</p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)"><a href="mailto:arne.floh@wu.ac.at">arne.floh@wu.ac.at</a></p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Welthandelsplatz 1, 1020 Wien, Austria</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;color:var(--wu-black)">www.wu.ac.at</p>
+  </div>
+  <div class="footer"><span class="pg">Page 63</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<script>
+  function fit(){var vw=document.body.clientWidth-40;var sc=Math.min(1,vw/1280);document.querySelectorAll('.stage').forEach(function(st){var sl=st.querySelector('.slide');sl.style.transform='scale('+sc+')';st.style.height=(720*sc)+'px';st.style.width=(1280*sc)+'px';});}
+  window.addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>

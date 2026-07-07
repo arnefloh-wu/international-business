@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firm Strategy and Industry Analysis (WU)</title><link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page); box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+  .s-title { position:absolute; left:65px; top:16px; width:1000px; height:114px; margin:0; display:flex; align-items:center; font-family:var(--font-title); font-weight:bold; font-size:var(--size-slide-title); line-height:1.05; color:var(--wu-black); }
+  .rule { position:absolute; left:64px; top:126px; width:108px; height:7px; background:var(--wu-rule-cyan); }
+  .logo-black { position:absolute; left:1106px; top:22px; width:121px; height:90px; }
+  ul.wu { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; }
+  ul.wu li { font-family:var(--font-body); color:var(--wu-black); line-height:1.3; display:flex; gap:15px; align-items:baseline; font-size:var(--fs,20px); }
+  ul.wu li::before { content:"\25AA"; color:var(--accent-bullet); flex:none; }
+  .footer { position:absolute; left:65px; top:688px; display:flex; font-family:var(--font-body); font-size:var(--size-footer); color:var(--wu-gray-footer); text-transform:uppercase; letter-spacing:0.04em; }
+  .footer .pg { width:130px; flex:none; }
+  .accred-b { position:absolute; left:1052px; top:678px; width:200px; height:32px; }
+  .src { position:absolute; left:65px; top:652px; width:1150px; margin:0; font-family:var(--font-body); font-size:13px; font-style:italic; color:var(--wu-gray-footer); line-height:1.3; }
+  .slide a { color:var(--wu-link); text-decoration:underline; }
+  .act-kicker { position:absolute; left:65px; top:148px; margin:0; font-family:var(--font-body); font-size:17px; text-transform:uppercase; letter-spacing:0.12em; color:var(--wu-cyan); font-weight:bold; }
+  .act-obj { position:absolute; left:65px; top:180px; width:1120px; margin:0; font-family:var(--font-body); font-size:18px; font-style:italic; color:var(--wu-gray-footer); line-height:1.35; }
+  .act-box { position:absolute; left:65px; width:1150px; background:var(--wu-ice); padding:22px 30px; box-sizing:border-box; }
+  ol.steps { margin:0; padding:0; list-style:none; counter-reset:st; display:flex; flex-direction:column; gap:11px; }
+  ol.steps li { counter-increment:st; font-family:var(--font-body); font-size:19px; line-height:1.32; color:var(--wu-black); display:flex; gap:14px; align-items:baseline; }
+  ol.steps li::before { content:counter(st); font-weight:bold; color:var(--wu-cyan); flex:none; min-width:22px; }
+  ul.fl { margin:0; padding:0 0 0 18px; font-family:var(--font-body); font-size:15.5px; line-height:1.4; color:#fff; }
+  ul.fl li { margin-bottom:8px; }
+  ul.fl.fl-d { color:var(--wu-black); }
+  .fwtile { background:var(--wu-ice); padding:18px 22px; min-height:120px; }
+  .fw-h { margin:0 0 8px 0; font-family:var(--font-title); font-weight:bold; font-size:21px; }
+  .fw-d { margin:0; font-family:var(--font-body); font-size:16px; color:var(--wu-black); line-height:1.4; }
+  .lvl { background:var(--wu-ice); padding:16px 18px; min-height:150px; border-top:5px solid var(--wu-cyan); }
+  .lvl-h { margin:0 0 8px 0; font-family:var(--font-title); font-weight:bold; font-size:19px; color:var(--wu-navy); }
+  .lvl-d { margin:0; font-family:var(--font-body); font-size:15px; color:var(--wu-black); line-height:1.35; }
+  @media print { body{background:#fff;padding:0;gap:0;} .slide{box-shadow:none;page-break-after:always;break-after:page;} .stage{max-width:none;} }
+</style></head><body>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:26px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.12;color:var(--wu-white)">Firm Strategy and<br>Industry Analysis</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026<br><b>Dr. Arne Floh</b> · Department of Global Trade, WU Vienna</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Define <b>strategy</b> and separate <b>corporate</b> from <b>business</b> strategy.</span></li>
+    <li><span>See how strategy rests on <b>internal and external</b> analysis.</span></li>
+    <li><span>Analyze industry attractiveness with <b>Porter’s Five Forces</b> — and what drives each force high or low.</span></li>
+    <li><span>Understand what makes <b>international</b> strategy special.</span></li>
+    <li><span>Balance <b>integration and responsiveness</b> — down to the task level.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">What is strategy?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:196px;width:1150px;background:var(--wu-ice);padding:34px 44px;border-left:8px solid var(--wu-cyan)">
+    <p style="margin:0;font-family:var(--font-title);font-size:29px;line-height:1.4;color:var(--wu-navy)">“A planned set of actions that managers employ to make best use of the firm’s <b>resources and core competencies</b> to gain <b>competitive advantage</b>.”</p>
+  </div>
+  <ul class="wu" style="position:absolute;left:65px;top:440px;width:1150px;gap:10px;--fs:18px">
+    <li><span>Two questions sit inside every strategy: <b>where to compete</b> (which industries and markets) and <b>how to compete</b> (the competitive approach there).</span></li>
+    <li><span>Watch: Michael Porter, <a href="https://www.youtube.com/watch?v=NY4myVa5Wkw">“What is strategy?”</a> — strategy is choosing to be <i>different</i>, not just better.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 3</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Two levels of firm strategy</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:186px;width:1150px;display:flex;gap:22px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:24px 28px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:23px">Corporate strategy</p>
+      <p style="margin:10px 0 0 0;font-family:var(--font-body);font-size:20px;color:var(--wu-sky)"><b>Where to compete?</b></p>
+      <p style="margin:12px 0 0 0;font-family:var(--font-body);font-size:16.5px;line-height:1.45">The scope of the firm — in which <b>industries and markets</b> should it operate? Diversification, vertical integration, entering or exiting countries.</p>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:24px 28px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:23px;color:var(--wu-navy)">Business strategy</p>
+      <p style="margin:10px 0 0 0;font-family:var(--font-body);font-size:20px;color:var(--wu-cyan)"><b>How to compete?</b></p>
+      <p style="margin:12px 0 0 0;font-family:var(--font-body);font-size:16.5px;line-height:1.45">The competitive approach <b>within</b> an industry or market — cost leadership vs. differentiation, how to win customers against rivals.</p>
+    </div>
+  </div>
+  <ul class="wu" style="position:absolute;left:65px;top:470px;width:1150px;gap:9px;--fs:18px">
+    <li><span>For the international firm both questions gain a geographic dimension: <b>which countries</b>, and <b>how to compete</b> in each.</span></li>
+  </ul>
+  <p class="src">Based on Grant, Contemporary Strategy Analysis (2010).</p>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">What is the basis for defining strategy?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:230px;top:170px;width:820px;background:var(--wu-navy);color:#fff;padding:14px;text-align:center;font-family:var(--font-title);font-weight:bold;font-size:20px">Competitive advantage</div>
+  <div style="position:absolute;left:230px;top:238px;width:820px;display:flex;gap:16px">
+    <div style="flex:1;background:var(--wu-ice);padding:16px 20px"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:17px;color:var(--wu-navy)">Firm resources &amp; capabilities</p><p style="margin:6px 0 0 0;font-family:var(--font-body);font-size:14.5px">internal — how do we create customer value?</p></div>
+    <div style="flex:1;background:var(--wu-sky);padding:16px 20px"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:17px;color:var(--wu-navy)">Industry environment</p><p style="margin:6px 0 0 0;font-family:var(--font-body);font-size:14.5px">who are our business partners and rivals?</p></div>
+    <div style="flex:1;background:var(--wu-steel,#457AA0);color:#fff;padding:16px 20px"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:17px">National environment</p><p style="margin:6px 0 0 0;font-family:var(--font-body);font-size:14.5px">what is our extended business domain?</p></div>
+  </div>
+  <ul class="wu" style="position:absolute;left:65px;top:430px;width:1150px;gap:10px;--fs:18px">
+    <li><span>Competitive advantage is built where the <b>firm’s resources</b> meet the <b>industry</b> and <b>national</b> environments.</span></li>
+    <li><span>So strategy definition always rests on <b>both internal and external analysis</b> — the two we develop today.</span></li>
+  </ul>
+  <p class="src">Based on Grant, Contemporary Strategy Analysis (2010).</p>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Two tools for external analysis</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>The external environment has two layers — and each has its own workhorse tool:</span></li>
+    <li><span><b>Macro environment</b> → <b>PEST(EL)</b>: political, economic, societal, technological (plus environmental and legal) forces. Broad, indirect, almost the same for everyone.</span></li>
+    <li><span><b>Industry (micro) environment</b> → <b>Porter’s Five Forces</b>: the direct competitive forces that determine how profitable an industry is.</span></li>
+    <li><span>Today we go deep on the second — the tool that explains <b>why some industries are far more profitable than others</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Porter’s Five Forces: analyzing industry attractiveness</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px">
+    <svg viewBox="0 0 760 480" width="760" height="480" font-family="Georgia,serif">
+      <rect x="270" y="200" width="220" height="80" fill="#002350"/>
+      <text x="380" y="232" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">Industry rivalry</text>
+      <text x="380" y="256" font-size="12.5" fill="#80CFE9" text-anchor="middle">among existing firms</text>
+      <rect x="270" y="20" width="220" height="64" fill="#457AA0"/>
+      <text x="380" y="47" font-size="14.5" fill="#fff" text-anchor="middle" font-weight="bold">New entrants</text>
+      <text x="380" y="67" font-size="11.5" fill="#E5F5FA" text-anchor="middle">threat of entry</text>
+      <rect x="270" y="396" width="220" height="64" fill="#457AA0"/>
+      <text x="380" y="423" font-size="14.5" fill="#fff" text-anchor="middle" font-weight="bold">Substitutes</text>
+      <text x="380" y="443" font-size="11.5" fill="#E5F5FA" text-anchor="middle">threat of substitution</text>
+      <rect x="20" y="208" width="200" height="64" fill="#0096D3"/>
+      <text x="120" y="235" font-size="14.5" fill="#fff" text-anchor="middle" font-weight="bold">Suppliers</text>
+      <text x="120" y="255" font-size="11.5" fill="#E5F5FA" text-anchor="middle">bargaining power</text>
+      <rect x="540" y="208" width="200" height="64" fill="#0096D3"/>
+      <text x="640" y="235" font-size="14.5" fill="#fff" text-anchor="middle" font-weight="bold">Buyers</text>
+      <text x="640" y="255" font-size="11.5" fill="#E5F5FA" text-anchor="middle">bargaining power</text>
+      <g stroke="#888" stroke-width="2" marker-end="url(#a)">
+        <line x1="380" y1="84" x2="380" y2="196"/>
+        <line x1="380" y1="396" x2="380" y2="284"/>
+        <line x1="220" y1="240" x2="266" y2="240"/>
+        <line x1="540" y1="240" x2="494" y2="240"/>
+      </g>
+      <defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#888"/></marker></defs>
+    </svg>
+  </div>
+  <ul class="wu" style="position:absolute;left:850px;top:190px;width:370px;gap:13px;--fs:16.5px">
+    <li><span>The five forces together set the <b>ceiling on industry profitability</b>.</span></li>
+    <li><span>Strong forces squeeze profits; weak forces leave room to earn returns.</span></li>
+    <li><span>Porter later added a <b>sixth</b>: complementary products and complementors.</span></li>
+    <li><span>Internationally, each force gains a cross-border edge — foreign entrants, global suppliers, imports as substitutes.</span></li>
+  </ul>
+  <p class="src">Based on Porter (1996, 2008).</p>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Force 1: rivalry among existing competitors</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:16.5px;color:var(--wu-gray-footer)">Rivalry shows up as price discounting, advertising battles and service one-upmanship — all of which limit profitability. What matters is its intensity and its basis (price vs. differentiation).</p>
+  <div style="position:absolute;left:65px;top:214px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:18px 24px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:19px">Rivalry is HIGH when…</p>
+      <ul class="fl"><li>Low industry concentration (many similar-sized firms)</li><li>Low product differentiation — buyers see substitutes</li><li>High economies of scale and a high ratio of fixed to variable costs</li><li>Slow industry growth — gains come only from rivals</li></ul>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:18px 24px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Rivalry is LOW when…</p>
+      <ul class="fl fl-d"><li>High industry concentration (a few dominant firms)</li><li>High product differentiation and brand loyalty</li><li>Low fixed-cost pressure to fill capacity</li><li>Growing industry — everyone can expand</li></ul>
+    </div>
+  </div>
+  <p class="src">Source: Campbell, Edgar & Stonehouse (2011); Grant (2008); Porter (2008).</p>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Force 2: bargaining power of suppliers</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:16.5px;color:var(--wu-gray-footer)">Suppliers and buyers use bargaining power to capture a larger share of the value chain’s total profit. First, the supplier side.</p>
+  <div style="position:absolute;left:65px;top:214px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:18px 24px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:19px">Supplier power is HIGH when…</p>
+      <ul class="fl"><li>Few suppliers, each selling a high volume to the industry</li><li>High switching costs and few appropriate substitutes for the input</li><li>Highly differentiated inputs the buyer cannot easily replace</li><li>Credible threat of forward integration by suppliers</li></ul>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:18px 24px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Supplier power is LOW when…</p>
+      <ul class="fl fl-d"><li>Many suppliers competing for the firm’s purchases</li><li>Low switching costs and readily available substitute inputs</li><li>Undifferentiated, commodity inputs</li><li>The industry is an important customer for suppliers</li></ul>
+    </div>
+  </div>
+  <p class="src">Source: Campbell, Edgar & Stonehouse (2011); Grant (2008); Porter (2008).</p>
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Force 3: bargaining power of buyers</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:16.5px;color:var(--wu-gray-footer)">Now the buyer side of the value chain — the same logic, mirrored.</p>
+  <div style="position:absolute;left:65px;top:214px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:18px 24px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:19px">Buyer power is HIGH when…</p>
+      <ul class="fl"><li>Few customers, each buying a high volume</li><li>Low switching costs and many available substitutes</li><li>Undifferentiated products — buyers can shop on price</li><li>Credible threat of backward integration by buyers</li></ul>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:18px 24px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Buyer power is LOW when…</p>
+      <ul class="fl fl-d"><li>Many small customers, each buying little</li><li>High switching costs and few substitutes</li><li>Highly differentiated products buyers must have</li><li>The product is a small share of the buyer’s cost</li></ul>
+    </div>
+  </div>
+  <p class="src">Source: Campbell, Edgar & Stonehouse (2011); Grant (2008); Porter (2008).</p>
+  <div class="footer"><span class="pg">Page 10</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="font-size:30px;">Forces 4 & 5: new entrants and substitutes</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1">
+      <div style="background:var(--wu-navy);color:#fff;padding:14px 20px"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px">Threat of new entrants is HIGH when…</p></div>
+      <div style="background:var(--wu-ice);padding:14px 20px"><ul class="fl fl-d">
+        <li>Low capital costs to enter</li><li>Low brand loyalty and low customer switching costs</li><li>Open access to inputs and distribution channels</li><li>No scale advantages held by incumbents</li></ul></div>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:14px;color:var(--wu-gray-footer)">Incumbents spend (discounts, advertising) to deter entrants — which itself lowers profit.</p>
+    </div>
+    <div style="flex:1">
+      <div style="background:var(--wu-navy);color:#fff;padding:14px 20px"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px">Threat of substitutes is HIGH when…</p></div>
+      <div style="background:var(--wu-ice);padding:14px 20px"><ul class="fl fl-d">
+        <li>A substitute matches the industry’s price and performance</li><li>Buyers face low switching costs to the substitute</li><li>The substitute improves quickly (better price–performance)</li><li>Internationally: imports act as substitutes via exports</li></ul></div>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:14px;color:var(--wu-gray-footer)">Substitutes outside the industry cap the price firms can charge.</p>
+    </div>
+  </div>
+  <p class="src">Source: Campbell, Edgar & Stonehouse (2011); Grant (2008); Porter (2008).</p>
+  <div class="footer"><span class="pg">Page 11</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Discussion: what is special about international strategy?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class discussion · 8 minutes</p>
+  <div class="act-box" style="top:210px">
+    <ol class="steps">
+      <li><span>Take any framework so far — resources, Five Forces, PEST(EL).</span></li>
+      <li><span>What <b>changes</b> when the firm operates in many countries at once?</span></li>
+      <li><span>Are a firm’s resources and capabilities <b>valuable in every market</b> — or only some?</span></li>
+      <li><span>Do the <b>competitive forces differ</b> across countries for the same industry?</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 12</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Multinationality adds layers of analysis</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Competitive advantage:</b> are the firm’s resources and capabilities valuable in <b>all</b> markets — or bound to the home context?</span></li>
+    <li><span><b>Industry environment:</b> do the <b>competitive forces differ</b> across countries — different rivals, suppliers, buyer power?</span></li>
+    <li><span><b>National environment:</b> different <b>trends and challenges</b> across countries — institutions, culture, demand.</span></li>
+    <li><span>→ Multinationality does not replace the frameworks; it <b>multiplies</b> them, one layer per market.</span></li>
+  </ul><p class="src">Based on Grant, Contemporary Strategy Analysis (2010).</p>
+  <div class="footer"><span class="pg">Page 13</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">A firm’s country of origin shapes its international strategy</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>The <b>country of origin shapes the competitive advantages</b> an MNC carries abroad — its home institutions, factor conditions and demand.</span></li>
+    <li><span>Firms differ in how they are <b>used to doing business</b> in a globalized world — and how they <b>cope with high-uncertainty</b> environments.</span></li>
+    <li><span>They also sit at <b>different stages of the internationalization process</b> — from low value-adding to high value-adding activities abroad.</span></li>
+    <li><span><i>This is why a German Mittelstand exporter, a Chinese state-linked champion and a Silicon Valley platform internationalize so differently.</i></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 14</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">MNCs face contradictory objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:170px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+    <div class="fwtile" style="border-top:6px solid #0096D3"><p class="fw-h" style="color:#002350">Efficiency</p><p class="fw-d">in international value chains — global scale and low cost</p></div>
+    <div class="fwtile" style="border-top:6px solid #457AA0"><p class="fw-h" style="color:#002350">Flexibility</p><p class="fw-d">facing country-specific risks and opportunities</p></div>
+    <div class="fwtile" style="border-top:6px solid #002350"><p class="fw-h" style="color:#002350">Learning</p><p class="fw-d">from global operations — and transferring it worldwide</p></div>
+  </div>
+  <div style="position:absolute;left:65px;top:400px;width:1150px;display:flex;gap:20px">
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:16px 22px"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px">Pressures for integration</p><p style="margin:5px 0 0 0;font-family:var(--font-body);font-size:14.5px;color:var(--wu-ice)">standardize, centralize, exploit scale</p></div>
+    <div style="flex:1;background:var(--wu-cyan);color:#fff;padding:16px 22px"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px">Pressures for responsiveness</p><p style="margin:5px 0 0 0;font-family:var(--font-body);font-size:14.5px;color:var(--wu-ice)">adapt to local needs and conditions</p></div>
+  </div>
+  <p class="src">MNC strategy must balance the pressures for integration and responsiveness to achieve all three goals. Source: Ghoshal (1987); Bartlett & Ghoshal.</p>
+  <div class="footer"><span class="pg">Page 15</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Discussion: the I/R framework in the FMCG industry</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class discussion · 10 minutes · groups</p>
+  <div class="act-box" style="top:210px">
+    <ol class="steps">
+      <li><span>What pressures for <b>local responsiveness</b> shape the fast-moving consumer goods industry?</span></li>
+      <li><span>What competitive forces push it toward <b>global integration</b>?</span></li>
+      <li><span>How are <b>technology and competition</b> changing that balance right now?</span></li>
+      <li><span>Where would you place a firm like Unilever, Nestlé or Red Bull — and why?</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 16</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Discussion: the I/R framework and McDonald’s</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class discussion · 10 minutes · groups</p>
+  <div class="act-box" style="top:210px">
+    <ol class="steps">
+      <li><span>What factors forced <b>McDonald’s to reconsider</b> its integration/responsiveness balance?</span></li>
+      <li><span>How did McDonald’s <b>react</b> to these industry pressures? (Think menu, sourcing, franchising, marketing.)</span></li>
+      <li><span>The McAloo Tikki in India, the McBaguette in France, vegetarian outlets near temples — integration or responsiveness?</span></li>
+      <li><span>Which Cavusgil strategy label fits McDonald’s best — global, multidomestic or transnational?</span></li>
+    </ol>
+  </div>
+  <div class="footer"><span class="pg">Page 17</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The I/R framework applies at every level — down to the task</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:180px;width:1150px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+    <div class="lvl"><p class="lvl-h">Industries</p><p class="lvl-d">Some industries are inherently more integrated (aerospace), others more local (retail food)</p></div>
+    <div class="lvl"><p class="lvl-h">Companies</p><p class="lvl-d">Within an industry, firms pick different points on the I/R map</p></div>
+    <div class="lvl"><p class="lvl-h">Functions</p><p class="lvl-d">R&amp;D may be integrated while marketing is highly responsive</p></div>
+    <div class="lvl"><p class="lvl-h">Tasks</p><p class="lvl-d">Even within a function, single tasks differ in their I/R pull</p></div>
+  </div>
+  <ul class="wu" style="position:absolute;left:65px;top:430px;width:1150px;gap:10px;--fs:18px">
+    <li><span>The integration–responsiveness tension is <b>not decided once</b> for the whole firm — it is resolved activity by activity.</span></li>
+    <li><span>Based on this analysis, MNCs <b>configure their value-chain activities</b> for the optimal use of resources — the bridge to the next session on strategy and structure.</span></li>
+  </ul>
+  <p class="src">Source: Bartlett (1985); Porter (1984).</p>
+  <div class="footer"><span class="pg">Page 18</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Apply it: a Five-Forces verdict</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · small groups</p>
+  <p class="act-obj">Objective: judge an industry’s attractiveness with the Five Forces, then add the international twist.</p>
+  <div class="act-box" style="top:248px"><ol class="steps"><li><span>Choose an industry: airlines, smartphones, streaming, coffee shops or car making.</span></li><li><span>Rate each of the five forces <b>high / medium / low</b> — and name the single driver that sets each rating.</span></li><li><span>Verdict: is this an <b>attractive</b> industry to be in? Where does the profit leak out?</span></li><li><span>Add the international layer: which force changes most <b>across countries</b>?</span></li><li><span>One group presents; the class challenges the ratings.</span></li></ol></div>
+  <div class="footer"><span class="pg">Page 19</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<script>function fit(){var vw=document.body.clientWidth-40;var sc=Math.min(1,vw/1280);document.querySelectorAll('.stage').forEach(function(st){var sl=st.querySelector('.slide');sl.style.transform='scale('+sc+')';st.style.height=(720*sc)+'px';st.style.width=(1280*sc)+'px';});}window.addEventListener('resize',fit);fit();</script>
+</body></html>

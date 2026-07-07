@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>External Strategic Analysis (WU)</title><link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page); box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+  .s-title { position:absolute; left:65px; top:16px; width:1000px; height:114px; margin:0; display:flex; align-items:center; font-family:var(--font-title); font-weight:bold; font-size:var(--size-slide-title); line-height:1.05; color:var(--wu-black); }
+  .rule { position:absolute; left:64px; top:126px; width:108px; height:7px; background:var(--wu-rule-cyan); }
+  .logo-black { position:absolute; left:1106px; top:22px; width:121px; height:90px; }
+  ul.wu { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; }
+  ul.wu li { font-family:var(--font-body); color:var(--wu-black); line-height:1.3; display:flex; gap:15px; align-items:baseline; font-size:var(--fs,20px); }
+  ul.wu li::before { content:"\25AA"; color:var(--accent-bullet); flex:none; }
+  .footer { position:absolute; left:65px; top:688px; display:flex; font-family:var(--font-body); font-size:var(--size-footer); color:var(--wu-gray-footer); text-transform:uppercase; letter-spacing:0.04em; }
+  .footer .pg { width:130px; flex:none; }
+  .accred-b { position:absolute; left:1052px; top:678px; width:200px; height:32px; }
+  .src { position:absolute; left:65px; top:650px; width:1150px; margin:0; font-family:var(--font-body); font-size:13.5px; font-style:italic; color:var(--wu-gray-footer); line-height:1.3; }
+  .slide a { color:var(--wu-link); text-decoration:underline; }
+  .act-kicker { position:absolute; left:65px; top:148px; margin:0; font-family:var(--font-body); font-size:17px; text-transform:uppercase; letter-spacing:0.12em; color:var(--wu-cyan); font-weight:bold; }
+  .act-obj { position:absolute; left:65px; top:180px; width:1120px; margin:0; font-family:var(--font-body); font-size:18px; font-style:italic; color:var(--wu-gray-footer); line-height:1.35; }
+  .act-box { position:absolute; left:65px; width:1150px; background:var(--wu-ice); padding:22px 30px; box-sizing:border-box; }
+  ol.steps { margin:0; padding:0; list-style:none; counter-reset:st; display:flex; flex-direction:column; gap:11px; }
+  ol.steps li { counter-increment:st; font-family:var(--font-body); font-size:19px; line-height:1.32; color:var(--wu-black); display:flex; gap:14px; align-items:baseline; }
+  ol.steps li::before { content:counter(st); font-weight:bold; color:var(--wu-cyan); flex:none; min-width:22px; }
+  .pes-t { background:var(--wu-ice); padding:12px 18px; min-height:104px; box-sizing:border-box; }
+  .pes-h { margin:0 0 5px 0; font-family:var(--font-title); font-weight:bold; font-size:17px; color:var(--wu-navy); display:flex; align-items:center; gap:6px; }
+  .pes-d { margin:0; font-family:var(--font-body); font-size:13.5px; color:var(--wu-black); line-height:1.35; }
+  @media print { body{background:#fff;padding:0;gap:0;} .slide{box-shadow:none;page-break-after:always;break-after:page;} .stage{max-width:none;} }
+</style></head><body>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:26px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.12;color:var(--wu-white)">External Strategic Analysis:<br>Scanning the Environment</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026<br><b>Dr. Arne Floh</b> · Department of Global Trade, WU Vienna</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>See how <b>strategy links the firm to its external environment</b> (Grant’s framework).</span></li>
+    <li><span>Distinguish the <b>micro (industry)</b> from the <b>macro (general)</b> environment.</span></li>
+    <li><span>Use the <b>PESTEL</b> tool to scan the global macro environment — and know its limits.</span></li>
+    <li><span>Turn the analysis into strategy with a <b>SWOT / TOWS</b> logic.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Strategy links the firm and its external environment</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:170px;width:1150px;display:flex;gap:20px;align-items:stretch">
+    <div style="flex:1;background:var(--wu-ice);padding:18px 22px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">The firm — internal analysis</p>
+      <ul class="wu" style="--fs:15.5px;gap:7px">
+        <li><span>Goals &amp; values</span></li><li><span>Resources &amp; capabilities</span></li><li><span>Structure &amp; systems</span></li>
+      </ul>
+      <p style="margin:12px 0 4px 0;font-family:var(--font-body);font-size:14px;color:var(--wu-gray-footer)">→ yields <b>Strengths</b> and <b>Weaknesses</b></p>
+    </div>
+    <div style="flex:none;display:flex;align-items:center;justify-content:center;width:210px;background:var(--wu-navy);color:#fff;padding:16px;text-align:center">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px">Strategy<br><span style="font-weight:normal;font-size:14.5px">to build and sustain competitive advantage</span></p>
+    </div>
+    <div style="flex:1;background:var(--wu-ice);padding:18px 22px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">The environment — external analysis</p>
+      <ul class="wu" style="--fs:15.5px;gap:7px">
+        <li><span><b>Micro:</b> competitors · customers · suppliers</span></li>
+        <li><span><b>Macro:</b> political, economic, societal, technological forces</span></li>
+      </ul>
+      <p style="margin:12px 0 4px 0;font-family:var(--font-body);font-size:14px;color:var(--wu-gray-footer)">→ yields <b>Opportunities</b> and <b>Threats</b></p>
+    </div>
+  </div>
+  <ul class="wu" style="position:absolute;left:65px;top:430px;width:1150px;gap:9px;--fs:18px">
+    <li><span>Good strategy is the <b>bridge</b>: it matches the firm’s strengths to the opportunities in its environment, while covering weaknesses and threats.</span></li>
+    <li><span>External analysis therefore has two layers — the <b>industry (micro)</b> and the <b>general (macro)</b> environment.</span></li>
+  </ul>
+  <p class="src">Based on Grant, Contemporary Strategy Analysis (2010).</p>
+  <div class="footer"><span class="pg">Page 3</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Two layers of the external environment</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:110px;top:168px">
+    <svg viewBox="0 0 560 470" width="560" height="470" font-family="Georgia,serif">
+      <circle cx="280" cy="235" r="228" fill="#E5F5FA"/>
+      <circle cx="280" cy="235" r="150" fill="#80CFE9"/>
+      <circle cx="280" cy="235" r="74" fill="#002350"/>
+      <text x="280" y="232" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">Company</text>
+      <text x="280" y="256" font-size="13" fill="#E5F5FA" text-anchor="middle">the focal firm</text>
+      <text x="280" y="130" font-size="17" fill="#002350" text-anchor="middle" font-weight="bold">Industry (micro)</text>
+      <text x="280" y="150" font-size="12.5" fill="#002350" text-anchor="middle">suppliers · competitors · customers</text>
+      <text x="280" y="52" font-size="17" fill="#002350" text-anchor="middle" font-weight="bold">Macro environment</text>
+      <text x="280" y="72" font-size="12.5" fill="#457AA0" text-anchor="middle">political · economic · societal · technological (+ E, L)</text>
+    </svg>
+  </div>
+  <ul class="wu" style="position:absolute;left:730px;top:200px;width:485px;gap:14px;--fs:17px">
+    <li><span>The <b>industry</b> influences companies and competition <b>directly</b>.</span></li>
+    <li><span>The <b>macro environment</b> influences the industry — and companies only <b>indirectly</b>.</span></li>
+    <li><span>The macro environment is <b>almost the same for everyone</b> and can hardly be affected by a single firm — so the task is to <b>scan and anticipate</b> it.</span></li>
+    <li><span>Tools: <b>PEST(EL)</b> for the macro layer, industry analysis (Porter) for the micro layer.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The PEST(EL) framework: scanning the macro environment</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">PEST(EL) captures the dynamics of the general environment as six sets of driving forces — the outer ring of the previous slide, made concrete.</p>
+  <div style="position:absolute;left:65px;top:212px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px"><div class="pes-t"><p class="pes-h"><span style="color:#002350;font-size:30px">P</span> · Political</p><p class="pes-d">Stability · trade policy · tariffs · government intervention</p></div><div class="pes-t"><p class="pes-h"><span style="color:#002350;font-size:30px">E</span> · Economic</p><p class="pes-d">Growth · inflation · exchange rates · disposable income</p></div><div class="pes-t"><p class="pes-h"><span style="color:#002350;font-size:30px">S</span> · Social</p><p class="pes-d">Demographics · values &amp; lifestyles · culture · education</p></div><div class="pes-t"><p class="pes-h"><span style="color:#002350;font-size:30px">T</span> · Technological</p><p class="pes-d">Digitalization · infrastructure · R&amp;D · automation</p></div><div class="pes-t"><p class="pes-h"><span style="color:#002350;font-size:30px">E</span> · Environmental</p><p class="pes-d">Climate · sustainability regulation · resource scarcity</p></div><div class="pes-t"><p class="pes-h"><span style="color:#002350;font-size:30px">L</span> · Legal</p><p class="pes-d">Employment law · IP · product standards · competition law</p></div></div>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">From PEST(EL) to opportunities and threats</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>A PEST(EL) scan is only useful if it ends in a strategic question: <b>how does each force affect industry profitability</b> — and this firm?</span></li>
+    <li><span>For every factor, classify it as an <b>opportunity</b> or a <b>threat</b>, and judge its <b>impact</b> and <b>likelihood</b>.</span></li>
+    <li><span>Track the <b>direction of change</b>: is the force strengthening or weakening — and how fast?</span></li>
+    <li><span>The output feeds directly into the <b>O</b> and <b>T</b> of the SWOT — and into scenario planning.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">PEST(EL): a good start — but not sufficient</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>What it does well:</b> a scanning system that maps the firm’s exposure to macro driving forces and roughly illustrates external conditions.</span></li>
+    <li><span>Identifies the <b>key influencing variables</b> and displays historical developments to help forecast future forces.</span></li>
+    <li><span><b>Limits:</b> the line between organizational, industry and macro influences is often hard to draw.</span></li>
+    <li><span>It is <b>subjective</b>; a historical view does not guarantee predictions; and it <b>cannot itself recommend actions</b>.</span></li>
+    <li><span>→ Treat it as a <b>foundation</b> for more detailed market and industry analysis — not a conclusion.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Turning analysis into strategy: the TOWS logic</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">Internal analysis gives Strengths and Weaknesses; external analysis gives Opportunities and Threats. Strategy lives where they cross.</p>
+  <div style="position:absolute;left:210px;top:214px;width:1000px;display:grid;grid-template-columns:150px 1fr 1fr;gap:10px">
+    <div></div>
+    <div style="background:var(--wu-navy);color:#fff;padding:10px;text-align:center;font-family:var(--font-title);font-weight:bold;font-size:17px">Opportunities</div>
+    <div style="background:var(--wu-navy);color:#fff;padding:10px;text-align:center;font-family:var(--font-title);font-weight:bold;font-size:17px">Threats</div>
+    <div style="background:var(--wu-navy);color:#fff;padding:10px;display:flex;align-items:center;justify-content:center;font-family:var(--font-title);font-weight:bold;font-size:17px">Strengths</div>
+    <div style="background:var(--wu-ice);padding:14px 16px"><p style="margin:0;font-family:var(--font-body);font-size:15.5px"><b>SO:</b> Do we have the strengths to <b>exploit</b> the opportunities?</p></div>
+    <div style="background:var(--wu-ice);padding:14px 16px"><p style="margin:0;font-family:var(--font-body);font-size:15.5px"><b>ST:</b> Do we have the strengths to <b>overcome</b> the risks?</p></div>
+    <div style="background:var(--wu-navy);color:#fff;padding:10px;display:flex;align-items:center;justify-content:center;font-family:var(--font-title);font-weight:bold;font-size:17px">Weaknesses</div>
+    <div style="background:var(--wu-ice);padding:14px 16px"><p style="margin:0;font-family:var(--font-body);font-size:15.5px"><b>WO:</b> Which opportunities are we <b>missing</b> because of our weaknesses?</p></div>
+    <div style="background:var(--wu-ice);padding:14px 16px"><p style="margin:0;font-family:var(--font-body);font-size:15.5px"><b>WT:</b> Which risks are we <b>exposed to</b> because of our weaknesses?</p></div>
+  </div>
+  <p class="src">The four questions turn a static SWOT list into strategy options — the TOWS matrix.</p>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Apply it: scan an industry’s macro environment</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 12 minutes · small groups</p>
+  <p class="act-obj">Objective: run a quick PEST(EL) on a real industry and convert it into opportunities and threats.</p>
+  <div class="act-box" style="top:248px"><ol class="steps"><li><span>Pick an industry with an international footprint: EVs, fast fashion, streaming, air travel or coffee.</span></li><li><span>List <b>one strong force per PEST(EL) letter</b> shaping it right now.</span></li><li><span>For each, mark <b>opportunity or threat</b> — and whether it is strengthening or weakening.</span></li><li><span>Name the <b>single most important</b> macro force, and one strategic response a firm should make.</span></li><li><span>Report your top force to the class — we compare which letters dominate which industries.</span></li></ol></div>
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<script>function fit(){var vw=document.body.clientWidth-40;var sc=Math.min(1,vw/1280);document.querySelectorAll('.stage').forEach(function(st){var sl=st.querySelector('.slide');sl.style.transform='scale('+sc+')';st.style.height=(720*sc)+'px';st.style.width=(1280*sc)+'px';});}window.addEventListener('resize',fit);fit();</script>
+</body></html>

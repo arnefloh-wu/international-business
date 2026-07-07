@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Entry (Cavusgil 13–15) (WU)</title><link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page); box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+  .s-title { position:absolute; left:65px; top:16px; width:1000px; height:114px; margin:0; display:flex; align-items:center; font-family:var(--font-title); font-weight:bold; font-size:var(--size-slide-title); line-height:1.05; color:var(--wu-black); }
+  .rule { position:absolute; left:64px; top:126px; width:108px; height:7px; background:var(--wu-rule-cyan); }
+  .logo-black { position:absolute; left:1106px; top:22px; width:121px; height:90px; }
+  ul.wu { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; }
+  ul.wu li { font-family:var(--font-body); color:var(--wu-black); line-height:1.3; display:flex; gap:15px; align-items:baseline; font-size:var(--fs,20px); }
+  ul.wu li::before { content:"\25AA"; color:var(--accent-bullet); flex:none; }
+  .footer { position:absolute; left:65px; top:688px; display:flex; font-family:var(--font-body); font-size:var(--size-footer); color:var(--wu-gray-footer); text-transform:uppercase; letter-spacing:0.04em; }
+  .footer .pg { width:130px; flex:none; }
+  .accred-b { position:absolute; left:1052px; top:678px; width:200px; height:32px; }
+  table.wu { border-collapse:collapse; width:1150px; font-family:var(--font-body); }
+  table.wu th, table.wu td { padding:9px 14px; text-align:left; vertical-align:top; line-height:1.3; }
+  table.wu th { background:var(--wu-navy); color:var(--wu-white); font-weight:bold; }
+  table.wu td.k { font-weight:bold; }
+  table.wu tbody tr:nth-child(even) { background:var(--wu-ice); }
+  .src { position:absolute; left:65px; top:650px; width:1150px; margin:0; font-family:var(--font-body); font-size:13.5px; font-style:italic; color:var(--wu-gray-footer); line-height:1.3; }
+  .slide a { color:var(--wu-link); text-decoration:underline; }
+  .act-kicker { position:absolute; left:65px; top:148px; margin:0; font-family:var(--font-body); font-size:17px; text-transform:uppercase; letter-spacing:0.12em; color:var(--wu-cyan); font-weight:bold; }
+  .act-obj { position:absolute; left:65px; top:180px; width:1120px; margin:0; font-family:var(--font-body); font-size:18px; font-style:italic; color:var(--wu-gray-footer); line-height:1.35; }
+  .act-box { position:absolute; left:65px; width:1150px; background:var(--wu-ice); padding:22px 30px; box-sizing:border-box; }
+  ol.steps { margin:0; padding:0; list-style:none; counter-reset:st; display:flex; flex-direction:column; gap:11px; }
+  ol.steps li { counter-increment:st; font-family:var(--font-body); font-size:18px; line-height:1.32; color:var(--wu-black); display:flex; gap:14px; align-items:baseline; }
+  ol.steps li::before { content:counter(st); font-weight:bold; color:var(--wu-cyan); flex:none; min-width:22px; }
+  ul.fl { margin:0; padding:0 0 0 18px; font-family:var(--font-body); font-size:15.5px; line-height:1.4; color:#fff; }
+  ul.fl li { margin-bottom:8px; }
+  ul.fl.fl-d { color:var(--wu-black); }
+  .fwtile { background:var(--wu-ice); padding:18px 22px; min-height:150px; }
+  .fw-h { margin:0 0 8px 0; font-family:var(--font-title); font-weight:bold; font-size:20px; }
+  .fw-d { margin:0; font-family:var(--font-body); font-size:15.5px; color:var(--wu-black); line-height:1.38; }
+  @media print { body{background:#fff;padding:0;gap:0;} .slide{box-shadow:none;page-break-after:always;break-after:page;} .stage{max-width:none;} }
+</style></head><body>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:26px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.12;color:var(--wu-white)">Market Entry<br>(Cavusgil 13–15)</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026<br><b>Dr. Arne Floh</b> · Department of Global Trade, WU Vienna</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span>Frame the two core <b>market-entry decisions</b>: <b>which markets</b> to enter and <b>which mode</b> to use.</span></li>
+    <li><span>Compare entry modes on <b>control, risk, commitment and flexibility</b> — the export → intermediate → hierarchical ladder.</span></li>
+    <li><span>Understand <b>exporting</b> and its mechanics (intermediaries, Incoterms, payment, countertrade).</span></li>
+    <li><span>Understand <b>contractual / intermediate</b> modes — licensing, franchising, alliances — and how to protect intellectual property.</span></li>
+    <li><span>Understand <b>FDI and hierarchical</b> modes — motives, greenfield vs. M&amp;A, ownership and integration.</span></li>
+    <li><span>Connect entry to <b>global sourcing, supply chains</b> and, when needed, <b>exit</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 1</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Opening activity: get an Austrian SME abroad</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class opener · 12 minutes · pairs — instinct first, framework later</p>
+  <p class="act-obj">Objective: make a real market-entry call on instinct, then test it against today’s framework.</p>
+  <div class="act-box" style="top:240px"><ol class="steps"><li><span>Take a Viennese SME — e.g. <b>Manner</b> (wafers), <b>Blaguss</b> (travel), a craft-gin distiller or a med-tech start-up.</span></li><li><span>Pick <b>one foreign market</b> to enter — and <b>one way in</b> (export? license? franchise? joint venture? build your own operation?).</span></li><li><span>Write down <b>why</b> that mode: how much <b>control</b> do you need, how much <b>risk</b> can you carry, how much can you <b>invest</b>?</span></li><li><span>Keep your answer — at the end of the session you will re-decide with the full toolkit.</span></li></ol></div>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Two decisions, one strategy</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Foreign market entry is really <b>two linked decisions</b>: <b>WHERE</b> to compete (which country markets) and <b>HOW</b> to enter each one (the entry mode).</span></li>
+    <li><span><b>Which markets?</b> Screen and rank countries on <b>market attractiveness</b> and the firm’s <b>competitive strength</b> (Hollensen’s MACS logic).</span></li>
+    <li><span><b>Which mode?</b> Trade off <b>control, risk, resource commitment and flexibility</b> — the ladder from exporting to wholly owned operations.</span></li>
+    <li><span>The two decisions interact: a highly attractive market where the firm is strong justifies a high-commitment mode; a risky or uncertain one argues for a low-commitment entry.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 3</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Which mode? The control–commitment ladder</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:168px;width:1150px;height:470px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Georgia,serif">
+      <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#002350"/></marker></defs>
+      <line x1="70" y1="430" x2="1080" y2="120" stroke="#888" stroke-width="1.5" marker-end="url(#ar)"/>
+      <text x="70" y="455" font-size="14" fill="#002350">low control · low risk · low commitment · high flexibility</text>
+      <text x="1080" y="105" font-size="14" fill="#002350" text-anchor="end">high control · high risk · high commitment · low flexibility</text>
+      <g>
+        <rect x="70" y="330" width="300" height="96" fill="#E5F5FA"/>
+        <text x="86" y="360" font-size="19" font-weight="bold" fill="#002350">Export modes</text>
+        <text x="86" y="386" font-size="14" fill="#002350">indirect · direct · cooperative</text>
+        <text x="86" y="408" font-size="13" fill="#457AA0">production stays home, sell abroad</text>
+        <rect x="420" y="222" width="300" height="96" fill="#80CFE9"/>
+        <text x="436" y="252" font-size="19" font-weight="bold" fill="#002350">Intermediate modes</text>
+        <text x="436" y="278" font-size="14" fill="#002350">licensing · franchising · JV / alliance</text>
+        <text x="436" y="300" font-size="13" fill="#002350">shared control with a partner</text>
+        <rect x="770" y="114" width="310" height="96" fill="#002350"/>
+        <text x="786" y="144" font-size="19" font-weight="bold" fill="#fff">Hierarchical modes</text>
+        <text x="786" y="170" font-size="14" fill="#E5F5FA">sales subsidiary · wholly owned FDI</text>
+        <text x="786" y="192" font-size="13" fill="#80CFE9">the firm owns the operation abroad</text>
+      </g>
+    </svg></div>
+  <p class="src">As the firm climbs from export to intermediate to hierarchical modes it gains control and market presence — but takes on more risk, cost and less flexibility. Source: Hollensen, Global Marketing; Cavusgil et al., International Business.</p>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">What drives the mode choice?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span><b>Internal factors:</b> firm size and resources · international experience · the product (complex, service, IP-heavy?) · desired degree of control.</span></li>
+    <li><span><b>External factors:</b> market size and growth · country risk (political, legal, cultural) · trade barriers and government rules · intensity of competition.</span></li>
+    <li><span><b>Desired mode characteristics:</b> how much <b>risk-averseness</b>, need for <b>control</b>, and <b>flexibility</b> the firm wants.</span></li>
+    <li><span><b>Transaction-specific factors:</b> the risk of a partner appropriating the firm’s <b>know-how</b> — high tacit-knowledge or brand value pushes toward higher-control modes.</span></li>
+    <li><span><i>No single best mode: the right entry matches firm, product, market and the firm’s appetite for control and risk.</i></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Exporting: the usual first step</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Exporting:</b> producing at home (or a third country) and selling into foreign markets — usually the firm’s <b>first</b> entry strategy: low risk, low cost, flexible. Popular with SMEs.</span></li>
+    <li><span><b>Advantages:</b> grow sales and market share · better margins and economies of scale · diversify across markets · a low-commitment way to learn.</span></li>
+    <li><span><b>Disadvantages:</b> less learning about customers and rivals than FDI · needs new capabilities (contracts, logistics, finance) · exposed to <b>tariffs, trade barriers and exchange-rate</b> swings · reliance on intermediaries.</span></li>
+    <li><span>Services are exported too — architecture, education, banking, entertainment — but many services need local presence (retailing → FDI).</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Working through export intermediaries</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Foreign distributor:</b> based in the market, takes <b>title</b> to the goods, resells and services them — the exporter’s most common partner.</span></li>
+    <li><span><b>Manufacturer’s representative / agent:</b> sells on commission but does <b>not</b> take title; <b>trading companies</b> handle many products and markets.</span></li>
+    <li><span>The exporter depends on intermediaries for marketing, distribution and service — so <b>cultivate the relationship</b>: support them, respond to their needs, show commitment.</span></li>
+    <li><span>Common disputes: <b>compensation, pricing, advertising support, inventory and who owns the customer</b> — settle them in the contract up front.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Getting paid: Incoterms and methods of payment</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:178px;font-size:15.5px">
+    <thead><tr><th style="width:230px">Payment method</th><th style="width:500px">How it works</th><th>Risk</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Cash in advance</td><td>Buyer pays before shipment</td><td>Safest for the exporter — but hard to win buyers</td></tr>
+      <tr><td class="k">Letter of credit</td><td>A bank guarantees payment once shipping documents are presented</td><td>Low risk for both — the workhorse of trade finance</td></tr>
+      <tr><td class="k">Documentary collection</td><td>Bank handles documents; payment on sight or on a set date</td><td>Medium — bank handles papers, not a guarantee</td></tr>
+      <tr><td class="k">Open account</td><td>Ship first, buyer pays later (e.g. 30–90 days)</td><td>Riskiest for the exporter — used with trusted buyers</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Incoterms (ICC) split the cost and risk of freight, insurance and customs between buyer and seller — e.g. EXW (buyer bears almost all), FOB (seller to the ship’s rail), CIF (seller pays cost, insurance, freight), DDP (seller delivers duty-paid). A letter of credit is the classic way to bridge trust across borders.</p>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Countertrade: paying in kind</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Countertrade:</b> an international deal in which all or part of the payment is made <b>in goods rather than cash</b> — a modern form of barter. Used where hard currency is scarce, costly or restricted.</span></li>
+    <li><span>Estimated at roughly <b>10%–one third of world trade</b>, concentrated in emerging and resource economies.</span></li>
+    <li><span>Forms: <b>barter</b> (goods for goods) · <b>compensation deal</b> (goods + cash) · <b>counterpurchase</b> (two linked contracts) · <b>buy-back</b> (paid in the output of the plant you sold).</span></li>
+    <li><span><b>Example:</b> PepsiCo famously sold syrup to the USSR in exchange for Stolichnaya vodka — cola paid for in vodka.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Contractual (intermediate) modes: sharing control</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Contractual entry:</b> a cross-border relationship governed by a <b>contract</b>, giving the firm a <b>moderate</b> level of control and usually exchanging <b>intangibles</b> — intellectual property, technology, know-how, a business system.</span></li>
+    <li><span><b>Licensing:</b> the owner of IP grants another firm the right to use it for a period, for a <b>royalty</b> (typically 2–5% of gross sales) plus an upfront fee.</span></li>
+    <li><span><b>Franchising:</b> the firm grants another the right to use an <b>entire business system</b> — more comprehensive and longer-term than licensing.</span></li>
+    <li><span>These modes reduce the perception of being a foreign firm, generate <b>steadier</b> earnings than FDI, and can be combined with exporting or FDI as conditions evolve.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 10</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Licensing: advantages and the key risk</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span>A <b>licensor</b> (owner) grants a <b>licensee</b> (user) the right to make or sell using its IP. Types: <b>trademark</b> (Disney characters on apparel), <b>copyright</b> (Harry Potter images), <b>know-how</b> (Intel’s chip process).</span></li>
+    <li><span>Worldwide retail sales of <b>licensed merchandise exceed US$340 billion</b> a year (LIMA). Disney alone earns tens of billions in licensing.</span></li>
+    <li><span><b>Advantages for the licensor:</b> low investment, low involvement, low effort once set up — a cheap, fast way into a market.</span></li>
+    <li><span><b>Disadvantages:</b> performance depends on the licensee · <b>limited control</b> over the asset abroad · and the ever-present risk of <b>creating a future competitor</b>.</span></li>
+    <li><span><b>Example:</b> Anheuser-Busch’s Budweiser is brewed in Japan by Kirin under licence; Nestlé’s Kit Kat is made in the US by Hershey under licence.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 11</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Leading licensors by retail sales of licensed products (US$ bn)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:158px;width:1150px;height:470px"><svg viewBox="0 0 1150 450" width="100%" height="450" font-family="Verdana,Geneva,sans-serif"><text x="222" y="42.6" font-size="13" text-anchor="end" fill="#002350">Disney</text><rect x="230" y="26.6" width="850.0" height="24.0" fill="#0096D3"/><text x="1086.0" y="42.6" font-size="12.5" fill="#002350">$63.0</text><text x="222" y="95.9" font-size="13" text-anchor="end" fill="#002350">Authentic Brands</text><rect x="230" y="79.9" width="431.7" height="24.0" fill="#0096D3"/><text x="667.7" y="95.9" font-size="12.5" fill="#002350">$32.0</text><text x="222" y="149.1" font-size="13" text-anchor="end" fill="#002350">Dotdash Meredith</text><rect x="230" y="133.1" width="360.2" height="24.0" fill="#0096D3"/><text x="596.2" y="149.1" font-size="12.5" fill="#002350">$26.7</text><text x="222" y="202.4" font-size="13" text-anchor="end" fill="#002350">NBCUniversal</text><rect x="230" y="186.4" width="229.4" height="24.0" fill="#0096D3"/><text x="465.4" y="202.4" font-size="12.5" fill="#002350">$17.0</text><text x="222" y="255.6" font-size="13" text-anchor="end" fill="#002350">Hasbro</text><rect x="230" y="239.6" width="217.2" height="24.0" fill="#0096D3"/><text x="453.2" y="255.6" font-size="12.5" fill="#002350">$16.1</text><text x="222" y="308.9" font-size="13" text-anchor="end" fill="#002350">Warner Bros. Discovery</text><rect x="230" y="292.9" width="202.4" height="24.0" fill="#0096D3"/><text x="438.4" y="308.9" font-size="12.5" fill="#002350">$15.0</text><text x="222" y="362.1" font-size="13" text-anchor="end" fill="#002350">Pokémon Company</text><rect x="230" y="346.1" width="161.9" height="24.0" fill="#0096D3"/><text x="397.9" y="362.1" font-size="12.5" fill="#002350">$12.0</text><text x="222" y="415.4" font-size="13" text-anchor="end" fill="#002350">Mattel</text><rect x="230" y="399.4" width="118.7" height="24.0" fill="#0096D3"/><text x="354.7" y="415.4" font-size="12.5" fill="#002350">$8.8</text></svg></div>
+  <p class="src">Retail sales of licensed products, 2024. Global licensed-product retail sales reached a record US$369.6 bn in 2024 (+3.7%); Disney is the world’s #1 licensor. Source: Licensing International, 2025 Global Licensing Industry Study; License Global.</p>
+  <div class="footer"><span class="pg">Page 12</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Franchising: the business-in-a-box</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span><b>Business-format franchising:</b> the franchisor transfers a <b>whole business method</b> — brand, products, processes, training and standards — to the franchisee, for fees and royalties.</span></li>
+    <li><span>A <b>master franchisee</b> is authorized to develop and manage the entire network in a market (e.g. McDonald’s master franchisees).</span></li>
+    <li><span><b>Advantages for the franchisor:</b> low investment · <b>rapid</b> internationalization to many markets · low effort once set up · leverages franchisees’ local knowledge.</span></li>
+    <li><span><b>Disadvantages:</b> hard to maintain <b>control and consistency</b> across many franchisees · limited control over assets abroad · risk of creating a future competitor.</span></li>
+    <li><span>In emerging markets, franchisors must weigh income levels, urbanization, fast-changing laws and <b>food/culture fit</b> — KFC and Pizza Hut are huge in China; menus are localized.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 13</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Leading international franchises</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:176px;font-size:16px">
+    <thead><tr><th style="width:230px">Franchise</th><th style="width:290px">Type</th><th style="width:220px">Outlets (approx.)</th><th>Countries</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Mixue (China)</td><td>Bubble tea &amp; ice cream</td><td>~45,000</td><td>10+</td></tr>
+      <tr><td class="k">7-Eleven</td><td>Convenience stores</td><td>~84,000</td><td>19</td></tr>
+      <tr><td class="k">McDonald’s</td><td>Burger restaurants</td><td>~44,000</td><td>100+</td></tr>
+      <tr><td class="k">Subway</td><td>Sandwich restaurants</td><td>~40,000</td><td>100+</td></tr>
+      <tr><td class="k">KFC (Yum!)</td><td>Chicken restaurants</td><td>~30,000</td><td>150</td></tr>
+      <tr><td class="k">Domino’s</td><td>Pizza</td><td>~21,000</td><td>90+</td></tr>
+      <tr><td class="k">Pizza Hut (Yum!)</td><td>Pizza</td><td>~19,000</td><td>100+</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Approximate global unit counts, 2024–25. Franchising scales a brand across borders fast on other people’s capital — but formats are localized (KFC in China, McAloo Tikki in India). Note the newcomer: China’s Mixue has overtaken McDonald’s and Starbucks by store count. Sources: company reports; Franchise Times / Vettedbiz rankings.</p>
+  <div class="footer"><span class="pg">Page 14</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Other contractual modes — and Yum!</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Turnkey contracting:</b> the firm designs, finances, builds and hands over a complete facility — metros, airports, gas plants. The Petronas Twin Towers were a 7-year turnkey project.</span></li>
+    <li><span><b>Management contract:</b> supply the <b>management know-how</b> to run a hotel, hospital or airport for a fee (e.g. Marriott, Hilton run hotels they don’t own).</span></li>
+    <li><span><b>International leasing:</b> rent out machinery or aircraft to foreign clients for years at a time.</span></li>
+    <li><span><b>Example — Yum! Brands:</b> ~53,000 outlets worldwide (KFC, Pizza Hut, Taco Bell), mostly franchised; in 2016 it spun off <b>Yum China</b>, now the country’s largest restaurant company.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 15</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Joint ventures and strategic alliances</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span>An <b>international collaborative venture</b> pools two or more firms’ resources to share cost and risk — it spans <b>equity joint ventures</b> and non-equity, <b>project-based</b> alliances.</span></li>
+    <li><span><b>Equity JV:</b> partners create a <b>new jointly-owned company</b> — used when no single party has all the assets; the local partner brings market access, the foreign partner technology or brand.</span></li>
+    <li><span><b>Project-based / non-equity alliance:</b> a narrow scope and fixed timetable, <b>no new legal entity</b> — e.g. a consortium (Airbus-style) or a cross-licensing deal.</span></li>
+    <li><span><b>Reality check:</b> about <b>half</b> of global collaborative ventures fail within five years — from culture clashes, unclear goals and weak governance. Success needs common goals, cultural awareness and disciplined management.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 16</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Protecting intellectual property</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Contractual modes hand your IP to a partner — so <b>protecting it is the whole game</b>. Counterfeiting and piracy of traded goods exceed <b>US$2 trillion</b> a year (OECD/ICC estimates).</span></li>
+    <li><span><b>Key treaties:</b> the <b>Paris</b> and <b>Berne</b> Conventions, and the WTO’s <b>TRIPS</b> agreement set minimum global IP standards — but enforcement varies widely by country.</span></li>
+    <li><span><b>Safeguards:</b> register core IP in your key markets · <b>separate value-chain steps</b> so no partner sees the whole process · favour hard-to-copy, leading-edge technology · choose reputable partners and write IP protection into contracts.</span></li>
+    <li><span><b>Example:</b> Coca-Cola licenses bottling worldwide but has <b>never</b> licensed the syrup formula — the crown-jewel IP stays in-house.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 17</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">FDI and hierarchical modes: owning the operation</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Foreign direct investment (FDI):</b> the firm establishes a <b>physical presence</b> abroad by acquiring productive assets — plants, subsidiaries, offices. The most advanced, costly and risky entry mode.</span></li>
+    <li><span><b>Key features:</b> a <b>substantial resource commitment</b> · local presence and operations · <b>substantial risk and uncertainty</b> · and the <b>highest control</b> and profit potential.</span></li>
+    <li><span>Hollensen’s <b>hierarchical</b> modes are the FDI family — from a <b>sales/marketing subsidiary</b>, through assembly, to a <b>wholly owned production subsidiary</b> or acquisition.</span></li>
+    <li><span>Undertaken by firms from advanced <b>and</b> emerging economies — and occasionally stirs patriotic pushback (e.g. Dubai Ports, Huawei).</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 18</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Why firms invest abroad: the FDI motives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:172px;width:1150px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px"><div class="fwtile" style="border-top:6px solid #0096D3"><p class="fw-h" style="color:#002350">Market-seeking</p><p class="fw-d">Reach or grow in a large/attractive market · follow key customers abroad · compete with rivals on their home turf</p></div><div class="fwtile" style="border-top:6px solid #457AA0"><p class="fw-h" style="color:#002350">Resource / asset-seeking</p><p class="fw-d">Secure raw materials · gain knowledge, brands or technology (Whirlpool–Philips) · tap local talent and know-how</p></div><div class="fwtile" style="border-top:6px solid #002350"><p class="fw-h" style="color:#002350">Efficiency-seeking</p><p class="fw-d">Cut cost via cheap labour and inputs · locate near customers · use government incentives · jump trade barriers</p></div><div class="fwtile" style="border-top:6px solid #4B2582"><p class="fw-h" style="color:#002350">Strategic-asset-seeking</p><p class="fw-d">Acquire capabilities the firm lacks — brands, R&amp;D, distribution — often via cross-border M&amp;A</p></div></div>
+  <p class="src">Dunning’s four motives, as used in Cavusgil et al. — most efficiency-seeking FDI is about accessing cheaper inputs; most market-seeking FDI is about being close to demand.</p>
+  <div class="footer"><span class="pg">Page 19</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Greenfield investment vs. mergers &amp; acquisitions</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:180px;width:1150px;display:flex;gap:22px">
+    <div style="flex:1;background:var(--wu-ice);padding:18px 24px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:20px;color:var(--wu-navy)">Greenfield — build new</p>
+      <ul class="fl fl-d"><li>Build a brand-new plant / subsidiary from scratch</li><li>Full control of design, technology, location and culture</li><li>Create new capacity and local jobs — governments love it</li><li>Slow; must build market presence and supplier links from zero</li></ul></div>
+    <div style="flex:1;background:var(--wu-navy);color:#fff;padding:18px 24px">
+      <p style="margin:0 0 10px 0;font-family:var(--font-title);font-weight:bold;font-size:20px">M&amp;A — buy existing</p>
+      <ul class="fl"><li>Acquire (or merge with) an existing local company</li><li><b>Fast</b> market access, brands, customers and staff</li><li>Adds no new capacity; integration and culture clashes are common</li><li>Can trigger political and regulatory scrutiny</li></ul></div>
+  </div><p class="src">Cross-border M&A and greenfield each account for a large share of global FDI; M&A dominates in advanced economies, greenfield in emerging ones. Example: Lenovo bought IBM’s PC unit (M&A); BMW built a greenfield plant in Spartanburg, USA.</p>
+  <div class="footer"><span class="pg">Page 20</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Ownership and level of integration</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Wholly owned direct investment:</b> the investor <b>fully owns</b> the foreign assets — maximum control and profit, maximum risk and commitment.</span></li>
+    <li><span><b>Equity joint venture:</b> partial ownership shared with a partner — less control, but shared risk and local access (bridges to the intermediate modes).</span></li>
+    <li><span><b>Horizontal FDI:</b> own the <b>same</b> value-chain stage abroad as at home — e.g. Toyota building cars in several countries (market-seeking).</span></li>
+    <li><span><b>Vertical FDI:</b> own <b>different</b> stages up- or down-stream — e.g. an oil major owning wells, refineries and filling stations (resource- and efficiency-seeking).</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 21</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Leading destinations for FDI inflows, 2024 (US$ bn)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:158px;width:1150px;height:470px"><svg viewBox="0 0 1150 450" width="100%" height="450" font-family="Verdana,Geneva,sans-serif"><text x="192" y="42.6" font-size="13" text-anchor="end" fill="#002350">United States</text><rect x="200" y="26.6" width="880.0" height="24.0" fill="#0096D3"/><text x="1086.0" y="42.6" font-size="12.5" fill="#002350">279</text><text x="192" y="95.9" font-size="13" text-anchor="end" fill="#002350">Singapore</text><rect x="200" y="79.9" width="451.0" height="24.0" fill="#0096D3"/><text x="657.0" y="95.9" font-size="12.5" fill="#002350">143</text><text x="192" y="149.1" font-size="13" text-anchor="end" fill="#002350">China</text><rect x="200" y="133.1" width="337.5" height="24.0" fill="#0096D3"/><text x="543.5" y="149.1" font-size="12.5" fill="#002350">107</text><text x="192" y="202.4" font-size="13" text-anchor="end" fill="#002350">Hong Kong SAR</text><rect x="200" y="186.4" width="331.2" height="24.0" fill="#0096D3"/><text x="537.2" y="202.4" font-size="12.5" fill="#002350">105</text><text x="192" y="255.6" font-size="13" text-anchor="end" fill="#002350">Brazil</text><rect x="200" y="239.6" width="201.9" height="24.0" fill="#0096D3"/><text x="407.9" y="255.6" font-size="12.5" fill="#002350">64</text><text x="192" y="308.9" font-size="13" text-anchor="end" fill="#002350">Canada</text><rect x="200" y="292.9" width="151.4" height="24.0" fill="#0096D3"/><text x="357.4" y="308.9" font-size="12.5" fill="#002350">48</text><text x="192" y="362.1" font-size="13" text-anchor="end" fill="#002350">India</text><rect x="200" y="346.1" width="88.3" height="24.0" fill="#0096D3"/><text x="294.3" y="362.1" font-size="12.5" fill="#002350">28</text><text x="192" y="415.4" font-size="13" text-anchor="end" fill="#002350">Mexico</text><rect x="200" y="399.4" width="116.7" height="24.0" fill="#0096D3"/><text x="322.7" y="415.4" font-size="12.5" fill="#002350">37</text></svg></div>
+  <p class="src">FDI inflows, 2024. Global FDI was ~US$1.5 tn but — stripping out volatile conduit flows — productive FDI fell for a second year. The US stays the top destination; Asian hubs dominate the rest. Figures beyond the US and China anchors are approximate. Source: UNCTAD, World Investment Report 2025.</p>
+  <div class="footer"><span class="pg">Page 22</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">A hard case: retailer internationalization — Walmart</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span>Retailers usually internationalize via <b>FDI and collaborative ventures</b> — and face steep <b>barriers</b>: consumer loyalty to local chains, culture and language, idiosyncratic laws (store hours, zoning), and the need to build <b>local supply</b>.</span></li>
+    <li><span><b>Walmart’s mixed record:</b> <b>Germany</b> — misread the market and local competition, exited in 2006. <b>Mexico</b> — built US-style parking lots, but many shoppers had no cars. <b>Brazil</b> — aisles too narrow for the payday rush. <b>Argentina</b> — US-flag colours offended local taste.</span></li>
+    <li><span><b>What works (success factors):</b> deep advance research (Carrefour spent 12 years in Taiwan) · build local logistics and sourcing · an entrepreneurial approach · and <b>adapt the model</b> (Home Depot in Mexico offers smaller packs and flexible credit).</span></li>
+    <li><span><b>The lesson:</b> a high-control mode does <b>not</b> guarantee success — it must be paired with genuine local responsiveness.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 23</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The other side: global sourcing</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span><b>Global sourcing:</b> procuring products or services from suppliers abroad for use at home or in a third country — the import side of the value chain (also called global outsourcing or procurement).</span></li>
+    <li><span>Two key decisions: <b>(1) outsource or not?</b> — do an activity in-house or buy it from an independent supplier; <b>(2) where in the world?</b> — configure each value-chain activity in its best location.</span></li>
+    <li><span>Forms: <b>contract manufacturing</b> (Foxconn builds the product to spec) · <b>business-process outsourcing (BPO)</b> (payroll, IT, call centres) · <b>offshoring</b> (relocating a process or plant abroad, often to your own subsidiary).</span></li>
+    <li><span><b>Example — the iPhone:</b> designed in California, with components sourced from suppliers in <b>~43 countries</b> (Apple’s network spans 50+), assembled mainly in China — and increasingly India and Vietnam. One product, a global sourcing map.</span></li>
+    <li><span><b>Benefits:</b> cost efficiency, access to talent and capacity, faster growth. <b>Risks:</b> lower-than-expected savings, quality and IP problems, exchange-rate and geopolitical exposure, and reputational risk.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 24</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Manufacturing labour cost per hour, selected countries (US$)</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:158px;width:1150px;height:470px"><svg viewBox="0 0 1150 450" width="100%" height="450" font-family="Verdana,Geneva,sans-serif"><text x="162" y="42.6" font-size="13" text-anchor="end" fill="#002350">Switzerland</text><rect x="170" y="26.6" width="866.7" height="24.0" fill="#0096D3"/><text x="1042.7" y="42.6" font-size="12.5" fill="#002350">$60.0</text><text x="162" y="95.9" font-size="13" text-anchor="end" fill="#002350">Germany</text><rect x="170" y="79.9" width="650.0" height="24.0" fill="#0096D3"/><text x="826.0" y="95.9" font-size="12.5" fill="#002350">$45.0</text><text x="162" y="149.1" font-size="13" text-anchor="end" fill="#002350">United States</text><rect x="170" y="133.1" width="606.7" height="24.0" fill="#0096D3"/><text x="782.7" y="149.1" font-size="12.5" fill="#002350">$42.0</text><text x="162" y="202.4" font-size="13" text-anchor="end" fill="#002350">China</text><rect x="170" y="186.4" width="101.1" height="24.0" fill="#0096D3"/><text x="277.1" y="202.4" font-size="12.5" fill="#002350">$7.0</text><text x="162" y="255.6" font-size="13" text-anchor="end" fill="#002350">Mexico</text><rect x="170" y="239.6" width="67.9" height="24.0" fill="#0096D3"/><text x="243.9" y="255.6" font-size="12.5" fill="#002350">$4.7</text><text x="162" y="308.9" font-size="13" text-anchor="end" fill="#002350">Vietnam</text><rect x="170" y="292.9" width="43.3" height="24.0" fill="#0096D3"/><text x="219.3" y="308.9" font-size="12.5" fill="#002350">$3.0</text><text x="162" y="362.1" font-size="13" text-anchor="end" fill="#002350">India</text><rect x="170" y="346.1" width="26.0" height="24.0" fill="#0096D3"/><text x="202.0" y="362.1" font-size="12.5" fill="#002350">$1.8</text><text x="162" y="415.4" font-size="13" text-anchor="end" fill="#002350">Bangladesh</text><rect x="170" y="399.4" width="14.4" height="24.0" fill="#0096D3"/><text x="190.4" y="415.4" font-size="12.5" fill="#002350">$1.0</text></svg></div>
+  <p class="src">Total hourly manufacturing labour cost, approximate (various 2023–24 sources — no single authoritative series exists since US BLS discontinued its comparisons). The wage gap is the engine of global sourcing — but Chinese wages have climbed sharply, narrowing it and driving reshoring/nearshoring. Sources: Conference Board, KPMG, Statista, ILO compilations.</p>
+  <div class="footer"><span class="pg">Page 25</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Reshoring, nearshoring and the supply chain</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>China is still a top sourcing location, but <b>rising wages</b> (average manufacturing pay more than doubled 2013–2022, now above ~US$8/hour) have eroded its cost edge.</span></li>
+    <li><span><b>Reshoring:</b> bringing production back home; <b>nearshoring:</b> moving it closer — US firms shifting from China to <b>Mexico</b>, which overtook China as the top source of US imports in 2023–24. Reshoring + FDI announcements added ~<b>245,000 US jobs in 2024</b> (Reshoring Initiative).</span></li>
+    <li><span>Drivers of the shift: rising wages, tariffs and geopolitics, long and fragile supply chains (COVID, Suez, Red Sea), and the pull of <b>speed and resilience</b> over pure cost.</span></li>
+    <li><span><b>Global supply-chain management</b> ties sourcing, production and distribution into one worldwide network. Logistics can be up to <b>40%</b> of total cost; firms lean on 3PL providers (DHL, UPS, FedEx, Maersk) and ICT to run it.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 26</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Moving the goods: transportation modes</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:180px;font-size:16px">
+    <thead><tr><th style="width:150px">Mode</th><th style="width:470px">Strengths</th><th>Best for</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Ocean</td><td>Cheapest per tonne-km; huge capacity; containerized</td><td>Bulk, heavy, non-urgent goods — ~80% of world trade by volume</td></tr>
+      <tr><td class="k">Air</td><td>Fast and reliable; low damage/theft</td><td>High-value, perishable or urgent goods — a small share of volume, large share of value</td></tr>
+      <tr><td class="k">Land (rail & road)</td><td>Flexible; door-to-door; good for regional trade</td><td>Continental and last-mile movement; the new rail land-bridges Asia–Europe</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Ocean transport is the backbone of international trade; air moves the value, not the volume; land links it together. The right mode balances cost, speed, reliability and the product’s value-to-weight ratio.</p>
+  <div class="footer"><span class="pg">Page 27</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The entry modes at a glance</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:178px;font-size:15.5px">
+    <thead><tr><th style="width:220px">Mode</th><th style="width:120px">Control</th><th style="width:150px">Risk / commitment</th><th style="width:150px">Speed &amp; flexibility</th><th>Typical use</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Exporting</td><td>Low</td><td>Low</td><td>High</td><td>First step; SMEs; test a market</td></tr>
+      <tr><td class="k">Licensing</td><td>Low–moderate</td><td>Low</td><td>High</td><td>IP-rich firms; fast, cheap reach</td></tr>
+      <tr><td class="k">Franchising</td><td>Moderate</td><td>Low–moderate</td><td>High</td><td>Replicable business systems; retail &amp; food</td></tr>
+      <tr><td class="k">Joint venture / alliance</td><td>Shared</td><td>Moderate</td><td>Moderate</td><td>Need a local partner’s assets or access</td></tr>
+      <tr><td class="k">Wholly owned FDI</td><td>High</td><td>High</td><td>Low</td><td>Strategic markets; control of IP &amp; quality</td></tr>
+    </tbody>
+  </table>
+  <p class="src">The through-line of the session: control, risk and commitment rise together as you climb the ladder — pick the lowest-commitment mode that still gives you the control the situation demands.</p>
+  <div class="footer"><span class="pg">Page 28</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Apply it: choose the entry mode</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · small groups</p>
+  <p class="act-obj">Objective: use the full toolkit to choose and defend an entry mode — then compare it to your opening instinct.</p>
+  <div class="act-box" style="top:240px"><ol class="steps"><li><span>Take one scenario: <b>(a)</b> a Styrian craft-gin maker entering Japan · <b>(b)</b> an Austrian med-tech firm entering the USA · <b>(c)</b> a Vienna coffee-house brand entering the Gulf.</span></li><li><span>Screen the market briefly (attractiveness × your strength) and pick a mode from the ladder.</span></li><li><span>Justify it on <b>control, risk, commitment and IP</b> — and name the single biggest risk of your choice.</span></li><li><span>Compare with your <b>opening-activity</b> answer: did the framework change your mind?</span></li><li><span>Two minutes per group; the class stress-tests each decision.</span></li></ol></div>
+  <div class="footer"><span class="pg">Page 29</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <img src="assets/emblem-vertical-blue.png" alt="Vienna University of Economics and Business" style="position:absolute;left:86px;top:236px;width:69px;height:284px">
+  <div style="position:absolute;left:236px;top:248px;width:720px">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Department of Global Trade</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;text-transform:uppercase;color:var(--wu-gray-footer)">WU Vienna</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Dr. Arne Floh</p>
+    <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Senior Lecturer in International Marketing</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Deputy Program Director MSc Export- and Internationalisation Management</p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)"><a href="mailto:arne.floh@wu.ac.at">arne.floh@wu.ac.at</a></p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Welthandelsplatz 1, 1020 Wien, Austria</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;color:var(--wu-black)">www.wu.ac.at</p>
+  </div>
+  <div class="footer"><span class="pg">Page 30</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<script>function fit(){var vw=document.body.clientWidth-40;var sc=Math.min(1,vw/1280);document.querySelectorAll('.stage').forEach(function(st){var sl=st.querySelector('.slide');sl.style.transform='scale('+sc+')';st.style.height=(720*sc)+'px';st.style.width=(1280*sc)+'px';});}window.addEventListener('resize',fit);fit();</script>
+</body></html>

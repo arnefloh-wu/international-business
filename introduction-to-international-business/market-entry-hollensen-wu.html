@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Entry (Hollensen 8–12) (WU)</title><link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page); box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+  .s-title { position:absolute; left:65px; top:16px; width:1000px; height:114px; margin:0; display:flex; align-items:center; font-family:var(--font-title); font-weight:bold; font-size:var(--size-slide-title); line-height:1.05; color:var(--wu-black); }
+  .rule { position:absolute; left:64px; top:126px; width:108px; height:7px; background:var(--wu-rule-cyan); }
+  .logo-black { position:absolute; left:1106px; top:22px; width:121px; height:90px; }
+  ul.wu { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; }
+  ul.wu li { font-family:var(--font-body); color:var(--wu-black); line-height:1.3; display:flex; gap:15px; align-items:baseline; font-size:var(--fs,20px); }
+  ul.wu li::before { content:"\25AA"; color:var(--accent-bullet); flex:none; }
+  .footer { position:absolute; left:65px; top:688px; display:flex; font-family:var(--font-body); font-size:var(--size-footer); color:var(--wu-gray-footer); text-transform:uppercase; letter-spacing:0.04em; }
+  .footer .pg { width:130px; flex:none; }
+  .accred-b { position:absolute; left:1052px; top:678px; width:200px; height:32px; }
+  table.wu { border-collapse:collapse; width:1150px; font-family:var(--font-body); }
+  table.wu th, table.wu td { padding:9px 14px; text-align:left; vertical-align:top; line-height:1.3; }
+  table.wu th { background:var(--wu-navy); color:var(--wu-white); font-weight:bold; }
+  table.wu td.k { font-weight:bold; }
+  table.wu tbody tr:nth-child(even) { background:var(--wu-ice); }
+  .src { position:absolute; left:65px; top:650px; width:1150px; margin:0; font-family:var(--font-body); font-size:13.5px; font-style:italic; color:var(--wu-gray-footer); line-height:1.3; }
+  .slide a { color:var(--wu-link); text-decoration:underline; }
+  .act-kicker { position:absolute; left:65px; top:148px; margin:0; font-family:var(--font-body); font-size:17px; text-transform:uppercase; letter-spacing:0.12em; color:var(--wu-cyan); font-weight:bold; }
+  .act-obj { position:absolute; left:65px; top:180px; width:1120px; margin:0; font-family:var(--font-body); font-size:18px; font-style:italic; color:var(--wu-gray-footer); line-height:1.35; }
+  .act-box { position:absolute; left:65px; width:1150px; background:var(--wu-ice); padding:22px 30px; box-sizing:border-box; }
+  ol.steps { margin:0; padding:0; list-style:none; counter-reset:st; display:flex; flex-direction:column; gap:11px; }
+  ol.steps li { counter-increment:st; font-family:var(--font-body); font-size:18px; line-height:1.32; color:var(--wu-black); display:flex; gap:14px; align-items:baseline; }
+  ol.steps li::before { content:counter(st); font-weight:bold; color:var(--wu-cyan); flex:none; min-width:22px; }
+  ul.fl { margin:0; padding:0 0 0 18px; font-family:var(--font-body); font-size:15.5px; line-height:1.4; color:#fff; }
+  ul.fl li { margin-bottom:8px; }
+  ul.fl.fl-d { color:var(--wu-black); }
+  .fwtile { background:var(--wu-ice); padding:18px 22px; min-height:150px; }
+  .fw-h { margin:0 0 8px 0; font-family:var(--font-title); font-weight:bold; font-size:20px; }
+  .fw-d { margin:0; font-family:var(--font-body); font-size:15.5px; color:var(--wu-black); line-height:1.38; }
+  @media print { body{background:#fff;padding:0;gap:0;} .slide{box-shadow:none;page-break-after:always;break-after:page;} .stage{max-width:none;} }
+</style></head><body>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:26px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.12;color:var(--wu-white)">Market Entry<br>(Hollensen 8–12)</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:406px;width:790px;box-sizing:border-box;padding:26px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:23px;line-height:1.4;color:var(--wu-black)">International Summer University<sup>WU</sup> 2026<br><b>Dr. Arne Floh</b> · Department of Global Trade, WU Vienna</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:19px">
+    <li><span>Frame the two core <b>market-entry decisions</b>: <b>which markets</b> to enter and <b>which mode</b> to use.</span></li>
+    <li><span>Compare entry modes on <b>control, risk, commitment and flexibility</b> — the export → intermediate → hierarchical ladder.</span></li>
+    <li><span>Understand <b>exporting</b> and its mechanics (intermediaries, Incoterms, payment, countertrade).</span></li>
+    <li><span>Understand <b>contractual / intermediate</b> modes — licensing, franchising, alliances — and how to protect intellectual property.</span></li>
+    <li><span>Understand <b>FDI and hierarchical</b> modes — motives, greenfield vs. M&amp;A, ownership and integration.</span></li>
+    <li><span>Connect entry to <b>global sourcing, supply chains</b> and, when needed, <b>exit</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 1</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Opening activity: get an Austrian SME abroad</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class opener · 12 minutes · pairs — instinct first, framework later</p>
+  <p class="act-obj">Objective: make a real market-entry call on instinct, then test it against today’s framework.</p>
+  <div class="act-box" style="top:240px"><ol class="steps"><li><span>Take a Viennese SME — e.g. <b>Manner</b> (wafers), <b>Blaguss</b> (travel), a craft-gin distiller or a med-tech start-up.</span></li><li><span>Pick <b>one foreign market</b> to enter — and <b>one way in</b> (export? license? franchise? joint venture? build your own operation?).</span></li><li><span>Write down <b>why</b> that mode: how much <b>control</b> do you need, how much <b>risk</b> can you carry, how much can you <b>invest</b>?</span></li><li><span>Keep your answer — at the end of the session you will re-decide with the full toolkit.</span></li></ol></div>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Two decisions, one strategy</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:19px">
+    <li><span>Foreign market entry is really <b>two linked decisions</b>: <b>WHERE</b> to compete (which country markets) and <b>HOW</b> to enter each one (the entry mode).</span></li>
+    <li><span><b>Which markets?</b> Screen and rank countries on <b>market attractiveness</b> and the firm’s <b>competitive strength</b> (Hollensen’s MACS logic).</span></li>
+    <li><span><b>Which mode?</b> Trade off <b>control, risk, resource commitment and flexibility</b> — the ladder from exporting to wholly owned operations.</span></li>
+    <li><span>The two decisions interact: a highly attractive market where the firm is strong justifies a high-commitment mode; a risky or uncertain one argues for a low-commitment entry.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 3</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Which markets? The MACS matrix</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:470px"><svg viewBox="0 0 720 470" width="720" height="470" font-family="Georgia,serif">
+      <line x1="90" y1="30" x2="90" y2="410" stroke="#002350" stroke-width="2"/>
+      <line x1="90" y1="410" x2="680" y2="410" stroke="#002350" stroke-width="2"/>
+      <text x="46" y="220" font-size="14" fill="#002350" font-weight="bold" transform="rotate(-90 46 220)" text-anchor="middle">Market attractiveness →</text>
+      <text x="385" y="450" font-size="14" fill="#002350" font-weight="bold" text-anchor="middle">Competitive strength of the firm →</text>
+      <rect x="105" y="45" width="270" height="175" fill="#80CFE9"/>
+      <text x="240" y="128" font-size="15" fill="#002350" text-anchor="middle" font-weight="bold">Attractive markets,</text>
+      <text x="240" y="148" font-size="15" fill="#002350" text-anchor="middle">but we are weak →</text>
+      <text x="240" y="168" font-size="14" fill="#002350" text-anchor="middle">enter via low-commitment modes / build strength</text>
+      <rect x="393" y="45" width="272" height="175" fill="#002350"/>
+      <text x="529" y="120" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">PRIORITY MARKETS</text>
+      <text x="529" y="146" font-size="14" fill="#E5F5FA" text-anchor="middle">attractive AND we are strong →</text>
+      <text x="529" y="166" font-size="14" fill="#E5F5FA" text-anchor="middle">commit: high-control modes</text>
+      <rect x="105" y="232" width="270" height="163" fill="#E5F5FA"/>
+      <text x="240" y="312" font-size="15" fill="#002350" text-anchor="middle">Low priority —</text>
+      <text x="240" y="332" font-size="14" fill="#002350" text-anchor="middle">avoid or exit</text>
+      <rect x="393" y="232" width="272" height="163" fill="#80CFE9"/>
+      <text x="529" y="304" font-size="15" fill="#002350" text-anchor="middle" font-weight="bold">We are strong,</text>
+      <text x="529" y="324" font-size="15" fill="#002350" text-anchor="middle">market less attractive →</text>
+      <text x="529" y="344" font-size="14" fill="#002350" text-anchor="middle">harvest selectively</text>
+    </svg></div>
+  <p class="src">Rank candidate countries on market attractiveness (size, growth, risk) against the firm’s competitive strength there. Priority markets score high on both. Source: Hollensen, Global Marketing (market attractiveness / competitive strength model).</p>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Which markets first? Waterfall vs. sprinkler</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span><b>Waterfall (incremental):</b> enter markets <b>one after another</b>, learning as you go — lower risk and resource strain; slower, and rivals may pre-empt you. Fits SMEs and complex products.</span></li>
+    <li><span><b>Sprinkler (simultaneous):</b> enter <b>many markets at once</b> — speed and first-mover advantage; far more demanding on resources and coordination. Fits short product life cycles and platform businesses.</span></li>
+    <li><span><b>Market concentration vs. diversification:</b> pour resources into a <b>few</b> deep markets, or spread thinly across <b>many</b>? Concentration builds strong positions; diversification spreads risk and reads the market.</span></li>
+    <li><span><b>Example:</b> Netflix went <b>sprinkler</b> — launching in ~130 countries at once in January 2016; a Mittelstand machine-tool maker typically goes <b>waterfall</b>, market by market.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Which mode? The control–commitment ladder</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:168px;width:1150px;height:470px"><svg viewBox="0 0 1150 470" width="100%" height="470" font-family="Georgia,serif">
+      <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#002350"/></marker></defs>
+      <line x1="70" y1="430" x2="1080" y2="120" stroke="#888" stroke-width="1.5" marker-end="url(#ar)"/>
+      <text x="70" y="455" font-size="14" fill="#002350">low control · low risk · low commitment · high flexibility</text>
+      <text x="1080" y="105" font-size="14" fill="#002350" text-anchor="end">high control · high risk · high commitment · low flexibility</text>
+      <g>
+        <rect x="70" y="330" width="300" height="96" fill="#E5F5FA"/>
+        <text x="86" y="360" font-size="19" font-weight="bold" fill="#002350">Export modes</text>
+        <text x="86" y="386" font-size="14" fill="#002350">indirect · direct · cooperative</text>
+        <text x="86" y="408" font-size="13" fill="#457AA0">production stays home, sell abroad</text>
+        <rect x="420" y="222" width="300" height="96" fill="#80CFE9"/>
+        <text x="436" y="252" font-size="19" font-weight="bold" fill="#002350">Intermediate modes</text>
+        <text x="436" y="278" font-size="14" fill="#002350">licensing · franchising · JV / alliance</text>
+        <text x="436" y="300" font-size="13" fill="#002350">shared control with a partner</text>
+        <rect x="770" y="114" width="310" height="96" fill="#002350"/>
+        <text x="786" y="144" font-size="19" font-weight="bold" fill="#fff">Hierarchical modes</text>
+        <text x="786" y="170" font-size="14" fill="#E5F5FA">sales subsidiary · wholly owned FDI</text>
+        <text x="786" y="192" font-size="13" fill="#80CFE9">the firm owns the operation abroad</text>
+      </g>
+    </svg></div>
+  <p class="src">As the firm climbs from export to intermediate to hierarchical modes it gains control and market presence — but takes on more risk, cost and less flexibility. Source: Hollensen, Global Marketing; Cavusgil et al., International Business.</p>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">What drives the mode choice?</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span><b>Internal factors:</b> firm size and resources · international experience · the product (complex, service, IP-heavy?) · desired degree of control.</span></li>
+    <li><span><b>External factors:</b> market size and growth · country risk (political, legal, cultural) · trade barriers and government rules · intensity of competition.</span></li>
+    <li><span><b>Desired mode characteristics:</b> how much <b>risk-averseness</b>, need for <b>control</b>, and <b>flexibility</b> the firm wants.</span></li>
+    <li><span><b>Transaction-specific factors:</b> the risk of a partner appropriating the firm’s <b>know-how</b> — high tacit-knowledge or brand value pushes toward higher-control modes.</span></li>
+    <li><span><i>No single best mode: the right entry matches firm, product, market and the firm’s appetite for control and risk.</i></span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Export modes: indirect, direct, cooperative</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:170px;width:1150px;height:300px"><svg viewBox="0 0 1150 300" width="100%" height="300" font-family="Georgia,serif">
+      <rect x="20" y="20" width="1110" height="34" fill="#002350"/>
+      <text x="575" y="43" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">Export modes — the producer sells abroad while production stays at home</text>
+      <g>
+        <rect x="40" y="80" width="340" height="180" fill="#E5F5FA"/>
+        <text x="60" y="112" font-size="18" font-weight="bold" fill="#002350">Indirect export</text>
+        <text x="60" y="140" font-size="14" fill="#002350">Sell through a home-country</text>
+        <text x="60" y="160" font-size="14" fill="#002350">intermediary (export house, trading</text>
+        <text x="60" y="180" font-size="14" fill="#002350">company, piggybacking).</text>
+        <text x="60" y="212" font-size="13" fill="#457AA0">Simplest, least control, no learning.</text>
+        <rect x="405" y="80" width="340" height="180" fill="#80CFE9"/>
+        <text x="425" y="112" font-size="18" font-weight="bold" fill="#002350">Direct export</text>
+        <text x="425" y="140" font-size="14" fill="#002350">Sell through intermediaries in the</text>
+        <text x="425" y="160" font-size="14" fill="#002350">foreign market (agents, distributors)</text>
+        <text x="425" y="180" font-size="14" fill="#002350">or the firm's own export dept.</text>
+        <text x="425" y="212" font-size="13" fill="#002350">More control, more market knowledge.</text>
+        <rect x="770" y="80" width="340" height="180" fill="#457AA0"/>
+        <text x="790" y="112" font-size="18" font-weight="bold" fill="#fff">Cooperative export</text>
+        <text x="790" y="140" font-size="14" fill="#E5F5FA">Export via a collaboration —</text>
+        <text x="790" y="160" font-size="14" fill="#E5F5FA">export marketing groups, consortia,</text>
+        <text x="790" y="180" font-size="14" fill="#E5F5FA">shared distribution.</text>
+        <text x="790" y="212" font-size="13" fill="#E5F5FA">Pool costs and reach with partners.</text>
+      </g>
+    </svg></div>
+  <p class="src">Three ways to export. Indirect uses a home-country intermediary; direct reaches the foreign market itself; cooperative shares the effort with partners. Source: Hollensen, Global Marketing.</p>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Joint ventures and strategic alliances</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span>An <b>international collaborative venture</b> pools two or more firms’ resources to share cost and risk — it spans <b>equity joint ventures</b> and non-equity, <b>project-based</b> alliances.</span></li>
+    <li><span><b>Equity JV:</b> partners create a <b>new jointly-owned company</b> — used when no single party has all the assets; the local partner brings market access, the foreign partner technology or brand.</span></li>
+    <li><span><b>Project-based / non-equity alliance:</b> a narrow scope and fixed timetable, <b>no new legal entity</b> — e.g. a consortium (Airbus-style) or a cross-licensing deal.</span></li>
+    <li><span><b>Reality check:</b> about <b>half</b> of global collaborative ventures fail within five years — from culture clashes, unclear goals and weak governance. Success needs common goals, cultural awareness and disciplined management.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Agent or own subsidiary? The break-even logic</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:168px;width:1150px;height:440px"><svg viewBox="0 0 1000 440" width="100%" height="440" font-family="Georgia,serif">
+      <line x1="70" y1="360" x2="940" y2="360" stroke="#002350" stroke-width="1.6"/>
+      <line x1="70" y1="40" x2="70" y2="360" stroke="#002350" stroke-width="1.6"/>
+      <text x="500" y="400" font-size="14" fill="#002350" text-anchor="middle">Sales volume →</text>
+      <text x="30" y="200" font-size="14" fill="#002350" transform="rotate(-90 30 200)" text-anchor="middle">Total cost →</text>
+      <line x1="70" y1="300" x2="940" y2="120" stroke="#0096D3" stroke-width="3"/>
+      <text x="820" y="120" font-size="14" fill="#0096D3" font-weight="bold">Agent / distributor</text>
+      <text x="820" y="138" font-size="12" fill="#0096D3">low fixed, high variable cost</text>
+      <line x1="70" y1="200" x2="940" y2="300" stroke="#002350" stroke-width="3"/>
+      <text x="760" y="315" font-size="14" fill="#002350" font-weight="bold">Own sales subsidiary</text>
+      <text x="760" y="333" font-size="12" fill="#002350">high fixed, low variable cost</text>
+      <circle cx="497" cy="238" r="6" fill="#4B2582"/>
+      <line x1="497" y1="238" x2="497" y2="360" stroke="#888" stroke-dasharray="4 4"/>
+      <text x="497" y="230" font-size="13" fill="#4B2582" text-anchor="middle" font-weight="bold">break-even</text>
+      <text x="300" y="345" font-size="12.5" fill="#457AA0" text-anchor="middle">use an agent below this volume</text>
+      <text x="720" y="70" font-size="12.5" fill="#457AA0" text-anchor="middle">own subsidiary pays off above it</text>
+    </svg></div>
+  <p class="src">A sales subsidiary carries high fixed but low variable cost; an agent/distributor is the reverse. Below the break-even volume the agent is cheaper; above it, owning the operation pays off — a classic reason firms escalate commitment as sales grow. Source: Hollensen, Global Marketing.</p>
+  <div class="footer"><span class="pg">Page 10</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">When to leave: the divestment decision</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:160px;width:1150px;height:460px"><svg viewBox="0 0 1150 460" width="100%" height="460" font-family="Georgia,serif"><rect x="120" y="60" width="900" height="58" fill="#E5F5FA"/><text x="140" y="86" font-size="17" font-weight="bold" fill="#002350">1. Problem recognized</text><text x="140" y="107" font-size="13.5" fill="#457AA0">weak or negative performance abroad — but is it temporary or structural?</text><line x1="570" y1="118" x2="570" y2="134" stroke="#888" stroke-width="1.5"/><rect x="120" y="134" width="900" height="58" fill="#E5F5FA"/><text x="140" y="160" font-size="17" font-weight="bold" fill="#002350">2. Analysis &amp; evaluation</text><text x="140" y="181" font-size="13.5" fill="#457AA0">assess causes, strategic fit, exit costs and stakeholder effects</text><line x1="570" y1="192" x2="570" y2="208" stroke="#888" stroke-width="1.5"/><rect x="120" y="208" width="900" height="58" fill="#E5F5FA"/><text x="140" y="234" font-size="17" font-weight="bold" fill="#002350">3. Search for alternatives</text><text x="140" y="255" font-size="13.5" fill="#457AA0">turnaround · sell the unit · hand to a local partner · full withdrawal</text><line x1="570" y1="266" x2="570" y2="282" stroke="#888" stroke-width="1.5"/><rect x="120" y="282" width="900" height="58" fill="#002350"/><text x="140" y="308" font-size="17" font-weight="bold" fill="#fff">4. Divestment decision</text><text x="140" y="329" font-size="13.5" fill="#80CFE9">choose and time the exit — sale, closure or transfer</text><line x1="570" y1="340" x2="570" y2="356" stroke="#888" stroke-width="1.5"/><rect x="120" y="356" width="900" height="58" fill="#E5F5FA"/><text x="140" y="382" font-size="17" font-weight="bold" fill="#002350">5. Implementation</text><text x="140" y="403" font-size="13.5" fill="#457AA0">manage contracts, staff, customers and reputation on the way out</text></svg></div>
+  <p class="src">Entry is not forever. Persistent underperformance triggers a structured exit: diagnose the cause, weigh turnaround against sale or withdrawal, then manage the exit’s contracts, people and reputation. Source: Hollensen, Global Marketing (divestment framework).</p>
+  <div class="footer"><span class="pg">Page 11</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">The entry modes at a glance</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <table class="wu" style="position:absolute;left:65px;top:178px;font-size:15.5px">
+    <thead><tr><th style="width:220px">Mode</th><th style="width:120px">Control</th><th style="width:150px">Risk / commitment</th><th style="width:150px">Speed &amp; flexibility</th><th>Typical use</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Exporting</td><td>Low</td><td>Low</td><td>High</td><td>First step; SMEs; test a market</td></tr>
+      <tr><td class="k">Licensing</td><td>Low–moderate</td><td>Low</td><td>High</td><td>IP-rich firms; fast, cheap reach</td></tr>
+      <tr><td class="k">Franchising</td><td>Moderate</td><td>Low–moderate</td><td>High</td><td>Replicable business systems; retail &amp; food</td></tr>
+      <tr><td class="k">Joint venture / alliance</td><td>Shared</td><td>Moderate</td><td>Moderate</td><td>Need a local partner’s assets or access</td></tr>
+      <tr><td class="k">Wholly owned FDI</td><td>High</td><td>High</td><td>Low</td><td>Strategic markets; control of IP &amp; quality</td></tr>
+    </tbody>
+  </table>
+  <p class="src">The through-line of the session: control, risk and commitment rise together as you climb the ladder — pick the lowest-commitment mode that still gives you the control the situation demands.</p>
+  <div class="footer"><span class="pg">Page 12</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title" style="">Apply it: choose the entry mode</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · small groups</p>
+  <p class="act-obj">Objective: use the full toolkit to choose and defend an entry mode — then compare it to your opening instinct.</p>
+  <div class="act-box" style="top:240px"><ol class="steps"><li><span>Take one scenario: <b>(a)</b> a Styrian craft-gin maker entering Japan · <b>(b)</b> an Austrian med-tech firm entering the USA · <b>(c)</b> a Vienna coffee-house brand entering the Gulf.</span></li><li><span>Screen the market briefly (attractiveness × your strength) and pick a mode from the ladder.</span></li><li><span>Justify it on <b>control, risk, commitment and IP</b> — and name the single biggest risk of your choice.</span></li><li><span>Compare with your <b>opening-activity</b> answer: did the framework change your mind?</span></li><li><span>Two minutes per group; the class stress-tests each decision.</span></li></ol></div>
+  <div class="footer"><span class="pg">Page 13</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <img src="assets/emblem-vertical-blue.png" alt="Vienna University of Economics and Business" style="position:absolute;left:86px;top:236px;width:69px;height:284px">
+  <div style="position:absolute;left:236px;top:248px;width:720px">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Department of Global Trade</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;text-transform:uppercase;color:var(--wu-gray-footer)">WU Vienna</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Dr. Arne Floh</p>
+    <p style="margin:4px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Senior Lecturer in International Marketing</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Deputy Program Director MSc Export- and Internationalisation Management</p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)"><a href="mailto:arne.floh@wu.ac.at">arne.floh@wu.ac.at</a></p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Welthandelsplatz 1, 1020 Wien, Austria</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;color:var(--wu-black)">www.wu.ac.at</p>
+  </div>
+  <div class="footer"><span class="pg">Page 14</span><span>International Summer University WU 2026</span></div>
+  <img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<script>function fit(){var vw=document.body.clientWidth-40;var sc=Math.min(1,vw/1280);document.querySelectorAll('.stage').forEach(function(st){var sl=st.querySelector('.slide');sl.style.transform='scale('+sc+')';st.style.height=(720*sc)+'px';st.style.width=(1280*sc)+'px';});}window.addEventListener('resize',fit);fit();</script>
+</body></html>

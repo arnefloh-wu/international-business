@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cultural Sensitivity &amp; Crisis Management — The D&amp;G China Case (WU)</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root { color-scheme: light; --font-body: Georgia, 'Times New Roman', serif; }
+  html, body { margin: 0; background: #55606b; }
+  body { font-family: var(--font-body); display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 40px 20px; }
+  .stage { width: 1280px; max-width: 100%; }
+  .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; background: var(--surface-page); box-shadow: 0 10px 40px rgba(0,0,0,0.35); transform-origin: top left; }
+  .s-title { position:absolute; left:65px; top:16px; width:1000px; height:114px; margin:0; display:flex; align-items:center; font-family:var(--font-title); font-weight:bold; font-size:var(--size-slide-title); line-height:1.05; color:var(--wu-black); }
+  .rule { position:absolute; left:64px; top:126px; width:108px; height:7px; background:var(--wu-rule-cyan); }
+  .logo-black { position:absolute; left:1106px; top:22px; width:121px; height:90px; }
+  ul.wu { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; }
+  ul.wu li { font-family:var(--font-body); color:var(--wu-black); line-height:1.3; display:flex; gap:15px; align-items:baseline; font-size:var(--fs,20px); }
+  ul.wu li::before { content:"\25AA"; color:var(--accent-bullet); flex:none; }
+  .footer { position:absolute; left:65px; top:688px; display:flex; font-family:var(--font-body); font-size:var(--size-footer); color:var(--wu-gray-footer); text-transform:uppercase; letter-spacing:0.04em; }
+  .footer .pg { width:130px; flex:none; }
+  .accred-b { position:absolute; left:1052px; top:678px; width:200px; height:32px; }
+  table.wu { border-collapse:collapse; width:1150px; font-family:var(--font-body); }
+  table.wu th, table.wu td { padding:9px 14px; text-align:left; vertical-align:top; line-height:1.3; }
+  table.wu th { background:var(--wu-navy); color:var(--wu-white); font-weight:bold; }
+  table.wu td.k { font-weight:bold; }
+  table.wu tbody tr:nth-child(even) { background:var(--wu-ice); }
+  .src { position:absolute; left:65px; top:652px; width:1150px; margin:0; font-family:var(--font-body); font-size:13.5px; font-style:italic; color:var(--wu-gray-footer); line-height:1.3; }
+  .slide a { color:var(--wu-link); text-decoration:underline; }
+  .act-kicker { position:absolute; left:65px; top:148px; margin:0; font-family:var(--font-body); font-size:17px; text-transform:uppercase; letter-spacing:0.12em; color:var(--wu-cyan); font-weight:bold; }
+  .act-obj { position:absolute; left:65px; top:180px; width:1120px; margin:0; font-family:var(--font-body); font-size:18px; font-style:italic; color:var(--wu-gray-footer); line-height:1.35; }
+  .act-box { position:absolute; left:65px; width:1150px; background:var(--wu-ice); padding:22px 30px; box-sizing:border-box; }
+  ol.steps { margin:0; padding:0; list-style:none; counter-reset:st; display:flex; flex-direction:column; gap:11px; }
+  ol.steps li { counter-increment:st; font-family:var(--font-body); font-size:19px; line-height:1.32; color:var(--wu-black); display:flex; gap:14px; align-items:baseline; }
+  ol.steps li::before { content:counter(st); font-weight:bold; color:var(--wu-cyan); flex:none; min-width:22px; }
+  @media print { body{background:#fff;padding:0;gap:0;} .slide{box-shadow:none;page-break-after:always;break-after:page;} .stage{max-width:none;} }
+</style>
+</head>
+<body>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/campus-photo.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:340px;object-fit:cover;object-position:left top">
+  <h1 style="position:absolute;left:64px;top:24px;width:1010px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:42px;line-height:1.14;color:var(--wu-white)">Cultural Sensitivity &amp; Crisis Management:<br>The D&amp;G China Case</h1>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+  <div style="position:absolute;left:64px;top:388px;width:900px;box-sizing:border-box;padding:24px 40px;background:rgba(255,255,255,0.9)">
+    <p style="margin:0;font-family:var(--font-body);font-size:21px;line-height:1.4;color:var(--wu-black)">Session 6 · Case discussion — when a brand misreads a culture<br>Case: Hung &amp; Ho (2019), <i>D&amp;G’s Marketing Missteps in China</i> · with HBR readings by Molinsky (2013) and Hahn &amp; Molinsky (2018)<br>International Summer University<sup>WU</sup> 2026 · <b>Dr. Arne Floh</b>, WU Vienna</p>
+  </div>
+  <img src="assets/accreditations-white.png" alt="EQUIS, AACSB and AMBA accredited" style="position:absolute;left:1015px;bottom:26px;width:232px;height:37px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">About this session</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span><b>The case:</b> Kineta Hung &amp; Mary Ho (2019), <i>D&amp;G’s Marketing Missteps in China (A)</i>, Asia Case Research Centre, University of Hong Kong.</span></li>
+    <li><span><b>Toolkit reading 1:</b> Andy Molinsky (2013), “Preparing for Inevitable Cultural Faux Pas,” <i>HBR</i> — build a <b>forgiveness strategy</b> before you slip.</span></li>
+    <li><span><b>Toolkit reading 2:</b> Melissa Hahn &amp; Andy Molinsky (2018), “How to Recover from a Cultural Faux Pas,” <i>HBR</i> — a <b>five-step recovery</b> process.</span></li>
+    <li><span><b>Two levels of the same problem:</b> the case is an <b>organizational</b> faux pas; the articles give the <b>individual</b> manager’s playbook.</span></li>
+    <li><span><b>Our path today:</b> the case facts → why the ad failed → managing the crisis → the personal toolkit for preparing and recovering.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 2</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Learning objectives</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:18px">
+    <li><span>Explain why <b>humour and cultural elements</b> in advertising are high-risk across cultures.</span></li>
+    <li><span>Use the <b>three Ms</b> (matter, media, manner) to diagnose an offensive campaign.</span></li>
+    <li><span>Apply a <b>crisis-management</b> lens — the three phases, speed, and “stealing thunder.”</span></li>
+    <li><span>Use <b>attribution theory / SCCT</b> to match a repair strategy to the type of crisis.</span></li>
+    <li><span>Translate the lesson to the <b>individual</b> level: prepare for and recover from your own faux pas.</span></li>
+    <li><span>Connect all of this back to <b>culture</b> — Hall, Hofstede and Meyer from earlier sessions.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 3</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:300px;object-fit:cover;object-position:left top;opacity:0.5">
+  <p style="position:absolute;left:80px;top:250px;margin:0;font-family:var(--font-body);font-size:20px;text-transform:uppercase;letter-spacing:0.18em;color:var(--wu-sky)">Part 1 — The case</p>
+  <h1 style="position:absolute;left:80px;top:286px;width:1080px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.1;color:#fff">D&amp;G’s Marketing Missteps in China</h1>
+  <p style="position:absolute;left:80px;top:398px;width:1040px;margin:0;font-family:var(--font-body);font-size:20px;color:var(--wu-ice)">18 November 2018 — three videos, and 24 hours to a full-blown crisis</p>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">D&amp;amp;G — brand snapshot</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span>Italian luxury house founded in <b>1985 in Milan</b> by Domenico Dolce and Stefano Gabbana; built on “Sicily, tailoring and tradition.”</span></li>
+    <li><span><b>Privately owned</b> — no external investors, so the founders design for the ultra-wealthy and “indulge their creative fantasies.”</span></li>
+    <li><span><b>Vertically integrated</b>: design, manufacturing and distribution in-house; its own global store network.</span></li>
+    <li><span>Revenue <b>≈ €1.29 bn</b> (FY2018, flat year-on-year); net profit €60.5 m, down from €80 m the year before.</span></li>
+    <li><span>The founders — especially Stefano Gabbana — were <b>active, outspoken</b> on social media.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 4</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">D&amp;amp;G in China — a market it could not afford to lose</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span>Entered mainland China in <b>2005</b> — the first Italian fashion company licensed to operate <b>without a local joint venture</b>.</span></li>
+    <li><span>First flagship in <b>Hangzhou</b> (2005); by 2018, <b>40+ boutiques</b> across Greater China.</span></li>
+    <li><span>China was both a key <b>market</b> and a source of <b>design inspiration</b> (the Chinese Palace collection, qipao; ambassadors Karry Wang &amp; Dilraba).</span></li>
+    <li><span>Chinese shoppers were the <b>world’s biggest luxury buyers</b> — the likely engine of future growth.</span></li>
+    <li><span>Analysts’ warning: up to <b>~30% of revenue</b> could be at risk if a China crisis were mishandled.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 5</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">The campaign: #DGLovesChina — “Eating with Chopsticks”</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker" style="color:#0096D3">18 November 2018 · three short videos to promote the first-ever Shanghai catwalk (21 Nov)</p>
+  <ul class="wu" style="position:absolute;left:65px;top:200px;width:1150px;gap:12px;--fs:17.5px">
+    <li><span>A Chinese model in a D&amp;G sequined dress struggles to eat <b>pizza, cannoli and spaghetti with chopsticks</b>, against red lanterns and traditional music.</span></li>
+    <li><span>A male narrator <b>lectures</b> her in a mocking tone — “Is it too big for you?” — and repeatedly mispronounces “Dolce” as “<b>Dos</b>.”</span></li>
+    <li><span>Posted on Instagram, Facebook, Twitter <b>and Weibo</b>; hashtags #DGLovesChina and #DGTheGreatShow.</span></li>
+    <li><span>Intended as <b>light comedy</b> — “an homage to China.” The reaction was the opposite.</span></li>
+    <li><span>Under public pressure, D&amp;G pulled the videos from Weibo within <b>24 hours</b> — but left them on Western platforms.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 6</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Why it enraged China — the cultural misreadings</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:16.5px">
+    <li><span><b>Chopsticks are a cultural symbol</b> — a Chinese invention taught from childhood. “Playing” with them reads as <b>disrespect</b>, not comedy.</span></li>
+    <li><span>The model’s eyes were <b>artificially narrowed</b> — an <b>Asian stereotype</b> — and “is it too big for you?” carried a <b>sexist</b> undertone.</span></li>
+    <li><span>The <b>condescending narrator</b> implied Chinese food and chopsticks were <b>inferior</b> to Italian cuisine and the fork.</span></li>
+    <li><span>Mispronouncing “Dolce” as “Dos” <b>mocked the Chinese accent</b>; the on-screen “Shanghai” even used a wrong <b>Japanese kanji</b> font.</span></li>
+    <li><span><b>Outdated orientalism</b> (red lanterns) ignored modern, cosmopolitan China — “this is definitely not what China looks like now.”</span></li>
+    <li><span>Historical irony: pasta is widely believed to <b>descend from Chinese noodles</b> (via Marco Polo).</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 7</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Intended vs. received meaning</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">A brand controls the message it <b>sends</b>, not the meaning the audience <b>makes</b> — and meaning is made through culture.</p>
+  <table class="wu" style="position:absolute;left:65px;top:194px;font-size:16.5px">
+    <thead><tr><th style="width:290px">Element</th><th style="width:420px">What D&amp;G intended</th><th style="width:440px">How China received it</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Chopsticks + Italian food</td><td>Playful East-meets-West comedy</td><td>Mockery of a sacred cultural symbol</td></tr>
+      <tr><td class="k">The narrator</td><td>Charming, tongue-in-cheek guide</td><td>Arrogant, colonial, talking down</td></tr>
+      <tr><td class="k">The model</td><td>Endearing, curious protagonist</td><td>A demeaning Asian stereotype</td></tr>
+      <tr><td class="k">“DGLovesChina”</td><td>A love letter / homage to China</td><td>“They’ll take our money but look down on us”</td></tr>
+      <tr><td class="k">Traditional imagery</td><td>Respectful nod to heritage</td><td>Outdated, patronising view of a modern nation</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Based on Hung &amp; Ho (2019). Culture provides the schema through which audiences interpret advertising.</p>
+  <div class="footer"><span class="pg">Page 8</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Not the first time — a pattern of missteps</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:17px">
+    <li><span><b>2012 — Hong Kong.</b> Guards barred locals from photographing the Canton Road store → protests; a formal apology came only after <b>~10 days</b>.</span></li>
+    <li><span><b>2016 — spring campaign.</b> Chinese “tourists” taking selfies and shopping stirred unease about how China was portrayed.</span></li>
+    <li><span><b>2017 — #DGLovesChina hutong shoot.</b> Models beside poor locals in old alleys near Tiananmen — “it almost looks like North Korea!” A clash with the concept of <b>face</b>.</span></li>
+    <li><span><b>2018 — the videos.</b> The same blind spot, now amplified — and the founder had a track record of <b>controversial public remarks</b>.</span></li>
+    <li><span><b>Pattern, not accident:</b> a repeated failure to see modern China, intensifying every new crisis.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 9</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">The response — and the clock</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:178px;width:555px;height:340px;background:#fff;border:2px solid #B23A48;padding:22px 28px;box-sizing:border-box">
+    <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px;color:#B23A48">What D&amp;G did</p>
+    <div style="height:4px;width:60px;background:#B23A48;margin:10px 0 14px 0"></div>
+    <p style="margin:0;font-family:var(--font-body);font-size:16.5px;line-height:1.5;color:var(--wu-black)">Pulled the videos from <b>Weibo only</b> — no statement, no apology. Left them live on Western platforms. Then <b>let the debate simmer</b> for days as the catwalk approached.</p>
+  </div>
+  <div style="position:absolute;left:660px;top:178px;width:555px;height:340px;background:var(--wu-navy);padding:22px 28px;box-sizing:border-box">
+    <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:20px;color:#fff">What the moment demanded</p>
+    <div style="height:4px;width:60px;background:var(--wu-sky);margin:10px 0 14px 0"></div>
+    <p style="margin:0;font-family:var(--font-body);font-size:16.5px;line-height:1.5;color:var(--wu-ice)">The Shanghai show was <b>days away</b>. Up to <b>~30% of revenue</b> was exposed. China expected a <b>fast, sincere</b> response that showed the brand understood <i>why</i> people were hurt.</p>
+  </div>
+  <div style="position:absolute;left:65px;top:544px;width:1150px;background:var(--wu-ice);padding:18px 28px;box-sizing:border-box">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)"><b>The decision point (Case A):</b> a formal apology — now? On which channels? Said how? And should the show go on?</p>
+  </div>
+  <div class="footer"><span class="pg">Page 10</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Discussion questions</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">Work in your groups · 10 minutes · be ready to defend a position</p>
+  <ul class="wu" style="position:absolute;left:65px;top:210px;width:1120px;gap:13px;--fs:18.5px">
+    <li><span><b>1 · The ad.</b> Why were the videos offensive? What was the intended joke — and why did it fail? Could it have been done better?</span></li>
+    <li><span><b>2 · Humour &amp; brand.</b> How does humour fit D&amp;G’s brand? What are the advantages and the risks — and how would you “turn it around”?</span></li>
+    <li><span><b>3 · Crisis response.</b> How effective was D&amp;G’s crisis communication? What should it have done — and how can it prevent a recurrence?</span></li>
+    <li><span><b>4 · Rebuilding.</b> How can D&amp;G repair the reputational damage and rebuild its long-term image in China?</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 11</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:300px;object-fit:cover;object-position:left top;opacity:0.5">
+  <p style="position:absolute;left:80px;top:250px;margin:0;font-family:var(--font-body);font-size:20px;text-transform:uppercase;letter-spacing:0.18em;color:var(--wu-sky)">Part 2 — Diagnosis</p>
+  <h1 style="position:absolute;left:80px;top:286px;width:1080px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.1;color:#fff">Why the Advertisement Failed</h1>
+  <p style="position:absolute;left:80px;top:398px;width:1040px;margin:0;font-family:var(--font-body);font-size:20px;color:var(--wu-ice)">Controversial advertising, the three Ms, and the trouble with humour</p>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Controversial advertising and the three Ms</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">Controversial ads deliberately court strong emotion. Their offensiveness turns on three things (Prendergast &amp; Ho, 2006).</p>
+  <div style="position:absolute;left:65px;top:206px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div style="background:var(--wu-ice);padding:20px 24px;border-top:6px solid #457AA0">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Matter</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.45;color:var(--wu-black)"><b>What</b> is advertised. Luxury fashion is not inherently offensive — so this was not the problem here.</p>
+    </div>
+    <div style="background:var(--wu-ice);padding:20px 24px;border-top:6px solid #457AA0">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Media</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.45;color:var(--wu-black)"><b>Where</b> it runs. The more <b>public</b> the medium, the lower the tolerance — and global social media is as public as it gets.</p>
+    </div>
+    <div style="background:var(--wu-ice);padding:20px 24px;border-top:6px solid #0096D3">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:22px;color:var(--wu-navy)">Manner</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.45;color:var(--wu-black)"><b>How</b> it is conveyed — <b>the decisive factor</b>. People are offended more by manner than by matter. D&amp;G’s manner was the whole problem.</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:65px;top:470px;width:1150px;background:var(--wu-navy);padding:18px 28px;box-sizing:border-box">
+    <p style="margin:0;font-family:var(--font-body);font-size:17px;color:#fff">D&amp;G’s offence lived entirely in the <b>manner</b>: silliness, sexual undertones and a condescending tone — broadcast on the most public of media.</p>
+  </div>
+  <div class="footer"><span class="pg">Page 12</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Humour in advertising — a double-edged sword</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">Humour can be powerful — but every advantage has a matching risk that grows when the ad crosses cultures.</p>
+  <table class="wu" style="position:absolute;left:65px;top:194px;font-size:16.5px">
+    <thead><tr><th style="width:540px">Potential advantages</th><th style="width:610px">Risks — especially across cultures</th></tr></thead>
+    <tbody>
+      <tr><td class="k">High message retention</td><td>It is genuinely hard to be funny</td></tr>
+      <tr><td class="k">Grabs and holds attention</td><td>If the joke misfires, the audience feels insulted</td></tr>
+      <tr><td class="k">Creates a positive mood toward the brand</td><td>Humour does not build source credibility</td></tr>
+      <tr><td class="k">Distracts from counter-arguing the ad</td><td>May be wrong for a prestige / luxury product</td></tr>
+      <tr><td class="k"></td><td>Humour is subjective and deeply culture-bound</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Dahlen, Lange &amp; Smith (2010); Tom &amp; Catanescu (2001), via Hung &amp; Ho (2019).</p>
+  <div class="footer"><span class="pg">Page 13</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Turning the joke around</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:17.5px">
+    <li><span>Effective creativity needs <b>both</b> divergence <b>and</b> relevance: novel <i>and</i> meaningful, appropriate and valuable to <b>this</b> audience.</span></li>
+    <li><span>D&amp;G had plenty of divergence — but almost <b>no relevance</b> to how Chinese viewers see themselves.</span></li>
+    <li><span><b>Turn the joke on yourself.</b> Show a Western man clumsily eating Chinese soup with a knife — poke fun at <b>Italian</b>, not Chinese, culture.</span></li>
+    <li><span>Tellingly, exactly such a <b>reverse parody</b> circulated on Weibo <i>after</i> the crisis — and Chinese audiences loved it.</span></li>
+    <li><span><b>Rule of thumb:</b> when using humour or cultural elements abroad, run it past <b>local eyes</b> before launch — test for offence on safe channels first.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 14</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Culture as the schema for meaning</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:17.5px">
+    <li><span><b>Culture is the schema</b> audiences use to decode an ad — the same 30 seconds means different things in Milan and Shanghai.</span></li>
+    <li><span><b>High-context, collectivist</b> audiences (China) are <b>more critical</b> of sexual or socially negative appeals than low-context, individualist ones.</span></li>
+    <li><span>Viewers judge offensiveness through their <b>cultural identity</b> — endorsing the video would have meant betraying it.</span></li>
+    <li><span>This is Hall, Hofstede and Meyer in action: <b>power distance, high/low context, and “face”</b> all shaped the reaction.</span></li>
+    <li><span><b>Managerial point:</b> global consistency must be balanced against local meaning — a brand cannot outsource cultural judgement to head office.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 15</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:300px;object-fit:cover;object-position:left top;opacity:0.5">
+  <p style="position:absolute;left:80px;top:250px;margin:0;font-family:var(--font-body);font-size:20px;text-transform:uppercase;letter-spacing:0.18em;color:var(--wu-sky)">Part 3 — The crisis</p>
+  <h1 style="position:absolute;left:80px;top:286px;width:1080px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.1;color:#fff">Managing (and Mismanaging) the Crisis</h1>
+  <p style="position:absolute;left:80px;top:398px;width:1040px;margin:0;font-family:var(--font-body);font-size:20px;color:var(--wu-ice)">Three phases, the need for speed, and matching the repair to the crisis</p>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">The three phases of crisis management</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">Crisis management is not one moment of response — it is three phases (Coombs). Most of the work happens before and after.</p>
+  <div style="position:absolute;left:65px;top:196px;width:1150px"><div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:14px">
+      <div style="flex:none;width:44px;height:44px;background:var(--wu-navy);color:#fff;font-family:var(--font-title);font-weight:bold;font-size:22px;display:flex;align-items:center;justify-content:center">1</div>
+      <div style="flex:1"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Pre-crisis — prevention &amp; preparation</p>
+      <p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.4;color:var(--wu-black)">Anticipate crises, build a plan and a team, pre-draft messages, train spokespeople, connect local teams to HQ. D&amp;G had little of this.</p></div>
+    </div><div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:14px">
+      <div style="flex:none;width:44px;height:44px;background:var(--wu-navy);color:#fff;font-family:var(--font-title);font-weight:bold;font-size:22px;display:flex;align-items:center;justify-content:center">2</div>
+      <div style="flex:1"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Crisis response — react</p>
+      <p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.4;color:var(--wu-black)">Respond in the first hour: fast, accurate, consistent, and full of genuine concern for those hurt. This is where D&amp;G stumbled badly.</p></div>
+    </div><div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:14px">
+      <div style="flex:none;width:44px;height:44px;background:var(--wu-navy);color:#fff;font-family:var(--font-title);font-weight:bold;font-size:22px;display:flex;align-items:center;justify-content:center">3</div>
+      <div style="flex:1"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Post-crisis — learn &amp; rebuild</p>
+      <p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.4;color:var(--wu-black)">Follow through on promises, repair the reputation, and prepare better for the next one.</p></div>
+    </div></div>
+  <div class="footer"><span class="pg">Page 16</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Speed, silence and “stealing thunder”</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:17px">
+    <li><span>A good initial response is <b>fast, accurate and consistent</b> — and expresses <b>concern</b> for those affected.</span></li>
+    <li><span><b>Silence is not neutral.</b> It lets others control the story and signals you have not grasped the situation.</span></li>
+    <li><span><b>Stealing thunder:</b> be the <b>first</b> to report and frame your own crisis — it measurably reduces reputational damage.</span></li>
+    <li><span><b>Social media compress the clock:</b> even a single “wrong” customer can turn a complaint into a movement within hours.</span></li>
+    <li><span><b>D&amp;G’s failures:</b> a Weibo-only takedown, no timely statement, no local spokesperson, days of silence, and a late apology that felt <b>forced and insincere</b>.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 17</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Attribution &amp; SCCT: match the repair to the crisis</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">Situational Crisis Communication Theory: the more the public blames <b>you</b>, the more accommodative your response must be.</p>
+  <div style="position:absolute;left:65px;top:202px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+    <div style="background:var(--wu-ice);padding:18px 22px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px;color:var(--wu-navy)">Victim</p>
+      <p style="margin:6px 0 0 0;font-family:var(--font-body);font-size:15px;line-height:1.4">Minimal responsibility — e.g. rumours, natural disasters. Instructions + care.</p>
+    </div>
+    <div style="background:var(--wu-ice);padding:18px 22px">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px;color:var(--wu-navy)">Accident</p>
+      <p style="margin:6px 0 0 0;font-family:var(--font-body);font-size:15px;line-height:1.4">Low responsibility — technical error, a challenge. Add excuse / justification.</p>
+    </div>
+    <div style="background:#F3E8EC;padding:18px 22px;border-top:5px solid #B23A48">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:18px;color:#B23A48">Preventable</p>
+      <p style="margin:6px 0 0 0;font-family:var(--font-body);font-size:15px;line-height:1.4"><b>Strong responsibility</b> — organizational misdeed, human error. Needs <b>apology and/or compensation</b>.</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:65px;top:432px;width:1150px;background:var(--wu-navy);padding:18px 28px;box-sizing:border-box">
+    <p style="margin:0;font-family:var(--font-body);font-size:17px;color:#fff;line-height:1.5">D&amp;G’s scandal was a <b>preventable crisis</b> → strong responsibility. Worse, <b>intensifying factors</b> — a history of offending China and a controversial founder — magnified the threat. Excuses were never going to be enough; only <b>apology + compensation + genuine care</b> could work.</p>
+  </div>
+  <div class="footer"><span class="pg">Page 18</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Reputation-repair strategies — and what D&amp;amp;G needed</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">Benoit &amp; Coombs’ master list runs from defensive to accommodative. A preventable crisis calls for the accommodative end.</p>
+  <table class="wu" style="position:absolute;left:65px;top:194px;font-size:16px">
+    <thead><tr><th style="width:250px">Strategy</th><th style="width:540px">What it means</th><th style="width:360px">Fit for D&amp;G?</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Deny / attack accuser</td><td>“There is no crisis” / confront the critic</td><td>No — only for rumours</td></tr>
+      <tr><td class="k">Scapegoat / excuse</td><td>Blame others; deny intent to harm</td><td>No — reads as evasion</td></tr>
+      <tr><td class="k">Justification</td><td>Minimise the perceived damage</td><td>No — dismisses real hurt</td></tr>
+      <tr><td class="k">Compensation</td><td>Offer gestures of goodwill to those harmed</td><td>Yes — signals sincerity</td></tr>
+      <tr><td class="k">Apology</td><td>Take full responsibility; ask forgiveness</td><td>Yes — the core response</td></tr>
+    </tbody>
+  </table>
+  <p class="src">Benoit (1995, 1997); Coombs (2007), via Hung &amp; Ho (2019).</p>
+  <div class="footer"><span class="pg">Page 19</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Rebuilding the brand in China</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:11px;--fs:16.5px">
+    <li><span><b>Localise the response:</b> use a Chinese PR agency and let <b>local staff lead</b> authentic, culturally fluent campaigns.</span></li>
+    <li><span><b>Test before you launch:</b> put every campaign with humour or cultural content in front of <b>third-party local reviewers</b>.</span></li>
+    <li><span><b>Empower local voices:</b> encourage local teams to <b>speak up</b> rather than passively follow global guidelines.</span></li>
+    <li><span><b>Balance global and local:</b> keep brand consistency, but drop the paternalistic, one-size-fits-all approach.</span></li>
+    <li><span><b>Diversify the team:</b> hire local talent and run internal <b>cultural-sensitivity training</b> — starting at the top.</span></li>
+    <li><span><b>Rebuild relationships</b> with consumers, retailers, celebrities, media and government — reputation is a long game.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 20</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide" style="background:var(--wu-navy)">
+  <img src="assets/patterns/pattern-lines-white.png" alt="" style="position:absolute;left:0;bottom:0;width:1280px;height:300px;object-fit:cover;object-position:left top;opacity:0.5">
+  <p style="position:absolute;left:80px;top:250px;margin:0;font-family:var(--font-body);font-size:20px;text-transform:uppercase;letter-spacing:0.18em;color:var(--wu-sky)">Part 4 — The personal toolkit</p>
+  <h1 style="position:absolute;left:80px;top:286px;width:1080px;margin:0;font-family:var(--font-title);font-weight:bold;font-size:46px;line-height:1.1;color:#fff">When You Make the Mistake</h1>
+  <p style="position:absolute;left:80px;top:398px;width:1040px;margin:0;font-family:var(--font-body);font-size:20px;color:var(--wu-ice)">Molinsky (2013) and Hahn &amp; Molinsky (2018): prepare for — and recover from — your own faux pas</p>
+  <img src="assets/wu-logo-white.png" alt="WU Vienna" style="position:absolute;left:1106px;top:22px;width:121px;height:90px">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Prepare: have a “forgiveness strategy”</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:16.5px;color:var(--wu-gray-footer)">Mohammed, trained in deferential Saudi manners, came across as “weak” in a New York interview. We all slip abroad — so plan for it (Molinsky, 2013).</p>
+  <div style="position:absolute;left:65px;top:216px;width:1150px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+    <div style="background:var(--wu-ice);padding:20px 24px;border-top:6px solid #0096D3">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Shape how it is read</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:15.5px;line-height:1.45">Make your slip look like an <b>honest mistake by someone trying</b> — not proof you don’t care.</p>
+    </div>
+    <div style="background:var(--wu-ice);padding:20px 24px;border-top:6px solid #0096D3">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Build swift trust</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:15.5px;line-height:1.45">Show <b>authentic</b> interest in their culture. Learn how trust is actually built in that setting.</p>
+    </div>
+    <div style="background:var(--wu-ice);padding:20px 24px;border-top:6px solid #0096D3">
+      <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Find a cultural mentor</p>
+      <p style="margin:8px 0 0 0;font-family:var(--font-body);font-size:15.5px;line-height:1.45">A trusted local guide can <b>coach you ahead</b> of the moments that really count.</p>
+    </div>
+  </div>
+  <div style="position:absolute;left:65px;top:474px;width:1150px;background:var(--wu-navy);padding:18px 28px;box-sizing:border-box">
+    <p style="margin:0;font-family:var(--font-body);font-size:17px;color:#fff">You already have a strategy for <b>learning</b> a new culture. Do you have a strategy for being <b>forgiven</b> in it?</p>
+  </div>
+  <div class="footer"><span class="pg">Page 21</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Recover: a five-step process</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p style="position:absolute;left:65px;top:150px;width:1120px;margin:0;font-family:var(--font-body);font-size:17px;color:var(--wu-gray-footer)">Mistakes are inevitable, so turn them into learning (Hahn &amp; Molinsky, 2018).</p>
+  <div style="position:absolute;left:65px;top:196px;width:1150px"><div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:14px">
+      <div style="flex:none;width:44px;height:44px;background:var(--wu-navy);color:#fff;font-family:var(--font-title);font-weight:bold;font-size:22px;display:flex;align-items:center;justify-content:center">1</div>
+      <div style="flex:1"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Ditch the obsession with performance</p>
+      <p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.4;color:var(--wu-black)">Swap a “performance mindset” for a <b>learning mindset</b> (Dweck). Stop catastrophizing — mistakes are the raw material of learning.</p></div>
+    </div><div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:14px">
+      <div style="flex:none;width:44px;height:44px;background:var(--wu-navy);color:#fff;font-family:var(--font-title);font-weight:bold;font-size:22px;display:flex;align-items:center;justify-content:center">2</div>
+      <div style="flex:1"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Equip yourself with knowledge</p>
+      <p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.4;color:var(--wu-black)">Learn the norms — and how people in this culture <b>react to</b> mistakes. Invest in relationships <b>before</b> you need them.</p></div>
+    </div><div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:14px">
+      <div style="flex:none;width:44px;height:44px;background:var(--wu-navy);color:#fff;font-family:var(--font-title);font-weight:bold;font-size:22px;display:flex;align-items:center;justify-content:center">3</div>
+      <div style="flex:1"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Keep your cool</p>
+      <p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.4;color:var(--wu-black)">Assess the damage; if an apology is due, deliver one close to the local norm. A prior bond makes forgiveness far easier.</p></div>
+    </div><div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:14px">
+      <div style="flex:none;width:44px;height:44px;background:var(--wu-navy);color:#fff;font-family:var(--font-title);font-weight:bold;font-size:22px;display:flex;align-items:center;justify-content:center">4</div>
+      <div style="flex:1"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Engage in self-reflection</p>
+      <p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.4;color:var(--wu-black)">Ask: what did I do, how did they react, what did I miss, what would I do differently? Write it down.</p></div>
+    </div><div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:14px">
+      <div style="flex:none;width:44px;height:44px;background:var(--wu-navy);color:#fff;font-family:var(--font-title);font-weight:bold;font-size:22px;display:flex;align-items:center;justify-content:center">5</div>
+      <div style="flex:1"><p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:19px;color:var(--wu-navy)">Get feedback</p>
+      <p style="margin:3px 0 0 0;font-family:var(--font-body);font-size:16px;line-height:1.4;color:var(--wu-black)">Ask trusted locals what you’re missing; rehearse before high-stakes moments; lean on — don’t hide — your foreignness.</p></div>
+    </div></div>
+  <div class="footer"><span class="pg">Page 22</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Performance mindset vs. learning mindset</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <div style="position:absolute;left:65px;top:186px;width:555px;height:330px;background:#F3E8EC;padding:24px 30px;box-sizing:border-box;border-top:6px solid #B23A48">
+    <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:21px;color:#B23A48">Performance mindset</p>
+    <div style="height:4px;width:60px;background:#B23A48;margin:10px 0 16px 0"></div>
+    <p style="margin:0;font-family:var(--font-body);font-size:16.5px;line-height:1.55;color:var(--wu-black)">Mistakes = proof of your limits.<br><br>Thinking <b>constricts</b>; you become stiff and inauthentic.<br><br><b>Catastrophizing:</b> “If I bow the wrong way, I’ll blow the deal!”</p>
+  </div>
+  <div style="position:absolute;left:660px;top:186px;width:555px;height:330px;background:var(--wu-ice);padding:24px 30px;box-sizing:border-box;border-top:6px solid #0096D3">
+    <p style="margin:0;font-family:var(--font-title);font-weight:bold;font-size:21px;color:var(--wu-navy)">Learning mindset</p>
+    <div style="height:4px;width:60px;background:var(--wu-cyan);margin:10px 0 16px 0"></div>
+    <p style="margin:0;font-family:var(--font-body);font-size:16.5px;line-height:1.55;color:var(--wu-black)">Mistakes = chances to improve.<br><br>You stay <b>loose, curious and authentic</b> — which is what actually builds relationships.<br><br>Improvement takes time, and will involve slip-ups along the way.</p>
+  </div>
+  <p style="position:absolute;left:65px;top:544px;width:1150px;margin:0;font-family:var(--font-body);font-size:17px;font-style:italic;color:var(--wu-gray-footer)">The same idea scales up: D&amp;G defended its “performance”; a learning organization would have listened, reflected and adapted.</p>
+  <div class="footer"><span class="pg">Page 23</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">Key takeaways</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <ul class="wu" style="position:absolute;left:65px;top:180px;width:1120px;gap:13px;--fs:18px">
+    <li><span><b>Culture makes the meaning.</b> You control the message you send, never the meaning the audience makes — so test with local eyes.</span></li>
+    <li><span><b>Humour and cultural elements are high-risk abroad;</b> judge the <b>manner</b>, not just the matter, and be ready to poke fun at yourself.</span></li>
+    <li><span><b>In a crisis, speed and sincerity win.</b> Be first to frame it, apologise fully for a preventable crisis, and show genuine care.</span></li>
+    <li><span><b>Empower local voices</b> and prepare before the crisis — a plan, a team, and people who can say “this won’t work here.”</span></li>
+    <li><span><b>At the individual level,</b> carry a forgiveness strategy and a learning mindset — prepare for, and recover from, the faux pas you <i>will</i> make.</span></li>
+  </ul>
+  <div class="footer"><span class="pg">Page 24</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <h1 class="s-title">In-class activity: draft D&amp;G’s response</h1>
+<div class="rule"></div>
+<img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <p class="act-kicker">In-class activity · 15 minutes · small groups</p>
+  <p class="act-obj">Objective: put the crisis-communication frameworks to work under time pressure.</p>
+  <div class="act-box" style="top:248px">
+    <ol class="steps">
+      <li><span>You are D&amp;G’s <b>crisis team</b>, 24 hours after the videos. Classify the crisis (SCCT) and name the <b>intensifying factors</b>.</span></li>
+      <li><span>Draft a <b>90-word public statement</b> for Weibo: fast, accurate, consistent — and full of genuine care.</span></li>
+      <li><span>Decide: does the Shanghai show <b>go ahead</b>? On which <b>channels</b> do you respond, and who is your <b>spokesperson</b>?</span></li>
+      <li><span>Name <b>two prevention measures</b> so this can’t recur — and connect one to your own market-entry group assignment.</span></li>
+    </ol>
+  </div>
+  <p style="position:absolute;left:65px;top:566px;width:1150px;margin:0;font-family:var(--font-body);font-size:16px;font-style:italic;color:var(--wu-gray-footer)">Be ready to read your statement aloud — the class will judge whether it “steals thunder” or fans the flames.</p>
+  <div class="footer"><span class="pg">Page 25</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<div class="stage"><div class="slide">
+  <img src="assets/wu-logo-black.png" alt="WU Vienna" class="logo-black">
+  <img src="assets/emblem-vertical-blue.png" alt="Vienna University of Economics and Business" style="position:absolute;left:86px;top:236px;width:69px;height:284px">
+  <div style="position:absolute;left:236px;top:232px;width:840px">
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;text-transform:uppercase;color:var(--wu-black)">Department of Global Trade · WU Vienna</p>
+    <p style="margin:18px 0 0 0;font-family:var(--font-title);font-weight:bold;font-size:28px;color:var(--wu-navy)">Dr. Arne Floh</p>
+    <p style="margin:6px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Senior Lecturer in International Marketing</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Deputy Program Director MSc Export- and Internationalisation Management</p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)"><a href="mailto:arne.floh@wu.ac.at">arne.floh@wu.ac.at</a></p>
+    <p style="margin:14px 0 0 0;font-family:var(--font-body);font-size:18px;color:var(--wu-black)">Welthandelsplatz 1, 1020 Wien, Austria</p>
+    <p style="margin:0;font-family:var(--font-body);font-size:18px;font-weight:bold;color:var(--wu-black)">www.wu.ac.at</p>
+    <p style="margin:20px 0 0 0;font-family:var(--font-body);font-size:14px;font-style:italic;color:var(--wu-gray-footer);line-height:1.45">Case: Hung, K. &amp; Ho, M. (2019). D&amp;G’s Marketing Missteps in China. Asia Case Research Centre, HKU. · Molinsky (2013) and Hahn &amp; Molinsky (2018), Harvard Business Review.</p>
+  </div>
+  <div class="footer"><span class="pg">Page 26</span><span>International Summer University WU 2026</span></div>
+<img src="assets/accreditations-black.png" alt="" class="accred-b">
+</div></div>
+<script>
+  function fit(){var vw=document.body.clientWidth-40;var sc=Math.min(1,vw/1280);document.querySelectorAll('.stage').forEach(function(st){var sl=st.querySelector('.slide');sl.style.transform='scale('+sc+')';st.style.height=(720*sc)+'px';st.style.width=(1280*sc)+'px';});}
+  window.addEventListener('resize',fit);fit();
+</script>
+</body>
+</html>
